@@ -1,0 +1,15 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Frag_Grenade_Particles_Sub"
+    },
+    {
+      "SpawnerId": "Frag_Grenade_Particles_Sub"
+    },
+    {
+      "SpawnerId": "Frag_Grenade_Particles_Sub2"
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 500
+}

@@ -1,0 +1,25 @@
+{
+    "Group": "com.dopa",
+    "Name": "dopa",
+    "Version": "0.1.0",
+    "Description": "DOPA",
+    "Authors": [
+        {
+            "Name": "nalo"
+        }
+    ],
+    "Website": "",
+    "ServerVersion": ">=0.6.0-pre.9 <0.7.0",
+    "Dependencies": {
+        "Hytale:AssetModule": "*"
+    },
+    "OptionalDependencies": {
+        
+    },
+    "DisabledByDefault": false,
+    "Main": "com.dopa.modid.Main",
+    "IncludesAssetPack": true,
+    "UpdateChecker": {
+        "CurseForge": ""
+    }
+}

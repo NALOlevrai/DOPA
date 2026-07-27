@@ -1,0 +1,107 @@
+{
+  "Interactions": {
+    "ProjectileSpawn": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 2,
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 7.5,
+            "EntityDamage": 35,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": -5,
+              "VelocityY": 3.5,
+              "Duration": 0.1,
+              "VelocityConfig": {
+                "Style": "Exp"
+              },
+              "RelativeX": 0,
+              "RelativeZ": 0
+            },
+            "BlockDamageRadius": 0,
+            "BlockDamageFalloff": 0,
+            "BlockDropChance": 0,
+            "EntityDamageFalloff": 1,
+            "Particles": [
+              {
+                "SystemId": "Frag_Grenade_Particles",
+                "TargetEntityPart": "Entity",
+                "PositionOffset": {},
+                "DetachedFromModel": true
+              }
+            ],
+            "SoundEventId": "SFX_Frag_Grenade"
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false
+        },
+        {
+          "Type": "RemoveEntity",
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false
+        }
+      ],
+      "Rules": {
+        "InterruptedBy": []
+      }
+    },
+    "ProjectileBounce": {
+      "Interactions": [
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": false,
+            "EntityDamage": 0,
+            "BlockDamageRadius": 0,
+            "BlockDamageFalloff": 0,
+            "BlockDropChance": 0,
+            "EntityDamageRadius": 0,
+            "SoundEventId": "SFX_Frag_Grenade_Bounce",
+            "Particles": [
+              {
+                "SystemId": "Block_Land_Hard_Metal",
+                "DetachedFromModel": true,
+                "TargetEntityPart": "Entity"
+              }
+            ],
+            "DamageBlocks": false
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false
+        }
+      ]
+    }
+  },
+  "Model": "Frag_Grenade_Model",
+  "Physics": {
+    "Type": "Standard",
+    "TerminalVelocityWater": 25,
+    "HitWaterImpulseLoss": 0.5,
+    "AllowRolling": true,
+    "Bounciness": 0.4,
+    "TerminalVelocityAir": 35,
+    "Gravity": 18.0,
+    "Density": 750,
+    "DensityAir": 1.2,
+    "DensityWater": 1500,
+    "RotationForce": 5,
+    "SpeedRotationFactor": 0.2,
+    "RollingFrictionFactor": 0.2,
+    "RollingSpeed": 2,
+    "BounceLimit": 20,
+    "MoveOutOfSolidSpeed": 1
+  },
+  "LaunchForce": 17,
+  "UseModelScale": true,
+  "SpawnOffset": {
+    "Z": -0.25
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Objects/SFX_Smoke_Grenade.ogg"
+      ],
+      "RandomSettings": {
+        "MinPitch": -2.5,
+        "MaxPitch": 2.5,
+        "MaxVolume": 0
+      }
+    }
+  ],
+  "Volume": -2,
+  "Parent": "SFX_Attn_Loud",
+  "MaxDistance": 35,
+  "StartAttenuationDistance": 10
+}

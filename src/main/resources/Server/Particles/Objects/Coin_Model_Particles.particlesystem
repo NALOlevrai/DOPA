@@ -1,0 +1,8 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Coins_Particles_Sub"
+    }
+  ],
+  "IsImportant": false
+}

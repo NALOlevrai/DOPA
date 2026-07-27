@@ -1,0 +1,64 @@
+{
+  "Spawners": [
+    {
+      "PositionOffset": {
+        "Z": 0.0,
+        "Y": 0.5
+      },
+      "SpawnerId": "Stick_Slam_Ground_Large_Beam"
+    },
+    {
+      "PositionOffset": {
+        "Z": 0.0,
+        "Y": 2.0
+      },
+      "SpawnerId": "Stick_Slam_Ground_Large_Beam_Constant"
+    },
+    {
+      "PositionOffset": {
+        "X": 0.0,
+        "Z": 0.0,
+        "Y": 0.5
+      },
+      "StartDelay": 0.1,
+      "SpawnerId": "Stick_Slam_Ground_Hit"
+    },
+    {
+      "PositionOffset": {
+        "Z": 0.0,
+        "Y": 0.5
+      },
+      "FixedRotation": false,
+      "StartDelay": 0.1,
+      "SpawnerId": "Stick_Slam_Ground_Hit2"
+    },
+    {
+      "SpawnerId": "Stick_Slam_Shockwave",
+      "PositionOffset": {
+        "Z": 0.0,
+        "X": 0.0,
+        "Y": 0.5
+      },
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "Stick_Slam_Ground_AlphaWave",
+      "PositionOffset": {
+        "Z": 0.0,
+        "Y": 0.5
+      },
+      "FixedRotation": false,
+      "StartDelay": 0.1
+    },
+    {
+      "SpawnerId": "Mace_Signature_Distortion",
+      "PositionOffset": {
+        "Z": 0.0,
+        "Y": 0.5
+      },
+      "StartDelay": 0.1
+    }
+  ],
+  "BoundingRadius": 10,
+  "IsImportant": true
+}

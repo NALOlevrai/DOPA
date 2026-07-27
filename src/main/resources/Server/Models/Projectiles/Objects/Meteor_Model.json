@@ -1,0 +1,84 @@
+{
+  "HitBox": {
+    "Max": {
+      "Y": 0.75,
+      "Z": 0.75,
+      "X": 0.75
+    },
+    "Min": {
+      "X": 0,
+      "Y": 0,
+      "Z": 0
+    }
+  },
+  "Trails": [
+    {
+      "TargetNodeName": "Origin_Item",
+      "PositionOffset": {
+        "Y": 0,
+        "Z": 0.05
+      },
+      "TrailId": "Meteor_Trail"
+    },
+    {
+      "TargetNodeName": "Origin_Item",
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 90
+      },
+      "PositionOffset": {
+        "Y": 0,
+        "Z": 0.05
+      },
+      "TrailId": "Meteor_Trail"
+    },
+    {
+      "TargetNodeName": "Origin_Item",
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 45
+      },
+      "PositionOffset": {
+        "Y": 0,
+        "Z": 0.05
+      },
+      "TrailId": "Meteor_Trail"
+    },
+    {
+      "TargetNodeName": "Origin_Item",
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": -45
+      },
+      "TrailId": "Meteor_Trail",
+      "PositionOffset": {
+        "Y": 0,
+        "Z": 0.05
+      }
+    }
+  ],
+  "DefaultAttachments": [
+    {
+      "Model": "Resources/Meteor/Meteor_Model.blockymodel",
+      "Texture": "Resources/Meteor/Meteor_Texture.png"
+    }
+  ],
+  "Light": {
+    "Color": "#f00",
+    "Radius": 10
+  },
+  "EyeHeight": 0,
+  "Model": "Items/Projectiles/Projectile.blockymodel",
+  "Texture": "Items/Projectiles/Projectile_default.png",
+  "MinScale": 3.5,
+  "MaxScale": 3.5,
+  "Particles": [
+    {
+      "SystemId": "Meteor_Particles",
+      "Scale": 1,
+      "RotationOffset": {
+        "Pitch": -90
+      }
+    }
+  ]
+}

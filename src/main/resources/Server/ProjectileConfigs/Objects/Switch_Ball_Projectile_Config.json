@@ -1,0 +1,190 @@
+{
+  "Interactions": {
+    "ProjectileSpawn": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 5,
+          "OnItemChangeBehavior": "Finish",
+          "CancelOnItemChange": false
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 1.5,
+            "EntityDamage": 0,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": -1.5,
+              "VelocityY": 1.5,
+              "Duration": 0.1,
+              "VelocityConfig": {
+                "Style": "Exp"
+              },
+              "RelativeX": 0,
+              "RelativeZ": 0
+            },
+            "BlockDamageRadius": 0,
+            "BlockDamageFalloff": 0,
+            "BlockDropChance": 0,
+            "EntityDamageFalloff": 0,
+            "Particles": [
+              {
+                "SystemId": "Impulse_Ground_Particles",
+                "TargetEntityPart": "Entity",
+                "PositionOffset": {},
+                "DetachedFromModel": true,
+                "RotationOffset": {}
+              }
+            ],
+            "SoundEventId": "SFX_Impulse_Grenade_Explode"
+          },
+          "OnItemChangeBehavior": "Finish",
+          "CancelOnItemChange": false
+        },
+        {
+          "Type": "RemoveEntity",
+          "OnItemChangeBehavior": "Finish",
+          "CancelOnItemChange": false
+        }
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "Effects": {
+            "WorldSoundEventId": "SFX_Goblin_Lobber_Bomb_Hit",
+            "LocalSoundEventId": "SFX_Goblin_Lobber_Bomb_Hit",
+            "Particles": [
+              {
+                "SystemId": "VoidImpact",
+                "TargetEntityPart": "Entity",
+                "PositionOffset": {
+                  "Z": -0.1
+                },
+                "DetachedFromModel": true,
+                "RotationOffset": {
+                  "Yaw": 0
+                }
+              }
+            ]
+          },
+          "RunTime": 0.25,
+          "OnItemChangeBehavior": "Finish",
+          "CancelOnItemChange": false
+        },
+        {
+          "Type": "Teleporter",
+          "OnItemChangeBehavior": "Finish",
+          "CancelOnItemChange": false,
+          "UseLatestTarget": true,
+          "ClearOutXZ": 10.3,
+          "ClearOutY": 12.5
+        },
+        {
+          "Type": "RemoveEntity",
+          "OnItemChangeBehavior": "Finish",
+          "CancelOnItemChange": false
+        }
+      ]
+    },
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 0.25,
+          "Effects": {
+            "WorldSoundEventId": "SFX_Goblin_Lobber_Bomb_Hit",
+            "LocalSoundEventId": "SFX_Goblin_Lobber_Bomb_Hit",
+            "Particles": [
+              {
+                "SystemId": "VoidImpact",
+                "TargetEntityPart": "Entity",
+                "PositionOffset": {
+                  "Z": -0.1
+                },
+                "DetachedFromModel": true,
+                "RotationOffset": {
+                  "Yaw": 0
+                }
+              }
+            ]
+          },
+          "OnItemChangeBehavior": "Finish",
+          "CancelOnItemChange": false
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 1.5,
+            "EntityDamage": 0,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": -1.5,
+              "VelocityY": 1.5,
+              "Duration": 0.1,
+              "VelocityConfig": {
+                "Style": "Exp"
+              },
+              "RelativeX": 0,
+              "RelativeZ": 0
+            },
+            "BlockDamageRadius": 0,
+            "BlockDamageFalloff": 0,
+            "BlockDropChance": 0,
+            "EntityDamageFalloff": 0,
+            "Particles": [
+              {
+                "SystemId": "Impulse_Ground_Particles",
+                "TargetEntityPart": "Entity",
+                "PositionOffset": {},
+                "DetachedFromModel": true,
+                "RotationOffset": {}
+              }
+            ],
+            "SoundEventId": "SFX_Impulse_Grenade_Explode"
+          },
+          "OnItemChangeBehavior": "Finish",
+          "CancelOnItemChange": false
+        },
+        {
+          "Type": "RemoveEntity",
+          "OnItemChangeBehavior": "Finish",
+          "CancelOnItemChange": false
+        }
+      ]
+    }
+  },
+  "Model": "Switch_Ball_Model",
+  "Physics": {
+    "Type": "Standard",
+    "SticksVertically": true,
+    "Density": 750,
+    "RotationMode": "None",
+    "TerminalVelocityAir": 50,
+    "TerminalVelocityWater": 50,
+    "HitWaterImpulseLoss": 0.5,
+    "DensityAir": 0.1,
+    "Gravity": 50,
+    "BounceLimit": 10,
+    "ComputeYaw": false,
+    "ComputePitch": false,
+    "RotationForce": 0,
+    "SpeedRotationFactor": 0,
+    "RollingSpeed": 0,
+    "RollingFrictionFactor": 0,
+    "AllowRolling": false,
+    "DensityWater": 1
+  },
+  "LaunchForce": 25,
+  "SpawnOffset": {
+    "Z": -0.75,
+    "Y": -0.05
+  },
+  "UseModelScale": true
+}

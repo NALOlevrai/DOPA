@@ -1,0 +1,29 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "Effects": {
+        "WorldSoundEventId": "SFX_Trork_Throwing_Axe",
+        "LocalSoundEventId": "SFX_Trork_Throwing_Axe",
+        "ItemAnimationId": "Throw"
+      },
+      "RunTime": 0.25,
+      "CancelOnItemChange": false,
+      "OnItemChangeBehavior": "Ignore"
+    },
+    {
+      "Type": "ModifyInventory",
+      "RequiredGameMode": "Adventure",
+      "Next": {
+        "Type": "Projectile",
+        "Config": "Magic_Bean_Projectile_Config",
+        "CancelOnItemChange": false,
+        "OnItemChangeBehavior": "Ignore"
+      },
+      "CancelOnItemChange": false,
+      "OnItemChangeBehavior": "Ignore",
+      "AdjustHeldItemQuantity": -1
+    }
+  ]
+}

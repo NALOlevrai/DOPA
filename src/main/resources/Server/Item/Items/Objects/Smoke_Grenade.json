@@ -1,0 +1,83 @@
+{
+  "TranslationProperties": {
+    "Name": "Smoke Grenade",
+    "Description": "Smoke !"
+  },
+  "Categories": [
+    "Category_DOPA.DOPA"
+  ],
+  "Quality": "Rare",
+  "BlockType": {
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Items/Objects/Smoke_Grenade/Smoke_Grenade_Texture.png"
+      }
+    ],
+    "Light": {
+      "Color": "#232",
+      "Radius": 0
+    },
+    "CustomModel": "Items/Objects/Smoke_Grenade/Smoke_Grenade_Model.blockymodel",
+    "Opacity": "Solid",
+    "CubeShadingMode": "Fullbright",
+    "DrawType": "Model"
+  },
+  "DropOnDeath": true,
+  "IconProperties": {
+    "Scale": 0.75,
+    "Rotation": [
+      10,
+      148,
+      29
+    ],
+    "Translation": [
+      -7.1,
+      -15.2
+    ]
+  },
+  "MaxStack": 10,
+  "ItemEntity": {
+    "Physics": {
+      "InvertedGravity": false
+    }
+  },
+  "Icon": "Icons/ItemsGenerated/Smoke_Grenade.png",
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Tools"
+        ],
+        "Id": "Fieldcraft"
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Coin",
+        "Quantity": 10
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Smoke_Grenade",
+        "Quantity": 1
+      }
+    ],
+    "OutputQuantity": 1
+  },
+  "ItemLevel": 3,
+  "PlayerAnimationsId": "Item",
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        "Smoke_Grenade_Interaction"
+      ],
+      "RequireNewClick": true
+    }
+  },
+  "Utility": {
+    "Usable": true
+  }
+}

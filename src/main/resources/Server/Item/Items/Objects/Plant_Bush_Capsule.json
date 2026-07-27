@@ -1,0 +1,106 @@
+{
+  "TranslationProperties": {
+    "Name": "Plant Bush Capsule"
+  },
+  "Icon": "Icons/ItemsGenerated/Plant_Bush_Green.png",
+  "Categories": [
+    "Blocks.Plants"
+  ],
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 0.345,
+    "Translation": [
+      2.5,
+      -26.299999
+    ],
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Plant"
+    ],
+    "Family": [
+      "Bush"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Foliage",
+  "BlockType": {
+    "Gathering": {
+      "Soft": {
+        "DropList": "Empty",
+        "IsWeaponBreakable": true
+      },
+      "UseDefaultDropWhenPlaced": false
+    },
+    "PlacementSettings": {
+      "AllowBreakReplace": true
+    },
+    "DrawType": "Model",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Foliage/Plants/Bush_Big_Textures/Green.png",
+        "Weight": 1
+      }
+    ],
+    "Effect": [
+      "WindAttached"
+    ],
+    "CustomModel": "Blocks/Foliage/Plants/Bush_Big.blockymodel",
+    "CustomModelScale": 1.05,
+    "Opacity": "Transparent",
+    "RandomRotation": "YawStep1",
+    "BlockParticleSetId": "Leaves_Round",
+    "ParticleColor": "#579a1f",
+    "BlockSoundSetId": "Bush",
+    "PhysicalMaterialId": "Foliage",
+    "BiomeTint": 20,
+    "TextureComputedColor": "#426314",
+    "MovementSettings": {
+      "TerminalVelocityModifier": 0.05,
+      "JumpForceMultiplier": 0.5,
+      "HorizontalSpeedMultiplier": 0.5
+    },
+    "InteractionHitboxType": "Bush_Hitbox",
+    "HitboxType": "Bush_Hitbox",
+    "Material": "Empty",
+    "Interactions": {
+      "Collision": {
+        "Interactions": [
+          {
+            "Type": "ApplyEffect",
+            "EffectId": {
+              "Parent": "Small_FallDamage_Invulnerability"
+            }
+          },
+          {
+            "Type": "ApplyEffect",
+            "EffectId": {
+              "ModelOverride": {
+                "Texture": "Characters/Empty_Cube_Texture.png",
+                "Model": "Characters/Empty_Cube.blockymodel"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Support": {
+      "BlockSides": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "SupportsRequiredFor": "All",
+    "SupportDropType": "Break"
+  },
+  "ItemLevel": 2,
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  }
+}

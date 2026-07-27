@@ -1,0 +1,197 @@
+{
+  "ParticleRotationInfluence": "BillboardVelocity",
+  "MaxConcurrentParticles": 1000,
+  "SpawnRate": {
+    "Min": 75,
+    "Max": 75
+  },
+  "Attractors": [
+    {
+      "Position": {
+        "X": 0,
+        "Z": 0
+      },
+      "RadialAxis": {
+        "Y": 1
+      },
+      "RadialTangentAcceleration": 0.15,
+      "RadialImpulse": 0.5,
+      "TrailPositionMultiplier": 0,
+      "RadialTangentImpulse": 15,
+      "RadialAcceleration": -0.25,
+      "DampingMultiplier": {
+        "Y": 1
+      },
+      "LinearAcceleration": {
+        "Y": 0.025
+      },
+      "LinearImpulse": {
+        "Y": 0.25
+      }
+    }
+  ],
+  "VelocityStretchMultiplier": 75,
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Ball3.png",
+    "ScaleRatioConstraint": "None",
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 0.5,
+          "Max": 1
+        },
+        "Y": {
+          "Min": 0.5,
+          "Max": 1
+        }
+      }
+    },
+    "Animation": {
+      "0": {
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Scale": {
+          "X": {
+            "Min": 0,
+            "Max": 0
+          },
+          "Y": {
+            "Min": 0,
+            "Max": 0
+          }
+        },
+        "Opacity": 1,
+        "Color": "#ffffff"
+      },
+      "4": {
+        "Color": "#ff84f6"
+      },
+      "9": {
+        "Opacity": 1.0,
+        "Scale": {
+          "X": {
+            "Min": 0.35,
+            "Max": 0.5
+          },
+          "Y": {
+            "Min": 0.35,
+            "Max": 0.5
+          }
+        },
+        "Color": "#8400ff"
+      },
+      "13": {
+        "Color": "#0000ff"
+      },
+      "18": {
+        "Color": "#00ffff"
+      },
+      "22": {
+        "Color": "#00ff00"
+      },
+      "27": {
+        "Color": "#ffff00"
+      },
+      "31": {
+        "Color": "#ff8000"
+      },
+      "36": {
+        "Color": "#ff0000"
+      },
+      "40": {
+        "Color": "#ff84f6"
+      },
+      "45": {
+        "Color": "#ffffff"
+      },
+      "50": {
+        "Color": "#ff84f6"
+      },
+      "54": {
+        "Color": "#ff0000"
+      },
+      "59": {
+        "Color": "#ff8000"
+      },
+      "63": {
+        "Color": "#ffff00"
+      },
+      "68": {
+        "Color": "#00ff00"
+      },
+      "72": {
+        "Color": "#00ffff"
+      },
+      "77": {
+        "Color": "#0000ff"
+      },
+      "81": {
+        "Color": "#8400ff"
+      },
+      "86": {
+        "Color": "#ff84f6"
+      },
+      "90": {
+        "Opacity": 1.0,
+        "Scale": {
+          "X": {
+            "Min": 0.35,
+            "Max": 0.5
+          },
+          "Y": {
+            "Min": 0.35,
+            "Max": 0.5
+          }
+        },
+        "Color": "#ffffff"
+      },
+      "95": {
+        "Color": "#ff84f6"
+      },
+      "100": {
+        "Opacity": 0.0,
+        "Scale": {
+          "X": {
+            "Min": 0,
+            "Max": 0
+          },
+          "Y": {
+            "Min": 0,
+            "Max": 0
+          }
+        },
+        "Color": "#ffffff"
+      }
+    }
+  },
+  "EmitOffset": {
+    "X": {
+      "Max": 42,
+      "Min": 42
+    },
+    "Y": {
+      "Max": 0,
+      "Min": 0
+    },
+    "Z": {
+      "Max": 42,
+      "Min": 42
+    }
+  },
+  "IsLowRes": true,
+  "RenderMode": "Erosion",
+  "ParticleLifeSpan": {
+    "Min": 7.5,
+    "Max": 7.5
+  },
+  "Shape": "Sphere",
+  "InitialVelocity": {
+    "Speed": {
+      "Max": 0.45,
+      "Min": -0.45
+    }
+  },
+  "LinearFiltering": true
+}

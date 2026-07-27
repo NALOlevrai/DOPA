@@ -1,0 +1,24 @@
+{
+  "Type": "DamageEntity",
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Physical": 5
+    }
+  },
+  "DamageEffects": {
+    "Knockback": {
+      "Force": -5.5,
+      "RelativeX": 0,
+      "RelativeZ": 0,
+      "VelocityY": 15
+    },
+    "WorldSoundEventId": "SFX_Bat_Thud",
+    "LocalSoundEventId": "SFX_Bat_Thud",
+    "WorldParticles": [
+      {
+        "SystemId": "Impact_Blade_01",
+        "Scale": 2
+      }
+    ]
+  }
+}

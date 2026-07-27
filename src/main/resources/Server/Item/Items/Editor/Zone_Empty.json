@@ -1,0 +1,50 @@
+{
+  "Icon": "Icons/ItemsGenerated/Zone_Empty.png",
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Editor"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "UsePlayerAnimations": false,
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "TranslationProperties": {
+    "Name": "Empty"
+  },
+  "Categories": [
+    "Tool.Block"
+  ],
+  "Quality": "Technical",
+  "BlockType": {
+    "DrawType": "Empty",
+    "Gathering": {
+      "Soft": {
+        "IsWeaponBreakable": false
+      },
+      "Breaking": {
+        "DropList": {
+          "Parent": "Empty",
+          "Container": {
+            "Type": "Empty"
+          }
+        }
+      },
+      "UseDefaultDropWhenPlaced": false
+    },
+    "Opacity": "Transparent",
+    "Material": "Empty",
+    "HitboxType": "Empty_Hitbox"
+  }
+}

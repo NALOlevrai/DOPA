@@ -1,0 +1,79 @@
+{
+  "TranslationProperties": {
+    "Name": "Bush Capsule"
+  },
+  "Quality": "Uncommon",
+  "PlayerAnimationsId": "Item",
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        "Bush_Capsule_Interaction"
+      ],
+      "RequireNewClick": true
+    }
+  },
+  "IconProperties": {
+    "Scale": 0.55,
+    "Rotation": [
+      90,
+      0,
+      360
+    ],
+    "Translation": [
+      -1,
+      -2
+    ]
+  },
+  "Model": "Items/Objects/Bush_Capsule/Bush_Capsule_Model.blockymodel",
+  "Texture": "Items/Objects/Bush_Capsule/Bush_Capsule_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Bush_Capsule.png",
+  "Particles": [
+    {
+      "SystemId": "Block_Sprint_Leaves_Round",
+      "TargetEntityPart": "PrimaryItem",
+      "Color": "#548e19",
+      "Scale": 1
+    }
+  ],
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Bomb"
+    ]
+  },
+  "SoundEventId": "SFX_Bush_MoveIn",
+  "MaxStack": 10,
+  "Scale": 0.75,
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Fieldcraft",
+        "Categories": [
+          "Tools"
+        ]
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Coin",
+        "Quantity": 5
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Bush_Capsule",
+        "Quantity": 1
+      }
+    ]
+  },
+  "ItemLevel": 2,
+  "Categories": [
+    "Category_DOPA.DOPA"
+  ],
+  "Utility": {
+    "Usable": true
+  }
+}

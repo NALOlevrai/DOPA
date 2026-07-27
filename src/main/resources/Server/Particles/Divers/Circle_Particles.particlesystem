@@ -1,0 +1,14 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Circle_Particles_Sub",
+      "PositionOffset": {
+        "Y": -7.5
+      },
+      "TotalSpawners": 1,
+      "MaxConcurrent": 0
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 500
+}

@@ -1,0 +1,67 @@
+{
+  "TranslationProperties": {
+    "Name": "Coin"
+  },
+  "Quality": "Tool",
+  "Icon": "Icons/ItemsGenerated/Coin.png",
+  "ItemLevel": 0,
+  "MaxStack": 100000,
+  "DropOnDeath": false,
+  "Utility": {
+    "Compatible": true
+  },
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 1.15,
+    "Rotation": [
+      0,
+      0,
+      0
+    ],
+    "Translation": [
+      0.0,
+      -12.4
+    ]
+  },
+  "Scale": 1.5,
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Solid",
+    "CustomModel": "Resources/Coin/Coin_Model.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Coin/Coin_Texture.png"
+      }
+    ],
+    "Support": {
+      "Down": [
+        {
+          "TagId": "Nothing"
+        }
+      ]
+    },
+    "CustomModelScale": 0.55,
+    "CubeShadingMode": "Fullbright",
+    "Light": {
+      "Color": "#540",
+      "Radius": 1
+    },
+    "Particles": [
+      {
+        "SystemId": "Coin_Model_Particles",
+        "Scale": 0.5,
+        "RotationOffset": {
+          "Yaw": 0,
+          "Pitch": 90
+        },
+        "PositionOffset": {
+          "Y": 0
+        }
+      }
+    ]
+  },
+  "Categories": [
+    "Category_DOPA.DOPA"
+  ]
+}

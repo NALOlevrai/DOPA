@@ -1,0 +1,62 @@
+{
+  "TranslationProperties": {
+    "Name": "Wood Light"
+  },
+  "Icon": "Icons/ItemsGenerated/Wood_Light.png",
+  "Categories": [
+    "Blocks.Rocks",
+    "Blocks.Rocks"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Interactions": {
+    "Secondary": "Lantern_Yellow"
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Opacity": "Transparent",
+    "Group": "Stone",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks"
+      }
+    },
+    "BlockParticleSetId": "Crystal",
+    "Textures": [
+      {
+        "Weight": 1,
+        "All": "Resources/Wood_Light.png"
+      }
+    ],
+    "ParticleColor": "#ffc744",
+    "BlockSoundSetId": "Crystal",
+    "CubeShadingMode": "Fullbright",
+    "Light": {
+      "Color": "#fb6",
+      "Radius": 0
+    },
+    "VariantRotation": "None"
+  },
+  "Tags": {
+    "Type": [
+      "Rock"
+    ],
+    "Family": [
+      "Crystal"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone"
+}

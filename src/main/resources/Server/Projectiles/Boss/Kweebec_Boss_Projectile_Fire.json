@@ -1,0 +1,55 @@
+{
+  "Appearance": "Fireball_BOSS",
+  "SticksVertically": true,
+  "MuzzleVelocity": 50,
+  "TerminalVelocity": 50,
+  "Gravity": 2,
+  "ImpactSlowdown": 1,
+  "TimeToLive": 1,
+  "Damage": 35,
+  "DeathEffectsOnHit": true,
+  "DeadTime": 0.01,
+  "HitParticles": {
+    "SystemId": "Stone_Death"
+  },
+  "DepthShot": 1,
+  "PitchAdjustShot": true,
+  "BounceParticles": {
+    "SystemId": "Explosion_Medium",
+    "Scale": 0.5
+  },
+  "Radius": 0,
+  "Height": 0,
+  "BounceSoundEventId": "SFX_Staff_Flame_Fireball_Launch",
+  "DeadTimeMiss": 0.01,
+  "DeathSoundEventId": "SFX_Staff_Flame_Fireball_Launch",
+  "DeathParticles": {
+    "SystemId": "Explosion_Medium"
+  },
+  "MissParticles": {
+    "SystemId": "Fireball_Charge_To_4"
+  },
+  "Density": 2000,
+  "WaterHitImpulseLoss": 0.7,
+  "SwimmingDampingFactor": 50,
+  "ComputePitch": false,
+  "VerticalCenterShot": 1,
+  "HitSoundEventId": "SFX_Staff_Flame_Fireball_Launch",
+  "ComputeRoll": false,
+  "ComputeYaw": false,
+  "ExplosionConfig": {
+    "DamageBlocks": false,
+    "DamageEntities": true,
+    "BlockDamageRadius": 3,
+    "Knockback": {
+      "Force": -10,
+      "Duration": 0.1,
+      "VelocityY": 2,
+      "VelocityConfig": {
+        "Style": "Exp"
+      }
+    },
+    "EntityDamage": 15,
+    "EntityDamageRadius": 5
+  }
+}

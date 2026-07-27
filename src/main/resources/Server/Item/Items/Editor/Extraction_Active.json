@@ -1,0 +1,48 @@
+{
+  "TranslationProperties": {
+    "Name": "Extraction Particles",
+    "Description": "server.items.Editor_Empty.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Editor_Empty.png",
+  "Quality": "Technical",
+  "Categories": [
+    "Tool.Block"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Editor"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "BlockType": {
+    "DrawType": "Cube",
+    "RequiresAlphaBlending": false,
+    "Opacity": "Solid",
+    "Group": "@Tech",
+    "Flags": {},
+    "BlockParticleSetId": "Stone",
+    "CubeShadingMode": "Fullbright",
+    "Textures": [
+      {
+        "All": "Resources/Block_Texture.png"
+      }
+    ],
+    "Interactions": {
+      "Collision": {}
+    },
+    "Particles": [
+      {
+        "SystemId": "Extraction_Active_Particles"
+      }
+    ],
+    "Tint": [
+      "#cecece"
+    ],
+    "Material": "Solid",
+    "Light": {
+      "Radius": 5,
+      "Color": "#fff"
+    }
+  }
+}

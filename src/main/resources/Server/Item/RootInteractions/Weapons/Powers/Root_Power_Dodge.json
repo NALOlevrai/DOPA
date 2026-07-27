@@ -1,0 +1,13 @@
+{
+  "Parent": "Melee_Root",
+  "Interactions": [
+    "Power_Dodge"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "RequireNewClick": true,
+  "ClickQueuingTimeout": 0.25
+}

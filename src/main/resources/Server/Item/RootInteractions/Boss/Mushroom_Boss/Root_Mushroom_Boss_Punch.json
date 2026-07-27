@@ -1,0 +1,10 @@
+{
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Interactions": [
+    "Mushroom_Boss_Punch"
+  ]
+}

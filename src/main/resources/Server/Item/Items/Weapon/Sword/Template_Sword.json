@@ -1,0 +1,58 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Template_Weapon_Sword.name"
+  },
+  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
+  "Model": "Items/Weapons/Sword/Iron.blockymodel",
+  "Texture": "Items/Weapons/Sword/Iron_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Sword_Iron.png",
+  "PlayerAnimationsId": "Sword",
+  "Quality": "Template",
+  "ItemLevel": 15,
+  "IconProperties": {
+    "Scale": 0.35,
+    "Translation": [
+      -22,
+      -22
+    ],
+    "Rotation": [
+      45,
+      90,
+      0
+    ]
+  },
+  "Interactions": {
+    "Secondary": "Root_Sword_Secondary_Guard",
+    "Ability1": {
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "DefaultValue": {
+            "Interactions": [
+              "Sword_Primary_Thrust_StaminaCondition"
+            ]
+          },
+          "DefaultOk": true,
+          "Var": "Thrust_Stamina"
+        }
+      ]
+    },
+    "Primary": "Root_Sword_Primary"
+  },
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Sword"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Weapons_Blade_Large",
+  "DurabilityLossOnHit": 0,
+  "MaxDurability": 0,
+  "DurabilityLossOnDeath": false,
+  "Weapon": {},
+  "Utility": {
+    "Compatible": true
+  }
+}

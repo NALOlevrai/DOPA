@@ -1,0 +1,51 @@
+{
+  "TranslationProperties": {
+    "Name": "Launch"
+  },
+  "Icon": "Icons/ItemsGenerated/Zone_Empty.png",
+  "Quality": "Technical",
+  "BlockType": {
+    "Group": "@Tech",
+    "BlockParticleSetId": "Stone",
+    "Interactions": {
+      "Collision": {
+        "Interactions": [
+          {
+            "Type": "ApplyForce",
+            "Effects": {
+              "WorldSoundEventId": "SFX_Wind",
+              "LocalSoundEventId": "SFX_Wind",
+              "ItemAnimationId": "Launch"
+            },
+            "Direction": {
+              "Z": -1,
+              "Y": 0.01
+            },
+            "RaycastMode": "FollowLook",
+            "Duration": 1,
+            "ChangeVelocityType": "Add",
+            "Force": 1.5
+          }
+        ]
+      }
+    },
+    "Gathering": {
+      "Soft": {
+        "IsWeaponBreakable": false
+      },
+      "UseDefaultDropWhenPlaced": false
+    },
+    "HitboxType": "Empty_Hitbox",
+    "DrawType": "Empty"
+  },
+  "Tags": {
+    "Type": [
+      "Editor"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Tool.Block"
+  ]
+}

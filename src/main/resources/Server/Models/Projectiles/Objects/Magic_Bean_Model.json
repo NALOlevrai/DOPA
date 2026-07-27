@@ -1,0 +1,63 @@
+{
+  "HitBox": {
+    "Max": {
+      "X": 0.15,
+      "Y": 0.15,
+      "Z": 0.15
+    },
+    "Min": {
+      "X": 0,
+      "Y": 0,
+      "Z": 0
+    }
+  },
+  "Trails": [
+    {
+      "TargetNodeName": "Origin_Item",
+      "FixedRotation": true,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": -0.2
+      },
+      "TrailId": "Small_Projectile"
+    },
+    {
+      "TargetNodeName": "Origin_Item",
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0,
+        "Yaw": 90
+      },
+      "FixedRotation": true,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": -0.2
+      },
+      "TrailId": "Daggers_Dash_Distortion"
+    }
+  ],
+  "DefaultAttachments": [
+    {
+      "Model": "Items/Objects/Magic_Bean/Magic_Bean_Model.blockymodel",
+      "Texture": "Items/Objects/Magic_Bean/Magic_Bean_Texture.png"
+    }
+  ],
+  "Light": {
+    "Color": "#657",
+    "Radius": 1
+  },
+  "EyeHeight": 0,
+  "Model": "Items/Projectiles/Projectile.blockymodel",
+  "Texture": "Items/Projectiles/Projectile_default.png",
+  "Particles": [
+    {
+      "SystemId": "Block_Sprint_Leaves",
+      "Color": "#548e19",
+      "Scale": 2
+    }
+  ],
+  "MinScale": 1,
+  "MaxScale": 1
+}

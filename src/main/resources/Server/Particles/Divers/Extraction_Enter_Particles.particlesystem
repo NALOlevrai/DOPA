@@ -1,0 +1,9 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Extraction_Enter_Particles_Sub"
+    }
+  ],
+  "CullDistance": 1000,
+  "IsImportant": true
+}

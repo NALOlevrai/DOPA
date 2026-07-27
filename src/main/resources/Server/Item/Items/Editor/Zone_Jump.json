@@ -1,0 +1,48 @@
+{
+  "TranslationProperties": {
+    "Name": "Jump"
+  },
+  "Icon": "Icons/ItemsGenerated/Zone_Empty.png",
+  "Quality": "Technical",
+  "Categories": [
+    "Tool.Block"
+  ],
+  "BlockType": {
+    "Group": "@Tech",
+    "BlockParticleSetId": "Stone",
+    "DrawType": "Empty",
+    "Gathering": {
+      "Soft": {
+        "IsWeaponBreakable": false
+      },
+      "UseDefaultDropWhenPlaced": false
+    },
+    "HitboxType": "Empty_Hitbox",
+    "Interactions": {
+      "CollisionEnter": {
+        "Interactions": [
+          {
+            "Type": "ApplyForce",
+            "Effects": {
+              "LocalSoundEventId": "SFX_Wind",
+              "ItemAnimationId": "BigJump",
+              "WorldSoundEventId": "SFX_Wind"
+            },
+            "Force": 50,
+            "Direction": {
+              "Y": 1
+            },
+            "ChangeVelocityType": "Set"
+          }
+        ]
+      }
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Editor"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "PlayerAnimationsId": "Block"
+}

@@ -1,0 +1,40 @@
+{
+  "Type": "Simple",
+  "$Comment": "Prepare Delay before damage is applied via selector",
+  "Effects": {
+    "MovementEffects": {
+      "DisableAll": true
+    },
+    "ClearAnimationOnFinish": true,
+    "ItemAnimationId": "PunchAoe",
+    "ItemPlayerAnimationsId": "Kweebec_Boss"
+  },
+  "Next": {
+    "Type": "Selector",
+    "Selector": {
+      "Id": "Stab",
+      "EndDistance": 15,
+      "ExtendLeft": 5,
+      "ExtendBottom": 10
+    },
+    "RunTime": 0.1,
+    "HitEntity": {
+      "Interactions": [
+        "Boss_Attack_Melee_Damage"
+      ]
+    },
+    "Effects": {
+      "WorldSoundEventId": "SFX_Mace_T2_Signature_Impact",
+      "LocalSoundEventId": "SFX_Mace_T2_Signature_Impact_Local",
+      "MovementEffects": {
+        "DisableAll": true
+      }
+    },
+    "HorizontalSpeedMultiplier": 0,
+    "Next": {
+      "Type": "Simple",
+      "RunTime": 1
+    }
+  },
+  "RunTime": 0.8
+}

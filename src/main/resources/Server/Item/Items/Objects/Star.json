@@ -1,0 +1,67 @@
+{
+  "TranslationProperties": {
+    "Name": "Star"
+  },
+  "Quality": "Tool",
+  "Icon": "Icons/ItemsGenerated/Star.png",
+  "ItemLevel": 0,
+  "MaxStack": 100000,
+  "DropOnDeath": false,
+  "Utility": {
+    "Compatible": true
+  },
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 1,
+    "Rotation": [
+      0,
+      0,
+      0
+    ],
+    "Translation": [
+      0,
+      -13
+    ]
+  },
+  "Scale": 1.5,
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Solid",
+    "CustomModel": "Resources/Star/Star_Model.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Star/Star_Texture.png"
+      }
+    ],
+    "Support": {
+      "Down": [
+        {
+          "TagId": "Nothing"
+        }
+      ]
+    },
+    "CustomModelScale": 0.55,
+    "CubeShadingMode": "Fullbright",
+    "Light": {
+      "Color": "#540",
+      "Radius": 1
+    },
+    "Particles": [
+      {
+        "SystemId": "Star_Particles",
+        "Scale": 0.5,
+        "RotationOffset": {
+          "Yaw": 0,
+          "Pitch": 90
+        },
+        "PositionOffset": {
+          "Y": 0
+        }
+      }
+    ]
+  },
+  "Categories": [
+    "Category_DOPA.DOPA"
+  ]
+}

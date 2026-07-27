@@ -1,0 +1,46 @@
+{
+  "TranslationProperties": {
+    "Name": "Block White"
+  },
+  "Categories": [
+    "Blocks.Rocks"
+  ],
+  "PlayerAnimationsId": "Block",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Opacity": "Solid",
+    "Group": "Stone",
+    "CubeShadingMode": "Standard",
+    "BlockSoundSetId": "Stone",
+    "ParticleColor": "#ffffff",
+    "Textures": [
+      {
+        "All": "Resources/Block_Texture.png"
+      }
+    ],
+    "BlockParticleSetId": "Stone"
+  },
+  "Tags": {
+    "Type": [
+      "Rock"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "ItemEntity": {
+    "ParticleColor": "#ffffff"
+  },
+  "Icon": "Icons/ItemsGenerated/Block.png"
+}

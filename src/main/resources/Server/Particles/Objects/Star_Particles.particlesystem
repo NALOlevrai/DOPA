@@ -1,0 +1,8 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Life_Particles_Sub"
+    }
+  ],
+  "IsImportant": false
+}

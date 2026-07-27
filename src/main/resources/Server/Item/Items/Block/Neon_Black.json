@@ -1,0 +1,60 @@
+{
+  "TranslationProperties": {
+    "Name": "Neon Black"
+  },
+  "Icon": "Icons/ItemsGenerated/Neon_Black.png",
+  "Categories": [
+    "Blocks.Rocks"
+  ],
+  "PlayerAnimationsId": "Block",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Opacity": "Solid",
+    "Group": "Stone",
+    "CubeShadingMode": "Fullbright",
+    "BlockSoundSetId": "Stone",
+    "ParticleColor": "#000000",
+    "Textures": [
+      {
+        "All": "Resources/Block_Texture.png"
+      }
+    ],
+    "BlockParticleSetId": "Crystal",
+    "Tint": [
+      "#000000"
+    ],
+    "Light": {
+      "Color": "#000"
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Rock"
+    ],
+    "Family": [
+      "Crystal"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Gems",
+  "Light": {
+    "Radius": 1,
+    "Color": "#000"
+  },
+  "ItemEntity": {
+    "ShowItemParticles": false,
+    "ParticleColor": "#000000"
+  }
+}

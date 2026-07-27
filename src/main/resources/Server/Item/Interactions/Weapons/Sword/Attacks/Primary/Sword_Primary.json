@@ -1,0 +1,7 @@
+{
+  "Type": "Charging",
+  "DisplayProgress": false,
+  "Next": {
+    "0": "Sword_Primary_Chain"
+  }
+}

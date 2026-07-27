@@ -1,0 +1,55 @@
+{
+  "TranslationProperties": {
+    "Name": "Circle Particles",
+    "Description": "server.items.Editor_Empty.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Circle_Particles.png",
+  "Quality": "Technical",
+  "Categories": [
+    "Tool.Block"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Editor"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "BlockType": {
+    "DrawType": "Cube",
+    "Group": "@Tech",
+    "Flags": {},
+    "BlockParticleSetId": "Stone",
+    "CubeShadingMode": "Fullbright",
+    "Textures": [
+      {
+        "All": "Resources/Block_Texture.png"
+      }
+    ],
+    "Interactions": {
+      "Collision": {}
+    },
+    "Particles": [
+      {
+        "Scale": 1.85,
+        "SystemId": "Circle_Particles"
+      }
+    ],
+    "Tint": [
+      "#cecece"
+    ],
+    "Material": "Solid"
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
+}

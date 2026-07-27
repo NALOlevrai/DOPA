@@ -1,0 +1,33 @@
+{
+  "Duration": 0.35,
+  "ApplicationEffects": {
+    "Particles": [
+      {
+        "SystemId": "Daggers_Dash_Straight",
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "Hip",
+        "PositionOffset": {
+          "Y": 1.0
+        },
+        "Color": "#d7e5ec"
+      }
+    ],
+    "ModelVFXId": "Dagger_Dash"
+  },
+  "OverlapBehavior": "Overwrite",
+  "Invulnerable": false,
+  "DamageResistance": {
+    "Physical": [
+      {
+        "CalculationType": "Percent",
+        "Amount": 100
+      }
+    ],
+    "Projectile": [
+      {
+        "CalculationType": "Percent",
+        "Amount": 100
+      }
+    ]
+  }
+}

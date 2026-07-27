@@ -1,0 +1,47 @@
+{
+  "SoundEffect": {
+    "ReverbEffectId": "Rev_Default",
+    "EqualizerEffectId": "EQ_Default",
+    "IsInstant": true
+  },
+  "Priority": 999,
+  "AudioCategory": "AudioCat_Music",
+  "AmbientBed": {
+    "Track": "Sounds/Environments/Zone1/Environments/Forest/Day/Azure/Z1_Forest_Azure_Day_Stereo_LOOP.ogg",
+    "Volume": 10
+  },
+  "Sounds": [
+    {
+      "SoundEventId": "SFX_Forgotten_Temple_Emit_Birds",
+      "Frequency": {
+        "Min": 3,
+        "Max": 8
+      },
+      "Radius": {
+        "Min": 6,
+        "Max": 12
+      }
+    },
+    {
+      "SoundEventId": "SFX_Z1_Emit_Forest_Gen_Day_Birds",
+      "Frequency": {
+        "Min": 3,
+        "Max": 8
+      },
+      "Radius": {
+        "Min": 6,
+        "Max": 12
+      }
+    }
+  ],
+  "Music": {
+    "Tracks": [
+      "Music/Unique/Silence.ogg"
+    ]
+  },
+  "Conditions": {
+    "WeatherIds": [
+      "Weather_Lobby"
+    ]
+  }
+}

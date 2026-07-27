@@ -1,0 +1,61 @@
+{
+  "TranslationProperties": {
+    "Name": "Speed"
+  },
+  "Icon": "Icons/ItemsGenerated/Zone_Empty.png",
+  "Categories": [
+    "Tool.Block"
+  ],
+  "BlockType": {
+    "DrawType": "Model",
+    "BlockParticleSetId": "Metal",
+    "Opacity": "Solid",
+    "HitboxType": "Fin_Hitbox",
+    "MovementSettings": {
+      "HorizontalSpeedMultiplier": 5.5,
+      "JumpForceMultiplier": 1.75,
+      "IsClimbable": false,
+      "IsBouncy": false
+    },
+    "Material": "Solid",
+    "ParticleColor": "#ffffff",
+    "Textures": [
+      {
+        "All": "Blocks/_Debug/TextureEmpty.png"
+      }
+    ],
+    "CustomModelScale": 0,
+    "BlockSoundSetId": "Stone",
+    "Interactions": {
+      "CollisionEnter": {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "Effects": {
+              "Particles": [
+                {
+                  "SystemId": "Block_Hit_Metal",
+                  "TargetEntityPart": "Entity",
+                  "Color": "#ffffff",
+                  "PositionOffset": {
+                    "Y": 0
+                  },
+                  "DetachedFromModel": true,
+                  "Scale": 1.5
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Editor"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "PlayerAnimationsId": "Block",
+  "Quality": "Technical"
+}

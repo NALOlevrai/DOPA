@@ -1,0 +1,13 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Smoke_Grenade_Particles_Sub",
+      "LifeSpan": {
+        "Max": 10,
+        "Min": 10
+      }
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 500
+}

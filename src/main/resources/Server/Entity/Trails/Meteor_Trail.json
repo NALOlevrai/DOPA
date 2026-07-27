@@ -1,0 +1,15 @@
+{
+  "TexturePath": "Trails/Meteor_Trail.png",
+  "LifeSpan": 17,
+  "Start": {
+    "Color": "#b900ffff",
+    "Width": 2
+  },
+  "End": {
+    "Color": "#59f7ffff",
+    "Width": 5
+  },
+  "LightInfluence": 0.1,
+  "Smooth": true,
+  "RenderMode": "BlendAdd"
+}

@@ -1,0 +1,86 @@
+{
+  "Type": "DurabilityCondition",
+  "Threshold": 0,
+  "Operator": "GreaterThan",
+  "Next": {
+    "Type": "StatsCondition",
+    "Costs": {
+      "SignatureCharges": 1
+    },
+    "Next": {
+      "Type": "ChangeStat",
+      "Behaviour": "Set",
+      "StatModifiers": {
+        "StaminaRegenDelay": 0
+      },
+      "Next": {
+        "Type": "Replace",
+        "Var": "Signature_Volley_Charge",
+        "DefaultValue": {
+          "Interactions": [
+            "Weapon_Shortbow_Signature_Volley_Charge"
+          ]
+        }
+      }
+    },
+    "Failed": {
+      "Type": "ChangeStat",
+      "Behaviour": "Set",
+      "StatModifiers": {
+        "StaminaRegenDelay": 0
+      },
+      "Next": {
+        "Type": "Serial",
+        "Interactions": [
+          {
+            "Type": "ModifyInventory",
+            "RequiredGameMode": "Adventure",
+            "Next": {
+              "Type": "ChangeStat",
+              "Behaviour": "Set",
+              "StatModifiers": {
+                "Ammo": 1
+              },
+              "Next": {
+                "Type": "Replace",
+                "Var": "Primary_Shoot_Charge",
+                "DefaultValue": {
+                  "Interactions": [
+                    "Bow_Primary_Shoot_Charge"
+                  ]
+                }
+              },
+              "RunTime": 0.1
+            },
+            "Failed": {
+              "Type": "Replace",
+              "Var": "No_Ammo_Effects",
+              "DefaultValue": {
+                "Interactions": [
+                  "Common_Bow_No_Ammo"
+                ]
+              }
+            }
+          },
+          {
+            "Type": "StatsCondition",
+            "Next": {
+              "Type": "ChangeStat",
+              "Behaviour": "Set",
+              "Next": {
+                "Type": "ModifyInventory",
+                "RequiredGameMode": "Adventure"
+              },
+              "StatModifiers": {
+                "Ammo": 0
+              }
+            },
+            "Costs": {
+              "Ammo": 0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

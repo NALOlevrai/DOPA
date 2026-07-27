@@ -1,0 +1,57 @@
+{
+  "Icon": "Icons/ItemsGenerated/Zone_Empty.png",
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Editor"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "UsePlayerAnimations": false,
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "TranslationProperties": {
+    "Name": "Drill Cone Block"
+  },
+  "Categories": [
+    "Tool.Block"
+  ],
+  "Quality": "Technical",
+  "BlockType": {
+    "DrawType": "Empty",
+    "Gathering": {
+      "Soft": {
+        "IsWeaponBreakable": true,
+        "DropList": "Empty"
+      },
+      "Breaking": {
+        "DropList": {
+          "Parent": "Empty",
+          "Container": {
+            "Type": "Empty"
+          }
+        }
+      },
+      "UseDefaultDropWhenPlaced": false
+    },
+    "Opacity": "Transparent",
+    "Material": "Empty",
+    "PlacementSettings": {
+      "PlaceInEmptyBlocks": true,
+      "AllowBreakReplace": true,
+      "BlockPreviewVisibility": "AlwaysHidden"
+    },
+    "CubeShadingMode": "Flat",
+    "HitboxType": "Empty_Hitbox"
+  }
+}

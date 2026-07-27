@@ -1,0 +1,15 @@
+{
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "Effects": {
+            "ItemAnimationId": "Guard"
+          },
+          "EffectId": "Small_FallDamage_Invulnerability"
+        }
+      ]
+    }
+  }
+}

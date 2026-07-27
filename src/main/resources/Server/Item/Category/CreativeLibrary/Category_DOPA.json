@@ -1,0 +1,19 @@
+{
+  "Icon": "Icons/ItemCategories/Build-Lights.png",
+  "Order": 6,
+  "InfoDisplayMode": "None",
+  "Name": "DOPA",
+  "Children": [
+    {
+      "Id": "DOPA",
+      "Name": "DOPA",
+      "Icon": "Icons/ItemCategories/Items-Ingredients.png",
+      "InfoDisplayMode": "None",
+      "SubCategories": [
+        {
+          "Id": "Object"
+        }
+      ]
+    }
+  ]
+}

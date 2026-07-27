@@ -1,0 +1,19 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Objects/SFX_Drill_Cone.ogg"
+      ],
+      "RandomSettings": {
+        "MinVolume": -0.9151498112135024,
+        "MinPitch": -7.5
+      }
+    }
+  ],
+  "PreventSoundInterruption": true,
+  "Volume": 5,
+  "AudioCategory": "AudioCat_NPC_Eye_Void",
+  "Parent": "SFX_Attn_Moderate",
+  "MaxDistance": 35,
+  "StartAttenuationDistance": 10
+}

@@ -1,0 +1,111 @@
+{
+  "TranslationProperties": {
+    "Name": "Drill Cone"
+  },
+  "Icon": "Icons/ItemsGenerated/Drill_Cone.png",
+  "Categories": [
+    "Category_DOPA.DOPA"
+  ],
+  "Set": "Cloth_Wool_White",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "BlockParticleSetId": "Metal",
+    "BlockSoundSetId": "Cloth",
+    "PhysicalMaterialId": "Wool",
+    "ParticleColor": "#ffa700",
+    "TextureComputedColor": "#EEEEEE",
+    "CubeShadingMode": "Fullbright",
+    "CustomModel": "Items/Objects/Drill_Cone/Drill_Cone_Model.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Objects/Drill_Cone/Drill_Cone_Texture.png"
+      }
+    ],
+    "CustomModelScale": 1.5,
+    "Light": {
+      "Radius": 1,
+      "Color": "#752"
+    },
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "SpawnPrefab",
+            "PrefabPath": "Drill_Cone.prefab.json",
+            "OriginSource": "Block",
+            "Force": true,
+            "Effects": {
+              "WorldSoundEventId": "SFX_Drill_Cone",
+              "LocalSoundEventId": "SFX_Drill_Cone"
+            }
+          }
+        ],
+        "RequireNewClick": true
+      }
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "SoftBlocks"
+      }
+    },
+    "PlacementSettings": {
+      "PlaceInEmptyBlocks": true
+    },
+    "Opacity": "Solid"
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Cloth"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Cloth",
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Tools"
+        ],
+        "Id": "Fieldcraft"
+      },
+      {
+        "Id": "Workbench",
+        "Type": "Crafting",
+        "Categories": [
+          "Workbench_Survival"
+        ]
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Coin",
+        "Quantity": 10
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Drill_Cone"
+      }
+    ]
+  },
+  "IconProperties": {
+    "Scale": 1.25,
+    "Rotation": [
+      0,
+      90,
+      14.5
+    ],
+    "Translation": [
+      0,
+      -7.8
+    ]
+  },
+  "Quality": "Rare",
+  "ItemLevel": 2,
+  "MaxStack": 10,
+  "Utility": {
+    "Usable": true
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "Type": "ApplyForce",
+  "Force": 5,
+  "Direction": {
+    "X": 0,
+    "Y": 1,
+    "Z": -10
+  },
+  "AdjustVertical": true,
+  "VerticalClamp": [
+    -85,
+    20
+  ],
+  "WaitForGround": false,
+  "ChangeVelocityType": "Add",
+  "Duration": 0.1,
+  "RaycastMode": "FollowLook",
+  "VelocityConfig": {
+    "AirResistance": 0.97,
+    "AirResistanceMax": 0.96,
+    "GroundResistance": 0.94,
+    "GroundResistanceMax": 0.82,
+    "Threshold": 3.0,
+    "Style": "Exp"
+  }
+}

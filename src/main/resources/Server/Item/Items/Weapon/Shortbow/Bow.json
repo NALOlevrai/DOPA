@@ -1,0 +1,186 @@
+{
+  "TranslationProperties": {
+    "Name": "Bow"
+  },
+  "Parent": "Template_Bow",
+  "Quality": "Quality_DOPA",
+  "Icon": "Icons/ItemsGenerated/Bow.png",
+  "Model": "Items/Weapons/Bow/Bow_Model.blockymodel",
+  "Texture": "Items/Weapons/Bow/Bow_Texture.png",
+  "InteractionVars": {
+    "Primary_Shoot_Damage_Strength_0": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Shortbow_Primary_Shoot_Damage_Strength_0",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Projectile": 3
+            }
+          },
+          "DamageEffects": {
+            "Knockback": {
+              "Force": 0,
+              "VelocityType": "Add"
+            }
+          }
+        }
+      ]
+    },
+    "Primary_Shoot_Damage_Strength_1": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Shortbow_Primary_Shoot_Damage_Strength_1",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Projectile": 5
+            }
+          },
+          "DamageEffects": {
+            "Knockback": {
+              "Force": 0,
+              "VelocityType": "Add"
+            }
+          }
+        }
+      ]
+    },
+    "Primary_Shoot_Damage_Strength_2": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Shortbow_Primary_Shoot_Damage_Strength_2",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Projectile": 10
+            }
+          },
+          "DamageEffects": {
+            "Knockback": {
+              "Force": 0,
+              "VelocityType": "Add"
+            }
+          }
+        }
+      ]
+    },
+    "Primary_Shoot_Damage_Strength_3": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Shortbow_Primary_Shoot_Damage_Strength_3",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Projectile": 15
+            }
+          },
+          "DamageEffects": {
+            "Knockback": {
+              "Force": 4,
+              "VelocityType": "Add"
+            }
+          }
+        }
+      ]
+    },
+    "Primary_Shoot_Damage_Strength_4": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Shortbow_Primary_Shoot_Damage_Strength_4",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Projectile": 20
+            }
+          },
+          "TargetedDamage": {
+            "Head": {
+              "DamageCalculator": {
+                "BaseDamage": {
+                  "Projectile": 25
+                }
+              },
+              "DamageEffects": {
+                "Knockback": {
+                  "Type": "Force",
+                  "VelocityConfig": {
+                    "AirResistance": 0.99,
+                    "AirResistanceMax": 0.98,
+                    "GroundResistance": 0.94,
+                    "GroundResistanceMax": 0.3,
+                    "Threshold": 3.0,
+                    "Style": "Linear"
+                  },
+                  "Direction": {
+                    "X": 0.0,
+                    "Y": 0.5,
+                    "Z": -1
+                  },
+                  "Force": 10,
+                  "VelocityType": "Add"
+                },
+                "WorldParticles": [
+                  {
+                    "SystemId": "Impact_Critical",
+                    "Scale": 1,
+                    "RotationOffset": {
+                      "Yaw": 180,
+                      "Pitch": 0,
+                      "Roll": 0
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "VelocityConfig": {
+                "AirResistance": 0.97,
+                "AirResistanceMax": 0.96,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Exp"
+              },
+              "Direction": {
+                "X": 0,
+                "Y": 0.5,
+                "Z": -1
+              },
+              "Force": 8,
+              "VelocityType": "Add"
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Bow_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 1,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "DurabilityLossOnDeath": false,
+  "IconProperties": {
+    "Scale": 0.415,
+    "Rotation": [
+      44,
+      93,
+      0
+    ],
+    "Translation": [
+      -23.5,
+      -41.3
+    ]
+  }
+}

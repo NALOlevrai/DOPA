@@ -1,0 +1,444 @@
+{
+  "Volumes": {
+    "daf0ffe8-e27e-460e-82e6-f7dbe1366f0c": {
+      "Position": {
+        "X": 0.0,
+        "Y": 200.0,
+        "Z": 0.0
+      },
+      "Shape": {
+        "Type": "Sphere",
+        "Center": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Radius": 125.0
+      },
+      "Effects": [
+        {
+          "Type": "EntityEffect",
+          "Event": "EXIT",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "Effect": "FallDamage_Invulnerability",
+          "Mode": "Apply",
+          "Duration": -1.0
+        },
+        {
+          "Type": "RemoveEntities",
+          "Event": "TICK",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "Mode": "Remove",
+          "IncludeNpcs": true
+        }
+      ],
+      "Rules": [
+        {
+          "Type": "NoUse",
+          "Target": "Self",
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 50.0
+        },
+        {
+          "Type": "NoBuild",
+          "Target": "Self",
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 50.0
+        },
+        {
+          "Type": "NoDamage",
+          "EntityFilter": "All"
+        },
+        {
+          "Type": "NoDestroy",
+          "Target": "Self",
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 50.0
+        },
+        {
+          "Type": "NoDoorOpen",
+          "Target": "Self",
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 50.0
+        },
+        {
+          "Type": "NoHarvest",
+          "Target": "Self",
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 50.0
+        },
+        {
+          "Type": "NoHeal"
+        }
+      ],
+      "TargetTypes": [
+        "Player"
+      ],
+      "Enabled": true,
+      "KeepLoaded": true,
+      "Name": "Lobby"
+    },
+    "615cbe18-d47f-4446-80e1-f6f46825c375": {
+      "Position": {
+        "X": -212.5,
+        "Y": 56.0,
+        "Z": 126.5
+      },
+      "Shape": {
+        "Type": "Box",
+        "Min": {
+          "X": -4.0,
+          "Y": -3.0,
+          "Z": -4.0
+        },
+        "Max": {
+          "X": 4.0,
+          "Y": 3.0,
+          "Z": 4.0
+        }
+      },
+      "Conditions": [
+        {
+          "Type": "CooldownCondition",
+          "Event": "TICK",
+          "Cooldown": 2.75,
+          "Scope": "PER_PLAYER"
+        }
+      ],
+      "Effects": [
+        {
+          "Type": "PlaceBlock",
+          "Event": "ENTER",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "BlockType": "Extraction_Active",
+          "Position": {
+            "X": 0.0,
+            "Y": -4.0,
+            "Z": 0.0
+          },
+          "Origin": "VolumeOrigin",
+          "ReplaceMode": "Always",
+          "Rotation": "None"
+        },
+        {
+          "Type": "ShowEventTitle",
+          "Event": "ENTER",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "PrimaryTitle": "Extraction",
+          "SecondaryTitle": "Stay 3 Seconds",
+          "IsMajor": false,
+          "Icon": "",
+          "Duration": 1.0,
+          "FadeInDuration": 0.10000000149011612,
+          "FadeOutDuration": 0.3499999940395355
+        },
+        {
+          "Type": "PlayVfx",
+          "Event": "TICK",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "ParticleSystem": "Sword_Signature_Dash_Trail",
+          "Offset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -2.5
+          },
+          "Anchor": "Volume",
+          "Scale": 5.0,
+          "Rotation": {
+            "X": 90.0,
+            "Y": 180.0,
+            "Z": 90.0
+          },
+          "Duration": 0.0
+        },
+        {
+          "Type": "PlaySound",
+          "Event": "TICK",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "SoundEvent": "SFX_Extraction_Teleport",
+          "Volume": 1.0,
+          "Pitch": 1.0,
+          "Location": "VolumeCenter",
+          "Offset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        {
+          "Type": "PlayVfx",
+          "Event": "ENTER",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "ParticleSystem": "Extraction_Enter_Particles",
+          "Offset": {
+            "X": 0.0,
+            "Y": -4.0,
+            "Z": 0.0
+          },
+          "Anchor": "Volume",
+          "Scale": 5.5,
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "Duration": 0.0
+        },
+        {
+          "Type": "EntityEffect",
+          "Event": "TICK",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "Effect": "Life_Effect",
+          "Mode": "Apply",
+          "Duration": -1.0
+        },
+        {
+          "Type": "Teleport",
+          "Event": "TICK",
+          "Interval": 0.0,
+          "Delay": 0.009999999776482582,
+          "Position": {
+            "X": 0.5,
+            "Y": 205.0,
+            "Z": 0.5
+          },
+          "World": "",
+          "ResetVelocity": false,
+          "RelativeToEntity": false,
+          "RelativeToVolume": false,
+          "UseRotation": false,
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        {
+          "Type": "PlaceBlock",
+          "Event": "TICK",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "BlockType": "Block_White",
+          "Position": {
+            "X": 0.0,
+            "Y": -4.0,
+            "Z": 0.0
+          },
+          "Origin": "VolumeOrigin",
+          "ReplaceMode": "Always",
+          "Rotation": "None"
+        },
+        {
+          "Type": "DisableVolume",
+          "Event": "TICK",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 15.0,
+          "Center": "Volume"
+        },
+        {
+          "Type": "PlaySound",
+          "Event": "ENTER",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "SoundEvent": "SFX_Wood_Build",
+          "Volume": 10.0,
+          "Pitch": 5.0,
+          "Location": "VolumeCenter",
+          "Offset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        {
+          "Type": "PlaySound",
+          "Event": "ENTER",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "SoundEvent": "SFX_Arrow_Whistle",
+          "Volume": 10.0,
+          "Pitch": 1.0,
+          "Location": "VolumeCenter",
+          "Offset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        {
+          "Type": "PlaySound",
+          "Event": "ENTER",
+          "Interval": 0.0,
+          "Delay": 0.25,
+          "SoundEvent": "SFX_Arrow_Whistle",
+          "Volume": 10.0,
+          "Pitch": 0.8500000238418579,
+          "Location": "VolumeCenter",
+          "Offset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        {
+          "Type": "PlaceBlock",
+          "Event": "TICK",
+          "Interval": 0.0,
+          "Delay": 28.5,
+          "BlockType": "Extraction_Active",
+          "Position": {
+            "X": 0.0,
+            "Y": -4.0,
+            "Z": 0.0
+          },
+          "Origin": "VolumeOrigin",
+          "ReplaceMode": "Always",
+          "Rotation": "None"
+        },
+        {
+          "Type": "EnableVolume",
+          "Event": "TICK",
+          "Interval": 0.0,
+          "Delay": 30.0,
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 10.0,
+          "Center": "Volume"
+        }
+      ],
+      "TargetTypes": [
+        "Player"
+      ],
+      "Enabled": true,
+      "Color": {
+        "X": 0.0,
+        "Y": 0.0784313753247261,
+        "Z": 1.0
+      },
+      "KeepLoaded": true,
+      "Name": "Extraction"
+    },
+    "d69f0b21-4d9b-4f87-9dfe-a78b01ef0d46": {
+      "Position": {
+        "X": 208.0,
+        "Y": 55.0,
+        "Z": -177.0
+      },
+      "Shape": {
+        "Type": "Cylinder",
+        "Center": {
+          "X": 0.0,
+          "Y": 17.5,
+          "Z": 0.0
+        },
+        "Radius": 27.5,
+        "Height": 35.0
+      },
+      "Effects": [
+        {
+          "Type": "SetWeather",
+          "Event": "TICK",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "Weather": "Blood_Moon",
+          "PlayerOnly": true,
+          "ResetWeather": false
+        }
+      ],
+      "TargetTypes": [
+        "Player"
+      ],
+      "Enabled": true,
+      "KeepLoaded": false,
+      "Name": "tv_gdypcx"
+    },
+    "c9dcad36-998c-4289-9d44-8af89d611497": {
+      "Position": {
+        "X": -82.0,
+        "Y": 251.0,
+        "Z": 105.0
+      },
+      "Shape": {
+        "Type": "Box",
+        "Min": {
+          "X": -1.0,
+          "Y": -1.0,
+          "Z": -1.0
+        },
+        "Max": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      },
+      "Effects": [
+        {
+          "Type": "PlaySound",
+          "Event": "ENTER",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "SoundEvent": "SFX_Alchemy_Bench_Craft",
+          "Volume": 1.0,
+          "Pitch": 1.0,
+          "Location": "VolumeCenter",
+          "Offset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        {
+          "Type": "GiveItem",
+          "Event": "ENTER",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "Item": "Coin",
+          "Quantity": 1,
+          "OverflowBehavior": "DropRemainder"
+        },
+        {
+          "Type": "DisableVolume",
+          "Event": "ENTER",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 50.0,
+          "Center": "Volume"
+        },
+        {
+          "Type": "EnableVolume",
+          "Event": "ENTER",
+          "Interval": 1.0,
+          "Delay": 1.0,
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 50.0,
+          "Center": "Volume"
+        }
+      ],
+      "TargetTypes": [
+        "Player"
+      ],
+      "Enabled": true,
+      "KeepLoaded": false,
+      "Name": "Coin Test"
+    }
+  }
+}

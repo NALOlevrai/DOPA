@@ -1,0 +1,23 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Stamina": 4.5
+  },
+  "Next": {
+    "Type": "ChangeStat",
+    "Behaviour": "Set",
+    "StatModifiers": {
+      "StaminaRegenDelay": -2
+    },
+    "Next": {
+      "Type": "Replace",
+      "Var": "Thrust",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "Sword_Primary_Thrust"
+        ]
+      }
+    }
+  }
+}

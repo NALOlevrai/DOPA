@@ -1,0 +1,98 @@
+{
+  "TranslationProperties": {
+    "Name": "Plant Magic Bean"
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "StructuralCrafting",
+        "Id": "Builders",
+        "Categories": [
+          "Bricks"
+        ]
+      }
+    ]
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Solid",
+    "CustomModel": "Blocks/Foliage/Plants/Fern_Giant_Wet.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Items/Objects/Magic_Bean/Plant_Magic_Bean_Texture.png"
+      }
+    ],
+    "HitboxType": "Magic_Bean_Hitbox",
+    "VariantRotation": "Pipe",
+    "BlockParticleSetId": "Grass",
+    "BlockSoundSetId": "Bush",
+    "PhysicalMaterialId": "Foliage",
+    "MovementSettings": {
+      "IsClimbable": true,
+      "ClimbUpSpeedMultiplier": 5.5,
+      "ClimbDownSpeedMultiplier": 10,
+      "ClimbLateralSpeedMultiplier": 2.75
+    },
+    "MaxSupportDistance": 0,
+    "CubeShadingMode": "Standard",
+    "PlacementSettings": {
+      "AllowBreakReplace": true
+    },
+    "Effect": [
+      "WindAttached"
+    ],
+    "RandomRotation": "YawStep1",
+    "ParticleColor": "#43a479",
+    "CustomModelScale": 1,
+    "Gathering": {
+      "UseDefaultDropWhenPlaced": false,
+      "Breaking": {
+        "GatherType": "Soils",
+        "DropList": "Empty"
+      }
+    },
+    "SupportsRequiredFor": "All",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "Supporting": {
+      "Up": [
+        {}
+      ]
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Deco"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Foliage",
+  "SoundEventId": "SFX_Bush_MoveIn",
+  "IconProperties": {
+    "Scale": 0.25,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      4,
+      -41
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Magic_Bean.png",
+  "MaxStack": 10
+}

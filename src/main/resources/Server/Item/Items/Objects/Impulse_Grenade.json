@@ -1,0 +1,86 @@
+{
+  "TranslationProperties": {
+    "Name": "Impulse Grenade",
+    "Description": "Boom"
+  },
+  "Quality": "Epic",
+  "BlockType": {
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Items/Objects/Impulse_Grenade/Impulse_Grenade_Texture.png"
+      }
+    ],
+    "ParticleColor": "#b500ff",
+    "Light": {
+      "Color": "#f0e",
+      "Radius": 0
+    },
+    "CustomModel": "Items/Objects/Impulse_Grenade/Impulse_Grenade_Model.blockymodel",
+    "Opacity": "Solid",
+    "CubeShadingMode": "Fullbright",
+    "Interactions": {
+      "Secondary": {
+        "Interactions": [
+          "Impulse_Grenade_Interaction"
+        ],
+        "RequireNewClick": true
+      }
+    },
+    "DrawType": "Model"
+  },
+  "DropOnDeath": true,
+  "IconProperties": {
+    "Scale": 1,
+    "Rotation": [
+      26,
+      53,
+      30
+    ],
+    "Translation": [
+      -0.3,
+      -10.3
+    ]
+  },
+  "MaxStack": 10,
+  "Icon": "Icons/ItemsGenerated/Impulse_Grenade.png",
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Tools"
+        ],
+        "Id": "Fieldcraft"
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Coin",
+        "Quantity": 15
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Impulse_Grenade",
+        "Quantity": 1
+      }
+    ]
+  },
+  "ItemLevel": 4,
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        "Impulse_Grenade_Interaction"
+      ],
+      "RequireNewClick": true
+    }
+  },
+  "Categories": [
+    "Category_DOPA.DOPA"
+  ],
+  "PlayerAnimationsId": "Item",
+  "Utility": {
+    "Usable": true
+  }
+}

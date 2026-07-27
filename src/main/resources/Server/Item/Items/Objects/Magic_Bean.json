@@ -1,0 +1,79 @@
+{
+  "TranslationProperties": {
+    "Name": "Magic Bean"
+  },
+  "Quality": "Uncommon",
+  "PlayerAnimationsId": "Item",
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        "Magic_Bean_Interaction"
+      ],
+      "RequireNewClick": true
+    }
+  },
+  "IconProperties": {
+    "Scale": 0.65,
+    "Rotation": [
+      325,
+      64,
+      360
+    ],
+    "Translation": [
+      11.6,
+      -19.3
+    ]
+  },
+  "Model": "Items/Objects/Magic_Bean/Magic_Bean_Model.blockymodel",
+  "Texture": "Items/Objects/Magic_Bean/Magic_Bean_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Magic_Bean.png",
+  "Particles": [
+    {
+      "SystemId": "Block_Sprint_Leaves_Round",
+      "TargetEntityPart": "PrimaryItem",
+      "Color": "#6a0f2c",
+      "Scale": 1
+    }
+  ],
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Bomb"
+    ]
+  },
+  "SoundEventId": "SFX_Bush_MoveIn",
+  "MaxStack": 10,
+  "Scale": 0.75,
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Fieldcraft",
+        "Categories": [
+          "Tools"
+        ]
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Coin",
+        "Quantity": 5
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Magic_Bean",
+        "Quantity": 1
+      }
+    ]
+  },
+  "ItemLevel": 1,
+  "Categories": [
+    "Category_DOPA.DOPA"
+  ],
+  "Utility": {
+    "Usable": true
+  }
+}

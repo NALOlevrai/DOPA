@@ -1,0 +1,10 @@
+{
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Interactions": [
+    "Kweebec_Boss_Punch_AOE"
+  ]
+}
