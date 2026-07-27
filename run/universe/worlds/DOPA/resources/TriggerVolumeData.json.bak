@@ -36,13 +36,6 @@
       ],
       "Rules": [
         {
-          "Type": "NoUse",
-          "Target": "Self",
-          "MatchKey": "",
-          "MatchValue": "",
-          "Radius": 50.0
-        },
-        {
           "Type": "NoBuild",
           "Target": "Self",
           "MatchKey": "",
@@ -73,9 +66,6 @@
           "MatchKey": "",
           "MatchValue": "",
           "Radius": 50.0
-        },
-        {
-          "Type": "NoHeal"
         }
       ],
       "TargetTypes": [

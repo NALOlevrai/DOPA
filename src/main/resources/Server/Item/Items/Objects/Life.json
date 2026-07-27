@@ -1,107 +1,199 @@
 {
+  "TranslationProperties": {
+    "Name": "Life"
+  },
+  "Quality": "Legendary",
+  "MaxStack": 3,
+  "Icon": "Icons/ItemsGenerated/Life.png",
+  "Categories": [
+    "Category_DOPA.DOPA"
+  ],
+  "ItemLevel": 5,
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 1.15,
+    "Rotation": [
+      19,
+      0,
+      0
+    ],
+    "Translation": [
+      0,
+      -9
+    ]
+  },
   "Interactions": {
-    "ProjectileSpawn": {
+    "Secondary": {
+      "Type": "Serial",
       "Interactions": [
         {
-          "Type": "Simple",
-          "RunTime": 2,
-          "OnItemChangeBehavior": "Ignore",
-          "CancelOnItemChange": false
+          "Type": "Replace",
+          "Var": "ConsumeSFX",
+          "DefaultValue": {
+            "Interactions": [
+              "Consume_SFX"
+            ]
+          }
         },
         {
-          "Type": "Explode",
-          "Config": {
-            "DamageEntities": true,
-            "DamageBlocks": false,
-            "EntityDamageRadius": 7.5,
-            "EntityDamage": 35,
-            "Knockback": {
-              "Type": "Directional",
-              "Force": -5,
-              "VelocityY": 3.5,
-              "Duration": 0.1,
-              "VelocityConfig": {
-                "Style": "Exp"
-              },
-              "RelativeX": 0,
-              "RelativeZ": 0
-            },
-            "BlockDamageRadius": 0,
-            "BlockDamageFalloff": 0,
-            "BlockDropChance": 0,
-            "EntityDamageFalloff": 1,
-            "Particles": [
-              {
-                "SystemId": "Frag_Grenade_Particles",
-                "TargetEntityPart": "Entity",
-                "PositionOffset": {},
-                "DetachedFromModel": true
-              }
-            ],
-            "SoundEventId": "SFX_Frag_Grenade"
+          "Type": "Charging",
+          "FailOnDamage": false,
+          "Effects": {
+            "ItemAnimationId": "Consume",
+            "ClearAnimationOnFinish": true,
+            "ClearSoundEventOnFinish": true
           },
-          "OnItemChangeBehavior": "Ignore",
-          "CancelOnItemChange": false
-        },
-        {
-          "Type": "RemoveEntity",
-          "OnItemChangeBehavior": "Ignore",
-          "CancelOnItemChange": false
-        }
-      ],
-      "Rules": {
-        "InterruptedBy": []
-      }
-    },
-    "ProjectileBounce": {
-      "Interactions": [
-        {
-          "Type": "Explode",
-          "Config": {
-            "DamageEntities": false,
-            "EntityDamage": 0,
-            "BlockDamageRadius": 0,
-            "BlockDamageFalloff": 0,
-            "BlockDropChance": 0,
-            "EntityDamageRadius": 0,
-            "SoundEventId": "SFX_Frag_Grenade_Bounce",
-            "Particles": [
-              {
-                "SystemId": "Block_Land_Hard_Metal",
-                "DetachedFromModel": true,
-                "TargetEntityPart": "Entity"
+          "HorizontalSpeedMultiplier": 0.4,
+          "Next": {
+            "0.5": {
+              "Type": "ModifyInventory",
+              "AdjustHeldItemQuantity": -1,
+              "Next": {
+                "Type": "Serial",
+                "Interactions": [
+                  {
+                    "Type": "Replace",
+                    "Var": "ConsumedSFX",
+                    "DefaultOk": true,
+                    "DefaultValue": {
+                      "Interactions": [
+                        "Consumed_SFX"
+                      ]
+                    }
+                  },
+                  {
+                    "Type": "Replace",
+                    "DefaultValue": {
+                      "Interactions": [
+                        "Effect"
+                      ]
+                    },
+                    "Var": "Effect"
+                  },
+                  {
+                    "Type": "Simple",
+                    "RunTime": 0.2,
+                    "$Comment": "Delay before next consume cycle can start to prevent sound overlap"
+                  }
+                ]
               }
-            ],
-            "DamageBlocks": false
+            }
           },
-          "OnItemChangeBehavior": "Ignore",
-          "CancelOnItemChange": false
+          "Failed": {
+            "Type": "Simple"
+          }
         }
       ]
     }
   },
-  "Model": "Frag_Grenade_Model",
-  "Physics": {
-    "Type": "Standard",
-    "TerminalVelocityWater": 25,
-    "HitWaterImpulseLoss": 0.5,
-    "AllowRolling": true,
-    "Bounciness": 0.4,
-    "TerminalVelocityAir": 35,
-    "Gravity": 18.0,
-    "Density": 750,
-    "DensityAir": 1.2,
-    "DensityWater": 1500,
-    "RotationForce": 5,
-    "SpeedRotationFactor": 0.2,
-    "RollingFrictionFactor": 0.2,
-    "RollingSpeed": 2,
-    "BounceLimit": 20,
-    "MoveOutOfSolidSpeed": 1
+  "InteractionVars": {
+    "Consume_Charge": {
+      "Interactions": [
+        {
+          "Parent": "Consume_Charge_Food_T3_Inner",
+          "Effects": {
+            "ItemAnimationId": "Consume"
+          }
+        }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Life_Effect"
+        }
+      ]
+    },
+    "ConsumeSFX": {
+      "Interactions": [
+        {
+          "Parent": "Consume_SFX",
+          "Effects": {
+            "LocalSoundEventId": "SFX_Consume_Bread_Local"
+          }
+        }
+      ]
+    },
+    "ConsumedSFX": {
+      "Interactions": [
+        {
+          "Parent": "Consumed_SFX",
+          "Effects": {
+            "LocalSoundEventId": "SFX_Consume_Bread_Local"
+          }
+        }
+      ]
+    }
   },
-  "LaunchForce": 17,
-  "UseModelScale": true,
-  "SpawnOffset": {
-    "Z": -0.25
+  "InteractionConfig": {
+    "CanPlace": false,
+    "Priorities": {
+      "Primary": -1,
+      "Secondary": 1
+    }
+  },
+  "Consumable": true,
+  "Tags": {
+    "Type": [],
+    "Family": [
+      "Fruit"
+    ]
+  },
+  "Scale": 1.5,
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "Opacity": "Solid",
+    "CustomModel": "Items/Objects/Life/Life_Model.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Objects/Life/Life_Texture.png"
+      }
+    ],
+    "CustomModelScale": 0.55,
+    "CubeShadingMode": "Fullbright",
+    "Light": {
+      "Color": "#500",
+      "Radius": 1
+    },
+    "Particles": [
+      {
+        "SystemId": "Life_Particles",
+        "Scale": 0.5,
+        "RotationOffset": {
+          "Yaw": 0,
+          "Pitch": 90
+        },
+        "PositionOffset": {
+          "Y": 0
+        }
+      }
+    ]
+  },
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Tools"
+        ],
+        "Id": "Fieldcraft"
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Coin",
+        "Quantity": 50
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Life"
+      }
+    ]
+  },
+  "Utility": {
+    "Usable": true
   }
 }
