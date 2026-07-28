@@ -1,0 +1,140 @@
+{
+  "RenderMode": "BlendAdd",
+  "EmitOffset": {
+    "X": {
+      "Min": 0,
+      "Max": 1.2
+    },
+    "Y": {
+      "Min": 0,
+      "Max": 0
+    },
+    "Z": {
+      "Min": 0,
+      "Max": 1.2
+    }
+  },
+  "ParticleRotationInfluence": "Velocity",
+  "LinearFiltering": true,
+  "LightInfluence": 0.75,
+  "MaxConcurrentParticles": 2000,
+  "ParticleLifeSpan": {
+    "Min": 1.25,
+    "Max": 1.25
+  },
+  "ParticleRotateWithSpawner": false,
+  "TrailSpawnerPositionMultiplier": 1,
+  "TrailSpawnerRotationMultiplier": 1,
+  "SpawnRate": {
+    "Min": 200,
+    "Max": 200
+  },
+  "TotalParticles": {
+    "Min": 5000,
+    "Max": 5000
+  },
+  "InitialVelocity": {
+    "Yaw": {
+      "Min": 90,
+      "Max": 90
+    },
+    "Pitch": {
+      "Min": 90,
+      "Max": 90
+    },
+    "Speed": {
+      "Min": 7.5,
+      "Max": 7.5
+    }
+  },
+  "Attractors": [
+    {
+      "Position": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "RadialAxis": {
+        "X": 0,
+        "Y": 0.95
+      },
+      "Radius": 0,
+      "RadialAcceleration": -15,
+      "RadialTangentAcceleration": 15,
+      "DampingMultiplier": {
+        "X": 1,
+        "Y": 0.998,
+        "Z": 1
+      },
+      "TrailPositionMultiplier": 0,
+      "RadialImpulse": 1,
+      "RadialTangentImpulse": 2.5
+    }
+  ],
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Ball4.png",
+    "ScaleRatioConstraint": "OneToOne",
+    "Animation": {
+      "0": {
+        "Scale": {
+          "X": {
+            "Min": 0.1,
+            "Max": 0.1
+          },
+          "Y": {
+            "Min": 0.1,
+            "Max": 0.1
+          }
+        },
+        "Opacity": 0
+      },
+      "25": {
+        "Color": "#ffffff",
+        "Opacity": 0.856,
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          },
+          "Y": {
+            "Min": 1,
+            "Max": 1
+          }
+        }
+      },
+      "85": {
+        "Color": "#ffffff",
+        "Opacity": 0.852,
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          },
+          "Y": {
+            "Min": 1,
+            "Max": 1
+          }
+        }
+      },
+      "100": {
+        "Color": "#ffffff",
+        "Opacity": 0
+      }
+    },
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 0.5,
+          "Max": 0.5
+        },
+        "Y": {
+          "Min": 0.5,
+          "Max": 0.5
+        }
+      },
+      "Opacity": 1
+    }
+  },
+  "IsLowRes": true,
+  "VelocityStretchMultiplier": 150
+}

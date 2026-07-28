@@ -1,0 +1,32 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "Effects": {
+        "WorldSoundEventId": "SFX_Trork_Throwing_Axe",
+        "LocalSoundEventId": "SFX_Trork_Throwing_Axe",
+        "ItemAnimationId": "Throw"
+      },
+      "RunTime": 0.25,
+      "CancelOnItemChange": false,
+      "OnItemChangeBehavior": "Ignore"
+    },
+    {
+      "Type": "ModifyInventory",
+      "RequiredGameMode": "Adventure",
+      "Next": {
+        "Type": "Projectile",
+        "Config": "Twister_Grenade_Projectile_Config",
+        "CancelOnItemChange": false,
+        "OnItemChangeBehavior": "Ignore",
+        "IgnorePitch": false,
+        "IgnoreYaw": false,
+        "IgnoreRoll": false
+      },
+      "CancelOnItemChange": false,
+      "OnItemChangeBehavior": "Ignore",
+      "AdjustHeldItemQuantity": -1
+    }
+  ]
+}

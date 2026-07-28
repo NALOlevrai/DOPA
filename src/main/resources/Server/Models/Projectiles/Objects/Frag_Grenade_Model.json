@@ -16,28 +16,43 @@
   "Trails": [
     {
       "TargetNodeName": "Origin_Item",
+      "FixedRotation": false,
       "PositionOffset": {
         "Y": 0,
         "X": 0,
         "Z": -0.2
       },
       "TrailId": "Small_Projectile",
-      "FixedRotation": true
+      "RotationOffset": {
+        "Pitch": 90
+      }
     },
     {
       "TargetNodeName": "Origin_Item",
       "RotationOffset": {
-        "Pitch": 0,
-        "Roll": 0,
-        "Yaw": 90
+        "Pitch": 90
       },
+      "FixedRotation": false,
       "PositionOffset": {
         "Y": 0,
         "X": 0,
         "Z": -0.2
       },
-      "TrailId": "Daggers_Dash_Distortion",
-      "FixedRotation": true
+      "TrailId": "Daggers_Dash_Distortion"
+    },
+    {
+      "TargetNodeName": "Origin_Item",
+      "RotationOffset": {
+        "Roll": 90,
+        "Yaw": 0
+      },
+      "FixedRotation": false,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": -0.2
+      },
+      "TrailId": "Daggers_Dash_Distortion"
     }
   ],
   "DefaultAttachments": [

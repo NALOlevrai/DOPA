@@ -11,8 +11,6 @@
       "Z": 0
     }
   },
-  "MinScale": 1,
-  "MaxScale": 1,
   "Trails": [
     {
       "TargetNodeName": "Origin_Item",
@@ -57,15 +55,24 @@
   ],
   "DefaultAttachments": [
     {
-      "Model": "Items/Objects/Impulse_Grenade/Impulse_Grenade_Model.blockymodel",
-      "Texture": "Items/Objects/Impulse_Grenade/Impulse_Grenade_Texture.png"
+      "Model": "Items/Objects/Brick_Wall/Brick_Wall_Model.blockymodel",
+      "Texture": "Items/Objects/Brick_Wall/Brick_Wall_Texture.png"
     }
   ],
   "Light": {
-    "Color": "#f0e",
+    "Color": "#575",
     "Radius": 1
   },
   "EyeHeight": 0,
   "Model": "Items/Projectiles/Projectile.blockymodel",
-  "Texture": "Items/Projectiles/Projectile_default.png"
+  "Texture": "Items/Projectiles/Projectile_default.png",
+  "MinScale": 1,
+  "MaxScale": 1,
+  "Particles": [
+    {
+      "SystemId": "Block_Break_Stone",
+      "Color": "#cd835a",
+      "Scale": 0.75
+    }
+  ]
 }

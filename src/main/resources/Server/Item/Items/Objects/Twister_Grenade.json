@@ -1,49 +1,48 @@
 {
   "TranslationProperties": {
-    "Name": "Impulse Grenade",
-    "Description": "Boom"
+    "Name": "Smoke Grenade",
+    "Description": "Smoke !"
   },
-  "Quality": "Epic",
+  "Categories": [
+    "Category_DOPA.DOPA"
+  ],
+  "Quality": "Rare",
   "BlockType": {
     "CustomModelTexture": [
       {
         "Weight": 1,
-        "Texture": "Items/Objects/Impulse_Grenade/Impulse_Grenade_Texture.png"
+        "Texture": "Items/Objects/Twister_Grenade/Twister_Grenade_Texture.png"
       }
     ],
-    "ParticleColor": "#b500ff",
     "Light": {
-      "Color": "#f0e",
+      "Color": "#232",
       "Radius": 0
     },
-    "CustomModel": "Items/Objects/Impulse_Grenade/Impulse_Grenade_Model.blockymodel",
+    "CustomModel": "Items/Objects/Twister_Grenade/Twister_Grenade_Model.blockymodel",
     "Opacity": "Solid",
     "CubeShadingMode": "Fullbright",
-    "Interactions": {
-      "Secondary": {
-        "Interactions": [
-          "Switch_Ball_Interaction"
-        ],
-        "RequireNewClick": true
-      }
-    },
     "DrawType": "Model"
   },
   "DropOnDeath": true,
   "IconProperties": {
-    "Scale": 1,
+    "Scale": 2.5,
     "Rotation": [
-      26,
-      53,
-      30
+      8,
+      144,
+      37
     ],
     "Translation": [
-      -0.3,
-      -10.3
+      -2.0,
+      2.2
     ]
   },
   "MaxStack": 10,
-  "Icon": "Icons/ItemsGenerated/Impulse_Grenade.png",
+  "ItemEntity": {
+    "Physics": {
+      "InvertedGravity": false
+    }
+  },
+  "Icon": "Icons/ItemsGenerated/Twister_Grenade.png",
   "Recipe": {
     "BenchRequirement": [
       {
@@ -57,30 +56,28 @@
     "Input": [
       {
         "ItemId": "Coin",
-        "Quantity": 15
+        "Quantity": 10
       }
     ],
     "Output": [
       {
-        "ItemId": "Impulse_Grenade",
+        "ItemId": "Twister_Grenade",
         "Quantity": 1
       }
-    ]
+    ],
+    "OutputQuantity": 1
   },
-  "ItemLevel": 4,
-  "Categories": [
-    "Category_DOPA.DOPA"
-  ],
+  "ItemLevel": 3,
   "PlayerAnimationsId": "Item",
-  "Utility": {
-    "Usable": true
-  },
   "Interactions": {
     "Secondary": {
       "Interactions": [
-        "Switch_Ball_Interaction"
+        "Twister_Grenade_Interaction"
       ],
       "RequireNewClick": true
     }
+  },
+  "Utility": {
+    "Usable": true
   }
 }

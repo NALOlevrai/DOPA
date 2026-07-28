@@ -1,0 +1,26 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Twister_Grenade_Particles_Sub",
+      "LifeSpan": {
+        "Max": 5,
+        "Min": 5
+      },
+      "PositionOffset": {
+        "Y": 0
+      }
+    },
+    {
+      "SpawnerId": "Twister_Grenade_Particles_Sub2",
+      "LifeSpan": {
+        "Max": 5,
+        "Min": 5
+      },
+      "PositionOffset": {
+        "Y": 0
+      }
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 500
+}

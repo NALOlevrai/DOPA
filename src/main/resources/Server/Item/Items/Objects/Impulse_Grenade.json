@@ -19,14 +19,6 @@
     "CustomModel": "Items/Objects/Impulse_Grenade/Impulse_Grenade_Model.blockymodel",
     "Opacity": "Solid",
     "CubeShadingMode": "Fullbright",
-    "Interactions": {
-      "Secondary": {
-        "Interactions": [
-          "Impulse_Grenade_Interaction"
-        ],
-        "RequireNewClick": true
-      }
-    },
     "DrawType": "Model"
   },
   "DropOnDeath": true,
