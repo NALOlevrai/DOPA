@@ -1,9 +1,9 @@
 {
   "HitBox": {
     "Max": {
-      "X": 0.15,
-      "Y": 0.15,
-      "Z": 0.15
+      "X": 1.5,
+      "Y": 1.5,
+      "Z": 1.5
     },
     "Min": {
       "X": 0,
@@ -11,8 +11,8 @@
       "Z": 0
     }
   },
-  "MinScale": 5,
-  "MaxScale": 5,
+  "MinScale": 2,
+  "MaxScale": 2,
   "Trails": [
     {
       "TargetNodeName": "Origin_Item",

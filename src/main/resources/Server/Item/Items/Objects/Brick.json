@@ -38,7 +38,7 @@
     },
     "Gathering": {
       "Soft": {
-        "DropList": "Empty",
+        "DropList": "Drop_Brick",
         "IsWeaponBreakable": true
       }
     },

@@ -26,7 +26,7 @@
     "Textures": [
       {
         "Weight": 1,
-        "All": "Resources/Wood_Light.png"
+        "All": "Resources/Wood_Light_Texture.png"
       }
     ],
     "ParticleColor": "#ffc744",

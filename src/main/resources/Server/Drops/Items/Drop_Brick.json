@@ -1,0 +1,18 @@
+{
+  "Container": {
+    "Type": "Choice",
+    "Containers": [
+      {
+        "Type": "Single",
+        "Item": {
+          "ItemId": "Coin"
+        },
+        "Weight": 1
+      },
+      {
+        "Type": "Empty",
+        "Weight": 10
+      }
+    ]
+  }
+}
