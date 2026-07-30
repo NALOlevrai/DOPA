@@ -175,7 +175,7 @@
   },
   "LaunchForce": 25,
   "SpawnOffset": {
-    "Z": -0.75,
+    "Z": -0.15,
     "Y": -0.05
   },
   "UseModelScale": true

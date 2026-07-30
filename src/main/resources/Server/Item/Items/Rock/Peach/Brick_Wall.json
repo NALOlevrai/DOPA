@@ -27,26 +27,9 @@
   "Model": "Items/Objects/Brick_Wall/Brick_Wall_Model.blockymodel",
   "Texture": "Items/Objects/Brick_Wall/Brick_Wall_Texture.png",
   "Icon": "Icons/ItemsGenerated/Brick_Wall.png",
-  "Tags": {
-    "Type": [
-      "Weapon"
-    ],
-    "Family": [
-      "Bomb"
-    ]
-  },
   "MaxStack": 10,
   "Scale": 0.5,
   "Recipe": {
-    "BenchRequirement": [
-      {
-        "Type": "Crafting",
-        "Id": "Fieldcraft",
-        "Categories": [
-          "Tools"
-        ]
-      }
-    ],
     "Input": [
       {
         "ItemId": "Coin",
@@ -57,6 +40,15 @@
       {
         "ItemId": "Brick_Wall",
         "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Fieldcraft",
+        "Categories": [
+          "Tools"
+        ]
       }
     ]
   },

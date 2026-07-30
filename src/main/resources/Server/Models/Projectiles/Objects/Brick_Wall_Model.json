@@ -60,7 +60,7 @@
     }
   ],
   "Light": {
-    "Color": "#575",
+    "Color": "#a64",
     "Radius": 1
   },
   "EyeHeight": 0,
@@ -70,7 +70,7 @@
   "MaxScale": 1,
   "Particles": [
     {
-      "SystemId": "Block_Break_Stone",
+      "SystemId": "Block_Hit_Stone",
       "Color": "#cd835a",
       "Scale": 0.75
     }

@@ -145,12 +145,12 @@
     "SpeedRotationFactor": 0,
     "RollingFrictionFactor": 0,
     "RollingSpeed": 0,
-    "BounceLimit": 10,
     "MoveOutOfSolidSpeed": 1
   },
   "LaunchForce": 17,
   "UseModelScale": true,
   "SpawnOffset": {
-    "Z": -0.25
+    "Z": -0.15,
+    "Y": -0.05
   }
 }

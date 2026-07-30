@@ -129,7 +129,6 @@
     "HitWaterImpulseLoss": 0.55,
     "DensityAir": 0.1,
     "Gravity": 75,
-    "BounceLimit": 10,
     "DensityWater": 1,
     "ComputeYaw": false,
     "ComputePitch": false,
@@ -138,8 +137,8 @@
   },
   "LaunchForce": 50,
   "SpawnOffset": {
-    "Z": -0.75,
-    "Y": -0.05
+    "Y": -0.05,
+    "Z": -0.15
   },
   "UseModelScale": true
 }

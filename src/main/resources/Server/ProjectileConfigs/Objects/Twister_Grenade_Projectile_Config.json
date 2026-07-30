@@ -636,11 +636,11 @@
     "BounceLimit": 10
   },
   "LaunchForce": 25,
-  "SpawnOffset": {
-    "Z": -0.75,
-    "Y": -0.05
-  },
   "UseModelScale": true,
   "RotateSpawnOffsetByPitch": false,
-  "RotateSpawnOffsetByYaw": false
+  "RotateSpawnOffsetByYaw": false,
+  "SpawnOffset": {
+    "Z": -0.15,
+    "Y": -0.05
+  }
 }

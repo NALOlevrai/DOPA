@@ -1,10 +1,8 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Rock_Peachstone_Brick.name"
+    "Name": "Brick"
   },
   "Icon": "Icons/ItemsGenerated/Rock_Peachstone_Brick.png",
-  "Set": "Rock_Peach",
-  "Parent": "Rock_Stone_Brick",
   "Recipe": {
     "Input": [
       {
@@ -38,10 +36,6 @@
         ]
       }
     },
-    "MovementSettings": {
-      "IsBouncy": false,
-      "DisableAutoStep": true
-    },
     "Gathering": {
       "Soft": {
         "DropList": "Empty",
@@ -65,8 +59,9 @@
         "UpDown": "BlockTextures/Peachstone_Brick_Top03.png"
       }
     ],
-    "IsDoor": false,
-    "AllowsMultipleUsers": true
+    "Material": "Solid",
+    "BlockParticleSetId": "Stone",
+    "BlockSoundSetId": "Stone"
   },
   "IconProperties": {
     "Scale": 0.58823,
@@ -87,5 +82,7 @@
     {
       "Id": "Rock_Peach_Brick"
     }
-  ]
+  ],
+  "ItemLevel": 2,
+  "PlayerAnimationsId": "Block"
 }

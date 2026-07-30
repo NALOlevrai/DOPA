@@ -2,28 +2,29 @@
   "Type": "Serial",
   "Interactions": [
     {
+      "Type": "ModifyInventory",
+      "AdjustHeldItemQuantity": -1,
+      "RunTime": 0.05,
+      "OnItemChangeBehavior": "Ignore",
+      "CancelOnItemChange": false,
+      "RequiredGameMode": "Adventure"
+    },
+    {
       "Type": "Simple",
       "Effects": {
         "WorldSoundEventId": "SFX_Trork_Throwing_Axe",
         "LocalSoundEventId": "SFX_Trork_Throwing_Axe",
         "ItemAnimationId": "Throw"
       },
-      "RunTime": 0.25,
+      "RunTime": 0.2,
       "CancelOnItemChange": false,
       "OnItemChangeBehavior": "Ignore"
     },
     {
-      "Type": "ModifyInventory",
-      "RequiredGameMode": "Adventure",
-      "Next": {
-        "Type": "Projectile",
-        "Config": "Frag_Grenade_Projectile_Config",
-        "CancelOnItemChange": false,
-        "OnItemChangeBehavior": "Ignore"
-      },
+      "Type": "Projectile",
+      "Config": "Frag_Grenade_Projectile_Config",
       "CancelOnItemChange": false,
-      "OnItemChangeBehavior": "Ignore",
-      "AdjustHeldItemQuantity": -1
+      "OnItemChangeBehavior": "Ignore"
     }
   ]
 }

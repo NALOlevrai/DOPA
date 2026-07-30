@@ -35,14 +35,6 @@
       "Scale": 1
     }
   ],
-  "Tags": {
-    "Type": [
-      "Weapon"
-    ],
-    "Family": [
-      "Bomb"
-    ]
-  },
   "SoundEventId": "SFX_Bush_MoveIn",
   "MaxStack": 10,
   "Scale": 0.75,

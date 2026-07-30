@@ -196,6 +196,7 @@
   },
   "LaunchForce": 50,
   "SpawnOffset": {
+    "Z": -0.15,
     "Y": -0.05
   }
 }
