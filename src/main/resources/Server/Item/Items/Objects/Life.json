@@ -22,6 +22,114 @@
       -9
     ]
   },
+  "InteractionVars": {
+    "Consume_Charge": {
+      "Interactions": [
+        {
+          "Parent": "Consume_Charge_Food_T3_Inner",
+          "Effects": {
+            "ItemAnimationId": "Consume"
+          }
+        }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Life_Effect"
+        }
+      ]
+    },
+    "ConsumeSFX": {
+      "Interactions": [
+        {
+          "Parent": "Consume_SFX",
+          "Effects": {
+            "LocalSoundEventId": "SFX_Consume_Bread_Local"
+          }
+        }
+      ]
+    },
+    "ConsumedSFX": {
+      "Interactions": [
+        {
+          "Parent": "Consumed_SFX",
+          "Effects": {
+            "LocalSoundEventId": "SFX_Consume_Bread_Local"
+          }
+        }
+      ]
+    }
+  },
+  "InteractionConfig": {
+    "CanPlace": false,
+    "Priorities": {
+      "Primary": -1,
+      "Secondary": 1
+    }
+  },
+  "Consumable": true,
+  "Tags": {
+    "Type": [],
+    "Family": [
+      "Fruit"
+    ]
+  },
+  "Scale": 1.5,
+  "BlockType": {
+    "DrawType": "Model",
+    "CustomModel": "Items/Objects/Life/Life_Model.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Objects/Life/Life_Texture.png"
+      }
+    ],
+    "CustomModelScale": 0.55,
+    "CubeShadingMode": "Fullbright",
+    "Light": {
+      "Color": "#500",
+      "Radius": 1
+    },
+    "Particles": [
+      {
+        "SystemId": "Life_Particles",
+        "Scale": 0.5,
+        "RotationOffset": {
+          "Yaw": 0,
+          "Pitch": 90
+        },
+        "PositionOffset": {
+          "Y": 0
+        }
+      }
+    ]
+  },
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Tools"
+        ],
+        "Id": "Fieldcraft"
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Coin",
+        "Quantity": 50
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Life"
+      }
+    ]
+  },
+  "Utility": {
+    "Usable": true
+  },
   "Interactions": {
     "Secondary": {
       "Type": "Serial",
@@ -83,117 +191,8 @@
             "Type": "Simple"
           }
         }
-      ]
+      ],
+      "RequireNewClick": true
     }
-  },
-  "InteractionVars": {
-    "Consume_Charge": {
-      "Interactions": [
-        {
-          "Parent": "Consume_Charge_Food_T3_Inner",
-          "Effects": {
-            "ItemAnimationId": "Consume"
-          }
-        }
-      ]
-    },
-    "Effect": {
-      "Interactions": [
-        {
-          "Type": "ApplyEffect",
-          "EffectId": "Life_Effect"
-        }
-      ]
-    },
-    "ConsumeSFX": {
-      "Interactions": [
-        {
-          "Parent": "Consume_SFX",
-          "Effects": {
-            "LocalSoundEventId": "SFX_Consume_Bread_Local"
-          }
-        }
-      ]
-    },
-    "ConsumedSFX": {
-      "Interactions": [
-        {
-          "Parent": "Consumed_SFX",
-          "Effects": {
-            "LocalSoundEventId": "SFX_Consume_Bread_Local"
-          }
-        }
-      ]
-    }
-  },
-  "InteractionConfig": {
-    "CanPlace": false,
-    "Priorities": {
-      "Primary": -1,
-      "Secondary": 1
-    }
-  },
-  "Consumable": true,
-  "Tags": {
-    "Type": [],
-    "Family": [
-      "Fruit"
-    ]
-  },
-  "Scale": 1.5,
-  "BlockType": {
-    "Material": "Empty",
-    "DrawType": "Model",
-    "Opacity": "Solid",
-    "CustomModel": "Items/Objects/Life/Life_Model.blockymodel",
-    "CustomModelTexture": [
-      {
-        "Texture": "Items/Objects/Life/Life_Texture.png"
-      }
-    ],
-    "CustomModelScale": 0.55,
-    "CubeShadingMode": "Fullbright",
-    "Light": {
-      "Color": "#500",
-      "Radius": 1
-    },
-    "Particles": [
-      {
-        "SystemId": "Life_Particles",
-        "Scale": 0.5,
-        "RotationOffset": {
-          "Yaw": 0,
-          "Pitch": 90
-        },
-        "PositionOffset": {
-          "Y": 0
-        }
-      }
-    ]
-  },
-  "Recipe": {
-    "BenchRequirement": [
-      {
-        "Type": "Crafting",
-        "Categories": [
-          "Tools"
-        ],
-        "Id": "Fieldcraft"
-      }
-    ],
-    "Input": [
-      {
-        "ItemId": "Coin",
-        "Quantity": 50
-      }
-    ],
-    "Output": [
-      {
-        "ItemId": "Life"
-      }
-    ]
-  },
-  "Utility": {
-    "Usable": true
   }
 }

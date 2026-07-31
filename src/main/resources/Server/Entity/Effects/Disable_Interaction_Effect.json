@@ -1,0 +1,13 @@
+{
+  "OverlapBehavior": "Overwrite",
+  "RemovalBehavior": "Complete",
+  "Infinite": true,
+  "ApplicationEffects": {
+    "AbilityEffects": {
+      "Disabled": [
+        "Secondary",
+        "Ability1"
+      ]
+    }
+  }
+}

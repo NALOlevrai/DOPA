@@ -7,7 +7,8 @@
       "RunTime": 0.05,
       "OnItemChangeBehavior": "Ignore",
       "CancelOnItemChange": false,
-      "RequiredGameMode": "Adventure"
+      "RequiredGameMode": "Adventure",
+      "Rules": {}
     },
     {
       "Type": "Simple",

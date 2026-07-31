@@ -1,14 +1,14 @@
 {
   "HitBox": {
     "Max": {
-      "X": 1.5,
-      "Y": 1.5,
-      "Z": 1.5
+      "Y": 0.25,
+      "X": 0.25,
+      "Z": 0.25
     },
     "Min": {
-      "X": 0,
-      "Y": 0,
-      "Z": 0
+      "X": -0.37,
+      "Y": -0.37,
+      "Z": -0.37
     }
   },
   "MinScale": 2,
@@ -62,21 +62,22 @@
     }
   ],
   "Light": {
-    "Color": "#663",
-    "Radius": 1
+    "Radius": 1,
+    "Color": "#b39"
   },
-  "EyeHeight": 0,
+  "EyeHeight": 1,
   "Model": "Items/Projectiles/Projectile.blockymodel",
   "Texture": "Items/Projectiles/Projectile_default.png",
   "AnimationSets": {
     "Idle": {
       "Animations": [
         {
-          "Animation": "Items/Animations/Spin_Roll/Spin_Roll_Left.blockyanim",
-          "Looping": true,
-          "Speed": 5
+          "Animation": "Items/Objects/Twister_Grenade/Twister_Grenade_Animation.blockyanim"
         }
       ]
     }
+  },
+  "PhysicsValues": {
+    "Mass": 10
   }
 }

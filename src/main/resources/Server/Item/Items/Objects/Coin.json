@@ -7,9 +7,6 @@
   "ItemLevel": 0,
   "MaxStack": 100000,
   "DropOnDeath": false,
-  "Utility": {
-    "Compatible": true
-  },
   "PlayerAnimationsId": "Item",
   "IconProperties": {
     "Scale": 1.15,
@@ -25,22 +22,7 @@
   },
   "Scale": 1.5,
   "BlockType": {
-    "Material": "Solid",
     "DrawType": "Model",
-    "Opacity": "Solid",
-    "CustomModel": "Resources/Coin/Coin_Model.blockymodel",
-    "CustomModelTexture": [
-      {
-        "Texture": "Resources/Coin/Coin_Texture.png"
-      }
-    ],
-    "Support": {
-      "Down": [
-        {
-          "TagId": "Nothing"
-        }
-      ]
-    },
     "CustomModelScale": 0.55,
     "CubeShadingMode": "Fullbright",
     "Light": {
@@ -58,6 +40,12 @@
         "PositionOffset": {
           "Y": 0
         }
+      }
+    ],
+    "CustomModel": "Resources/Coin/Coin_Model.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Coin/Coin_Texture.png"
       }
     ]
   },

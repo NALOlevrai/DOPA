@@ -7,9 +7,6 @@
   "ItemLevel": 0,
   "MaxStack": 100000,
   "DropOnDeath": false,
-  "Utility": {
-    "Compatible": true
-  },
   "PlayerAnimationsId": "Item",
   "IconProperties": {
     "Scale": 1,
@@ -25,9 +22,7 @@
   },
   "Scale": 1.5,
   "BlockType": {
-    "Material": "Solid",
     "DrawType": "Model",
-    "Opacity": "Solid",
     "CustomModel": "Resources/Star/Star_Model.blockymodel",
     "CustomModelTexture": [
       {

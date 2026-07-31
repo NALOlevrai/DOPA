@@ -55,5 +55,8 @@
   "ItemLevel": 2,
   "Categories": [
     "Category_DOPA.DOPA"
-  ]
+  ],
+  "Utility": {
+    "Usable": true
+  }
 }

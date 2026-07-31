@@ -11,7 +11,7 @@
       }
     }
   ],
-  "Volume": -2,
+  "Volume": -6.28,
   "Parent": "SFX_Attn_Loud",
   "MaxDistance": 35,
   "StartAttenuationDistance": 10

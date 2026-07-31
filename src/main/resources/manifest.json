@@ -1,15 +1,15 @@
 {
-    "Group": "com.dopa",
-    "Name": "dopa",
-    "Version": "0.1.0",
+    "Group": "com.DOPA",
+    "Name": "DOPA",
+    "Version": "0.7.5",
     "Description": "DOPA",
     "Authors": [
         {
-            "Name": "nalo"
+            "Name": "NALO"
         }
     ],
     "Website": "",
-    "ServerVersion": ">=0.6.0-pre.9 <0.7.0",
+    "ServerVersion": ">=0.6.0-pre.10 <0.7.0",
     "Dependencies": {
         "Hytale:AssetModule": "*"
     },

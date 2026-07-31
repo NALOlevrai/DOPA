@@ -65,7 +65,12 @@
       "Interactions": [
         "Impulse_Grenade_Interaction"
       ],
-      "RequireNewClick": true
+      "RequireNewClick": true,
+      "Tags": {
+        "Object": [
+          ""
+        ]
+      }
     }
   },
   "Categories": [

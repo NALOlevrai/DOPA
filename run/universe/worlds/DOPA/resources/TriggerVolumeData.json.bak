@@ -26,12 +26,22 @@
           "Duration": -1.0
         },
         {
-          "Type": "RemoveEntities",
+          "Type": "EntityEffect",
+          "Event": "EXIT",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "Effect": "Disable_Interaction_Effect",
+          "Mode": "Remove",
+          "Duration": -1.0
+        },
+        {
+          "Type": "EntityEffect",
           "Event": "TICK",
           "Interval": 0.0,
           "Delay": 0.0,
-          "Mode": "Remove",
-          "IncludeNpcs": true
+          "Effect": "Disable_Interaction_Effect",
+          "Mode": "Apply",
+          "Duration": -1.0
         }
       ],
       "Rules": [
@@ -116,7 +126,9 @@
           },
           "Origin": "VolumeOrigin",
           "ReplaceMode": "Always",
-          "Rotation": "None"
+          "Rotation": "None",
+          "Pitch": "None",
+          "Roll": "None"
         },
         {
           "Type": "ShowEventTitle",
@@ -229,7 +241,9 @@
           },
           "Origin": "VolumeOrigin",
           "ReplaceMode": "Always",
-          "Rotation": "None"
+          "Rotation": "None",
+          "Pitch": "None",
+          "Roll": "None"
         },
         {
           "Type": "DisableVolume",
@@ -299,7 +313,9 @@
           },
           "Origin": "VolumeOrigin",
           "ReplaceMode": "Always",
-          "Rotation": "None"
+          "Rotation": "None",
+          "Pitch": "None",
+          "Roll": "None"
         },
         {
           "Type": "EnableVolume",

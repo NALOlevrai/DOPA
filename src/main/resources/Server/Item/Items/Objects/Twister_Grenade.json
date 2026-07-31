@@ -8,12 +8,6 @@
   ],
   "Quality": "Rare",
   "BlockType": {
-    "CustomModelTexture": [
-      {
-        "Weight": 1,
-        "Texture": "Items/Objects/Twister_Grenade/Twister_Grenade_Texture.png"
-      }
-    ],
     "Light": {
       "Color": "#232",
       "Radius": 0
@@ -21,7 +15,13 @@
     "Opacity": "Solid",
     "CubeShadingMode": "Fullbright",
     "DrawType": "Model",
-    "CustomModel": "Items/Objects/Twister_Grenade/Twister_Grenade_Model.blockymodel"
+    "CustomModel": "Items/Objects/Twister_Grenade/Twister_Grenade_Model.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Items/Objects/Twister_Grenade/Twister_Grenade_Texture.png"
+      }
+    ]
   },
   "DropOnDeath": true,
   "IconProperties": {
@@ -76,5 +76,8 @@
       ],
       "RequireNewClick": true
     }
+  },
+  "Utility": {
+    "Usable": true
   }
 }

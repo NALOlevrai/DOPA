@@ -65,520 +65,696 @@
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
         },
         {
           "Type": "Explode",
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 8.75,
+            "EntityDamageRadius": 10,
             "Knockback": {
               "Type": "Directional",
-              "Force": 5.85,
-              "VelocityY": 1.85,
-              "Duration": 0.15,
+              "Force": 5.5,
+              "VelocityY": 1.75,
               "RelativeX": 0,
               "RelativeZ": 0,
-              "VelocityType": "Add",
+              "Duration": 0.155,
               "VelocityConfig": {
-                "Style": "Linear"
+                "Style": "Exp"
               }
             },
             "SoundEventId": "SFX_Wind",
-            "EntityDamage": 0,
-            "EntityDamageFalloff": 0
+            "EntityDamage": 0
           },
           "OnItemChangeBehavior": "Ignore",
           "CancelOnItemChange": false,
-          "RunTime": 0.155
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.5,
+              "VelocityY": 1.75,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "Duration": 0.155,
+              "VelocityConfig": {
+                "Style": "Exp"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.5,
+              "VelocityY": 1.75,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "Duration": 0.155,
+              "VelocityConfig": {
+                "Style": "Exp"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.5,
+              "VelocityY": 1.75,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "Duration": 0.155,
+              "VelocityConfig": {
+                "Style": "Exp"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.5,
+              "VelocityY": 1.75,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "Duration": 0.155,
+              "VelocityConfig": {
+                "Style": "Exp"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.5,
+              "VelocityY": 1.75,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "Duration": 0.155,
+              "VelocityConfig": {
+                "Style": "Exp"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.5,
+              "VelocityY": 1.75,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "Duration": 0.155,
+              "VelocityConfig": {
+                "Style": "Exp"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.5,
+              "VelocityY": 1.75,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "Duration": 0.155,
+              "VelocityConfig": {
+                "Style": "Exp"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.5,
+              "VelocityY": 1.75,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "Duration": 0.155,
+              "VelocityConfig": {
+                "Style": "Exp"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.5,
+              "VelocityY": 1.75,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "Duration": 0.155,
+              "VelocityConfig": {
+                "Style": "Exp"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
         },
         {
           "Type": "RemoveEntity",
@@ -594,12 +770,12 @@
           "Config": {
             "DamageEntities": true,
             "DamageBlocks": false,
-            "EntityDamageRadius": 7.5,
+            "EntityDamageRadius": 3.5,
             "EntityDamage": 0,
             "Knockback": {
               "Type": "Directional",
-              "Force": -2,
-              "VelocityY": 2,
+              "Force": -3.5,
+              "VelocityY": 1.5,
               "Duration": 0.1,
               "VelocityConfig": {
                 "Style": "Exp"
@@ -607,28 +783,676 @@
               "RelativeX": 0,
               "RelativeZ": 0
             },
-            "BlockDamageRadius": 0,
-            "BlockDamageFalloff": 0,
-            "BlockDropChance": 0,
             "EntityDamageFalloff": 0,
+            "SoundEventId": "SFX_Twister_Grenade",
             "Particles": [
               {
-                "SystemId": "Smoke_Grenade_Particles",
+                "SystemId": "Twister_Grenade_Particles",
                 "TargetEntityPart": "Entity",
                 "PositionOffset": {},
                 "DetachedFromModel": true,
                 "RotationOffset": {}
               }
-            ],
-            "SoundEventId": "SFX_Smoke_Grenade"
+            ]
           },
           "OnItemChangeBehavior": "Ignore",
-          "CancelOnItemChange": false
+          "CancelOnItemChange": false,
+          "RunTime": 0.5
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
+        },
+        {
+          "Type": "Explode",
+          "Config": {
+            "DamageEntities": true,
+            "DamageBlocks": false,
+            "EntityDamageRadius": 10,
+            "Knockback": {
+              "Type": "Directional",
+              "Force": 5.35,
+              "VelocityY": 1.75,
+              "Duration": 0.15,
+              "RelativeX": 0,
+              "RelativeZ": 0,
+              "VelocityType": "Add",
+              "VelocityConfig": {
+                "Style": "Linear"
+              }
+            },
+            "SoundEventId": "SFX_Wind",
+            "EntityDamage": 0,
+            "EntityDamageFalloff": 5
+          },
+          "OnItemChangeBehavior": "Ignore",
+          "CancelOnItemChange": false,
+          "RunTime": 0.15
         },
         {
           "Type": "RemoveEntity",
-          "OnItemChangeBehavior": "Ignore",
-          "CancelOnItemChange": false
+          "CancelOnItemChange": false,
+          "OnItemChangeBehavior": "Ignore"
         }
       ]
     }
@@ -636,7 +1460,7 @@
   "Model": "Twister_Grenade_Model",
   "Physics": {
     "Type": "Standard",
-    "SticksVertically": true,
+    "SticksVertically": false,
     "Density": 750,
     "RotationMode": "None",
     "TerminalVelocityAir": 50,
@@ -655,10 +1479,8 @@
     "BounceCount": -1,
     "BounceLimit": 10
   },
-  "LaunchForce": 25,
+  "LaunchForce": 35,
   "UseModelScale": true,
-  "RotateSpawnOffsetByPitch": false,
-  "RotateSpawnOffsetByYaw": false,
   "SpawnOffset": {
     "Z": -0.15,
     "Y": -0.05
