@@ -1,140 +1,72 @@
 {
-  "RenderMode": "BlendAdd",
   "EmitOffset": {
     "X": {
       "Min": 0,
-      "Max": 1.2
+      "Max": 0
     },
     "Y": {
       "Min": 0,
-      "Max": 0
+      "Max": 0.4
     },
     "Z": {
       "Min": 0,
-      "Max": 1.2
+      "Max": 0
     }
   },
-  "ParticleRotationInfluence": "Velocity",
-  "LinearFiltering": true,
-  "LightInfluence": 0.75,
-  "MaxConcurrentParticles": 1500,
+  "LightInfluence": 1,
+  "MaxConcurrentParticles": 5,
   "ParticleLifeSpan": {
-    "Min": 1.25,
-    "Max": 1.25
+    "Min": 0.35,
+    "Max": 0.5
   },
-  "ParticleRotateWithSpawner": false,
-  "TrailSpawnerPositionMultiplier": 1,
-  "TrailSpawnerRotationMultiplier": 1,
   "SpawnRate": {
-    "Min": 150,
-    "Max": 150
+    "Min": 10,
+    "Max": 10
   },
-  "TotalParticles": {
-    "Min": 2500,
-    "Max": 2500
-  },
-  "InitialVelocity": {
-    "Yaw": {
-      "Min": 90,
-      "Max": 90
-    },
-    "Pitch": {
-      "Min": 90,
-      "Max": 90
-    },
-    "Speed": {
-      "Min": 7.5,
-      "Max": 7.5
-    }
-  },
-  "Attractors": [
-    {
-      "Position": {
-        "X": 0,
-        "Y": 0,
-        "Z": 0
-      },
-      "RadialAxis": {
-        "X": 0,
-        "Y": 0.95
-      },
-      "Radius": 0,
-      "RadialAcceleration": -15,
-      "RadialTangentAcceleration": 15,
-      "DampingMultiplier": {
-        "X": 1,
-        "Y": 0.998,
-        "Z": 1
-      },
-      "TrailPositionMultiplier": 0,
-      "RadialImpulse": 3.5,
-      "RadialTangentImpulse": 7.5
-    }
-  ],
   "Particle": {
-    "Texture": "Particles/Textures/Weather/Snow_HiRes.png",
-    "ScaleRatioConstraint": "OneToOne",
+    "Texture": "Particles/Textures/Basic/Ball6.png",
+    "FrameSize": {},
+    "SoftParticles": "Disable",
     "Animation": {
       "0": {
-        "Scale": {
-          "X": {
-            "Min": 0.1,
-            "Max": 0.1
-          },
-          "Y": {
-            "Min": 0.1,
-            "Max": 0.1
-          }
-        },
-        "Opacity": 0
-      },
-      "25": {
+        "Opacity": 0.5,
         "Color": "#ffffff",
-        "Opacity": 0.856,
         "Scale": {
           "X": {
-            "Min": 1,
-            "Max": 1
-          },
-          "Y": {
-            "Min": 1,
-            "Max": 1
-          }
-        }
-      },
-      "85": {
-        "Color": "#ffffff",
-        "Opacity": 0.852,
-        "Scale": {
-          "X": {
-            "Min": 1,
-            "Max": 1
-          },
-          "Y": {
             "Min": 1,
             "Max": 1
           }
         }
       },
       "100": {
-        "Color": "#ffffff",
-        "Opacity": 0
+        "Opacity": 0.5,
+        "Scale": {
+          "X": {
+            "Min": 0.1,
+            "Max": 0.1
+          }
+        }
       }
     },
     "InitialAnimationFrame": {
       "Scale": {
         "X": {
-          "Min": 1.5,
-          "Max": 1.5
-        },
-        "Y": {
-          "Min": 1.5,
-          "Max": 1.5
+          "Min": 3.5,
+          "Max": 3.5
         }
       },
-      "Opacity": 0.75
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 0
+      },
+      "Opacity": 0.65,
+      "Rotation": {
+        "X": {
+          "Min": 90,
+          "Max": 90
+        }
+      }
     }
   },
-  "IsLowRes": true,
-  "VelocityStretchMultiplier": 150
+  "IsLowRes": true
 }

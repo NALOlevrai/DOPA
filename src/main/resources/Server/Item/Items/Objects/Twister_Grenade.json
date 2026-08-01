@@ -9,7 +9,7 @@
   "Quality": "Rare",
   "BlockType": {
     "Light": {
-      "Color": "#232",
+      "Color": "#236",
       "Radius": 0
     },
     "Opacity": "Solid",
@@ -79,5 +79,8 @@
   },
   "Utility": {
     "Usable": true
+  },
+  "Light": {
+    "Color": "#236"
   }
 }

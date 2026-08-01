@@ -63,7 +63,7 @@
   ],
   "Light": {
     "Radius": 1,
-    "Color": "#b39"
+    "Color": "#236"
   },
   "EyeHeight": 1,
   "Model": "Items/Projectiles/Projectile.blockymodel",
@@ -72,7 +72,9 @@
     "Idle": {
       "Animations": [
         {
-          "Animation": "Items/Objects/Twister_Grenade/Twister_Grenade_Animation.blockyanim"
+          "Animation": "Items/Objects/Twister_Grenade/Twister_Grenade_Animation.blockyanim",
+          "Looping": true,
+          "Speed": 2
         }
       ]
     }
