@@ -1,6 +1,6 @@
 {
-  "Model": "NPC/Mushroom_Boss/Mushroom_Boss_Model.blockymodel",
-  "Texture": "NPC/Mushroom_Boss/Mushroom_Boss_Texture.png",
+  "Model": "NPC/Tree_Boss/Tree_Boss_Model.blockymodel",
+  "Texture": "NPC/Tree_Boss/Tree_Boss_Texture.png",
   "HitBox": {
     "Max": {
       "X": 0.75,

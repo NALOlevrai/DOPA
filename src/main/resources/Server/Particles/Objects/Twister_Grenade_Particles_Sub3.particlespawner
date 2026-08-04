@@ -1,0 +1,138 @@
+{
+  "EmitOffset": {
+    "X": {
+      "Min": 0,
+      "Max": 1.2
+    },
+    "Y": {
+      "Min": 0,
+      "Max": 0
+    },
+    "Z": {
+      "Min": 0,
+      "Max": 1.2
+    }
+  },
+  "ParticleRotationInfluence": "Velocity",
+  "LightInfluence": 1,
+  "MaxConcurrentParticles": 2000,
+  "ParticleLifeSpan": {
+    "Min": 1.35,
+    "Max": 1.25
+  },
+  "TrailSpawnerPositionMultiplier": 1,
+  "TrailSpawnerRotationMultiplier": 1,
+  "SpawnRate": {
+    "Min": 200,
+    "Max": 200
+  },
+  "TotalParticles": {
+    "Min": 1000,
+    "Max": 1000
+  },
+  "InitialVelocity": {
+    "Yaw": {
+      "Min": 90,
+      "Max": 90
+    },
+    "Pitch": {
+      "Min": 90,
+      "Max": 90
+    },
+    "Speed": {
+      "Min": 7.5,
+      "Max": 7.5
+    }
+  },
+  "Attractors": [
+    {
+      "Position": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "RadialAxis": {
+        "X": 0,
+        "Y": 0.95
+      },
+      "Radius": 0,
+      "RadialAcceleration": -75,
+      "RadialTangentAcceleration": 50,
+      "DampingMultiplier": {
+        "X": 1,
+        "Y": 0.998,
+        "Z": 1
+      },
+      "TrailPositionMultiplier": 0,
+      "RadialImpulse": 1,
+      "RadialTangentImpulse": 5
+    }
+  ],
+  "Particle": {
+    "Texture": "Particles/Textures/UVMotion/FlowMapSwirl.png",
+    "ScaleRatioConstraint": "OneToOne",
+    "Animation": {
+      "0": {
+        "Scale": {
+          "X": {
+            "Min": 0.1,
+            "Max": 0.1
+          },
+          "Y": {
+            "Min": 0.1,
+            "Max": 0.1
+          }
+        },
+        "Opacity": 0
+      },
+      "15": {
+        "Color": "#ffffff",
+        "Opacity": 1,
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          },
+          "Y": {
+            "Min": 1,
+            "Max": 1
+          }
+        }
+      },
+      "85": {
+        "Color": "#ffffff",
+        "Opacity": 1,
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          },
+          "Y": {
+            "Min": 1,
+            "Max": 1
+          }
+        }
+      },
+      "100": {
+        "Color": "#ffffff",
+        "Opacity": 0
+      }
+    },
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 1,
+          "Max": 1
+        },
+        "Y": {
+          "Min": 2.5,
+          "Max": 2.5
+        }
+      },
+      "Opacity": 1
+    }
+  },
+  "UseEmitDirection": false,
+  "IsLowRes": true,
+  "RenderMode": "Distortion"
+}

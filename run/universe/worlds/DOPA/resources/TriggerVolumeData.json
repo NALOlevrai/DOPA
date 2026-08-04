@@ -13,7 +13,7 @@
           "Y": 0.0,
           "Z": 0.0
         },
-        "Radius": 125.0
+        "Radius": 100.0
       },
       "Effects": [
         {
@@ -33,6 +33,14 @@
           "Effect": "Disable_Interaction_Effect",
           "Mode": "Remove",
           "Duration": -1.0
+        },
+        {
+          "Type": "RemoveEntities",
+          "Event": "TICK",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "Mode": "Remove",
+          "IncludeNpcs": true
         },
         {
           "Type": "EntityEffect",
@@ -79,11 +87,100 @@
         }
       ],
       "TargetTypes": [
-        "Player"
+        "Player",
+        "Npc",
+        "ItemDrop",
+        "Projectile"
       ],
       "Enabled": true,
       "KeepLoaded": true,
       "Name": "Lobby"
+    },
+    "4473d628-fbd6-4656-92d1-93c109680d43": {
+      "Position": {
+        "X": 0.0,
+        "Y": -5.0,
+        "Z": 0.0
+      },
+      "Shape": {
+        "Type": "Cylinder",
+        "Center": {
+          "X": 0.0,
+          "Y": 1.5,
+          "Z": 0.0
+        },
+        "Radius": 500.0,
+        "Height": 3.0
+      },
+      "Effects": [
+        {
+          "Type": "RemoveEntities",
+          "Event": "ENTER",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "Mode": "Kill",
+          "IncludeNpcs": true,
+          "IncludePlayers": true
+        }
+      ],
+      "TargetTypes": [
+        "Player",
+        "Npc",
+        "ItemDrop",
+        "Projectile"
+      ],
+      "Enabled": true,
+      "Color": {
+        "X": 1.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "KeepLoaded": true,
+      "RotateEffectsOnPaste": false,
+      "Name": "Kill 2"
+    },
+    "78868b0e-9411-4f47-90b0-6f1844b24335": {
+      "Position": {
+        "X": 0.0,
+        "Y": 300.0,
+        "Z": 0.0
+      },
+      "Shape": {
+        "Type": "Cylinder",
+        "Center": {
+          "X": 0.0,
+          "Y": 2.5,
+          "Z": 0.0
+        },
+        "Radius": 500.0,
+        "Height": 5.0
+      },
+      "Effects": [
+        {
+          "Type": "RemoveEntities",
+          "Event": "ENTER",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "Mode": "Kill",
+          "IncludeNpcs": true,
+          "IncludePlayers": true
+        }
+      ],
+      "TargetTypes": [
+        "Player",
+        "Npc",
+        "ItemDrop",
+        "Projectile"
+      ],
+      "Enabled": true,
+      "Color": {
+        "X": 1.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "KeepLoaded": true,
+      "RotateEffectsOnPaste": false,
+      "Name": "Kill"
     },
     "615cbe18-d47f-4446-80e1-f6f46825c375": {
       "Position": {
@@ -338,6 +435,7 @@
         "Z": 1.0
       },
       "KeepLoaded": true,
+      "RotateEffectsOnPaste": false,
       "Name": "Extraction"
     },
     "d69f0b21-4d9b-4f87-9dfe-a78b01ef0d46": {

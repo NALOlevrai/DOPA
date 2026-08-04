@@ -26,6 +26,9 @@
         "Min": 5.5,
         "Max": 5.5
       }
+    },
+    {
+      "SpawnerId": "Twister_Grenade_Particles_Sub3"
     }
   ],
   "IsImportant": true,
