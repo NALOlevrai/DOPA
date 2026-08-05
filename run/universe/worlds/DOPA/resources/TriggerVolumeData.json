@@ -182,11 +182,11 @@
       "RotateEffectsOnPaste": false,
       "Name": "Kill"
     },
-    "615cbe18-d47f-4446-80e1-f6f46825c375": {
+    "cff1224a-e6b2-4e25-8fe5-5b75abab90ec": {
       "Position": {
-        "X": -212.5,
-        "Y": 56.0,
-        "Z": 126.5
+        "X": -189.5,
+        "Y": 114.0,
+        "Z": 235.5
       },
       "Shape": {
         "Type": "Box",
@@ -435,8 +435,7 @@
         "Z": 1.0
       },
       "KeepLoaded": true,
-      "RotateEffectsOnPaste": false,
-      "Name": "Extraction"
+      "Name": "tv_ls90wy"
     },
     "d69f0b21-4d9b-4f87-9dfe-a78b01ef0d46": {
       "Position": {
