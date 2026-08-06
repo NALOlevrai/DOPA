@@ -9,7 +9,7 @@
   "PlayerAnimationsId": "Block",
   "BlockType": {
     "Material": "Solid",
-    "DrawType": "Cube",
+    "DrawType": "Model",
     "Opacity": "Solid",
     "Group": "Stone",
     "CubeShadingMode": "Fullbright",
