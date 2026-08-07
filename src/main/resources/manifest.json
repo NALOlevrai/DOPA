@@ -1,7 +1,7 @@
 {
     "Group": "com.DOPA",
     "Name": "DOPA",
-    "Version": "0.7.5",
+    "Version": "0.8.5",
     "Description": "DOPA",
     "Authors": [
         {
@@ -9,7 +9,7 @@
         }
     ],
     "Website": "",
-    "ServerVersion": ">=0.6.0-pre.10 <0.7.0",
+    "ServerVersion": ">=0.6.0-pre.11 <0.7.0",
     "Dependencies": {
         "Hytale:AssetModule": "*"
     },

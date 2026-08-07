@@ -1,0 +1,161 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Build_White_Roof_Flat.name"
+  },
+  "ItemLevel": 10,
+  "MaxStack": 10,
+  "Icon": "Icons/ItemsGenerated/Jump_Pad.png",
+  "Categories": [
+    "Category_DOPA.DOPA"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Build",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "CustomModel": "Items/Objects/Jump_Pad/Jump_Pad_Model.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Objects/Jump_Pad/Jump_Pad_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Roof",
+    "HitboxType": "Stairs_Flat",
+    "Flags": {},
+    "VariantRotation": "UpDownNESW",
+    "BlockParticleSetId": "Dust",
+    "Supporting": {
+      "Down": [
+        {}
+      ]
+    },
+    "ParticleColor": "#e7eaeb",
+    "BlockSoundSetId": "Soft",
+    "PhysicalMaterialId": "Wool",
+    "TextureComputedColor": "#E2EDF2",
+    "Interactions": {
+      "Collision": {
+        "Interactions": [
+          {
+            "Type": "ApplyEffect",
+            "OnItemChangeBehavior": "Ignore",
+            "CancelOnItemChange": false,
+            "EffectId": {
+              "Duration": 0.5,
+              "ApplicationEffects": {
+                "EntityAnimationId": "Launch"
+              },
+              "OverlapBehavior": "Overwrite"
+            }
+          },
+          {
+            "Type": "BreakBlock"
+          },
+          {
+            "Type": "ApplyForce",
+            "OnItemChangeBehavior": "Ignore",
+            "CancelOnItemChange": false,
+            "Direction": {
+              "Y": 10,
+              "X": 0,
+              "Z": -3.5
+            },
+            "Force": 65,
+            "ChangeVelocityType": "Set",
+            "AdjustVertical": false,
+            "VelocityConfig": {
+              "Style": "Linear"
+            }
+          },
+          {
+            "Type": "ApplyEffect",
+            "EffectId": "Small_FallDamage_Invulnerability",
+            "OnItemChangeBehavior": "Ignore",
+            "CancelOnItemChange": false
+          },
+          {
+            "Type": "ApplyForce",
+            "OnItemChangeBehavior": "Ignore",
+            "CancelOnItemChange": false,
+            "Direction": {
+              "X": 0,
+              "Y": -1
+            },
+            "ChangeVelocityType": "Set",
+            "VelocityConfig": {
+              "Style": "Linear"
+            }
+          }
+        ],
+        "Cooldown": {
+          "Cooldown": 0.5
+        }
+      }
+    },
+    "Gathering": {
+      "Soft": {
+        "DropList": "Empty",
+        "IsWeaponBreakable": false
+      }
+    },
+    "Tint": [
+      "#00fffa"
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Cloth"
+    ],
+    "SubType": [
+      "Roof"
+    ],
+    "Family": [
+      "Build"
+    ]
+  },
+  "Quality": "Rare",
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "IconProperties": {
+    "Scale": 0.65,
+    "Rotation": [
+      15,
+      45,
+      15
+    ],
+    "Translation": [
+      -0.1,
+      -2.7
+    ]
+  },
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Tools"
+        ],
+        "Id": "Fieldcraft"
+      },
+      {
+        "Id": "Workbench",
+        "Type": "Crafting",
+        "Categories": [
+          "Workbench_Survival"
+        ]
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Coin",
+        "Quantity": 15
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Jump_Pad",
+        "Quantity": 1
+      }
+    ]
+  }
+}

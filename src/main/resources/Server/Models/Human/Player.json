@@ -1288,7 +1288,7 @@
         {
           "Animation": "Characters/Animations/Players/Free_Fly.blockyanim",
           "Speed": 2.75,
-          "Looping": false,
+          "Looping": true,
           "BlendingDuration": 0.5
         }
       ]
@@ -1306,8 +1306,24 @@
           "Looping": false
         },
         {
-          "Animation": "Characters/Animations/Players/Spinning.blockyanim",
+          "Animation": "Characters/Animations/Players/Spin.blockyanim",
           "Speed": 3,
+          "Looping": false
+        }
+      ]
+    },
+    "Land": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Players/Land.blockyanim",
+          "Speed": 0.175,
+          "BlendingDuration": 0.1,
+          "Looping": false
+        },
+        {
+          "Animation": "Characters/Animations/Players/Land2.blockyanim",
+          "Speed": 0.175,
+          "BlendingDuration": 0.1,
           "Looping": false
         }
       ]

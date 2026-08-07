@@ -1,0 +1,60 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Build_White_Roof_Flat.name"
+  },
+  "ItemLevel": 10,
+  "MaxStack": 100,
+  "Icon": "Icons/ItemsGenerated/Build_White_Roof_Flat.png",
+  "Categories": [ "Tool.TechnicalBlocks" ],
+  "SubCategory": "BlockSets",
+  "PlayerAnimationsId": "Block",
+  "Set": "Build",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "CustomModel": "Items/Objects/Jump_Pad/Jump_Pad_Model.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Objects/Jump_Pad/Jump_Pad_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Stairs_Flat",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks"
+      }
+    },
+    "VariantRotation": "UpDownNESW",
+    "BlockParticleSetId": "Dust",
+    "Supporting": {
+      "Down": [
+        {}
+      ]
+    },
+    "ParticleColor": "#e7eaeb",
+    "BlockSoundSetId": "Soft",
+    "PhysicalMaterialId": "Wool",
+    "TextureComputedColor": "#E2EDF2"
+  },
+  "Tags": {
+    "Type": [ "Cloth" ],
+    "SubType": [ "Roof" ],
+    "Family": [ "Build" ]
+  },
+  "Quality": "Technical",
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [ 22.5, 45, 22.5 ],
+    "Translation": [ -1.1, -4.1 ]
+  },
+  "Model": "Items/Objects/Jump_Pad/Jump_Pad_Model.blockymodel",
+  "Texture": "Items/Objects/Jump_Pad/Jump_Pad_Texture.png",
+  "Particles": [
+    {
+      "SystemId": "BeamEmiter_Heal_Red_Dots"
+    }
+  ]
+}

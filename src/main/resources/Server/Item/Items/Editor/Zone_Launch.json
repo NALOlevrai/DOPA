@@ -11,12 +11,21 @@
       "Collision": {
         "Interactions": [
           {
-            "Type": "ApplyForce",
-            "Effects": {
-              "WorldSoundEventId": "SFX_Wind",
-              "LocalSoundEventId": "SFX_Wind",
-              "ItemAnimationId": "Launch"
+            "Type": "ApplyEffect",
+            "EffectId": {
+              "Duration": 1,
+              "ApplicationEffects": {
+                "LocalSoundEventId": "SFX_Wind",
+                "WorldSoundEventId": "SFX_Wind",
+                "EntityAnimationId": "Launch"
+              },
+              "OverlapBehavior": "Overwrite"
             },
+            "OnItemChangeBehavior": "Ignore",
+            "CancelOnItemChange": false
+          },
+          {
+            "Type": "ApplyForce",
             "Direction": {
               "Z": -1,
               "Y": 0.01
@@ -24,9 +33,33 @@
             "RaycastMode": "FollowLook",
             "Duration": 1,
             "ChangeVelocityType": "Add",
-            "Force": 1.5
+            "Force": 1.5,
+            "OnItemChangeBehavior": "Ignore",
+            "CancelOnItemChange": false
+          },
+          {
+            "Type": "ApplyEffect",
+            "EffectId": "Small_FallDamage_Invulnerability",
+            "OnItemChangeBehavior": "Ignore",
+            "CancelOnItemChange": false
+          },
+          {
+            "Type": "ApplyForce",
+            "OnItemChangeBehavior": "Ignore",
+            "CancelOnItemChange": false,
+            "Direction": {
+              "X": 0,
+              "Y": -1
+            },
+            "ChangeVelocityType": "Set",
+            "VelocityConfig": {
+              "Style": "Linear"
+            }
           }
-        ]
+        ],
+        "Cooldown": {
+          "Cooldown": 0.5
+        }
       }
     },
     "Gathering": {
