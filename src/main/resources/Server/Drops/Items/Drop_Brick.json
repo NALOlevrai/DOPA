@@ -5,13 +5,15 @@
       {
         "Type": "Single",
         "Item": {
-          "ItemId": "Coin"
+          "ItemId": "Coin",
+          "QuantityMin": 1,
+          "QuantityMax": 1
         },
-        "Weight": 1
+        "Weight": 10
       },
       {
         "Type": "Empty",
-        "Weight": 10
+        "Weight": 100
       }
     ]
   }

@@ -1,0 +1,115 @@
+{
+  "RenderMode": "BlendAdd",
+  "ParticleRotationInfluence": "None",
+  "LightInfluence": 0,
+  "MaxConcurrentParticles": 19,
+  "ParticleLifeSpan": {
+    "Min": 1.5,
+    "Max": 1.5
+  },
+  "InitialVelocity": {
+    "Speed": {
+      "Min": 0,
+      "Max": 0
+    },
+    "Yaw": {
+      "Min": 0,
+      "Max": 0
+    },
+    "Pitch": {
+      "Min": 0,
+      "Max": 0
+    }
+  },
+  "Attractors": [
+    {
+      "Position": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "RadialAxis": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "RadialAcceleration": 0,
+      "RadialTangentAcceleration": 0,
+      "LinearAcceleration": {
+        "X": 0,
+        "Z": 0
+      },
+      "LinearImpulse": {
+        "Y": 0.25
+      }
+    }
+  ],
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Glow_Square.png",
+    "ScaleRatioConstraint": "OneToOne",
+    "UVOption": "RandomFlipU",
+    "Animation": {
+      "0": {
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Opacity": 0.0,
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          }
+        }
+      },
+      "10": {
+        "Opacity": 1.0,
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          }
+        }
+      },
+      "100": {
+        "Opacity": 0,
+        "Scale": {
+          "X": {
+            "Min": 0.25,
+            "Max": 0.25
+          }
+        }
+      }
+    },
+    "InitialAnimationFrame": {
+      "Opacity": 1,
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 0
+      },
+      "Scale": {
+        "X": {
+          "Min": 0.5,
+          "Max": 0.5
+        }
+      },
+      "Color": "#4edfff",
+      "Rotation": {
+        "X": {
+          "Min": 90,
+          "Max": 90
+        }
+      }
+    },
+    "SoftParticles": "Disable"
+  },
+  "SpawnRate": {
+    "Min": 2,
+    "Max": 2
+  },
+  "WaveDelay": {
+    "Min": 0.5,
+    "Max": 0.5
+  },
+  "SpawnBurst": true
+}

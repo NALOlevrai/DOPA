@@ -1,0 +1,132 @@
+{
+  "RenderMode": "BlendAdd",
+  "EmitOffset": {
+    "X": {
+      "Min": 0.0,
+      "Max": 0.4
+    },
+    "Y": {
+      "Min": 0.0,
+      "Max": 0.8
+    },
+    "Z": {
+      "Min": 0.0,
+      "Max": 0.4
+    }
+  },
+  "ParticleRotationInfluence": "Billboard",
+  "LinearFiltering": true,
+  "LightInfluence": 0,
+  "ParticleRotateWithSpawner": false,
+  "TrailSpawnerPositionMultiplier": 1,
+  "TrailSpawnerRotationMultiplier": 1,
+  "MaxConcurrentParticles": 120,
+  "ParticleLifeSpan": {
+    "Min": 0.2,
+    "Max": 0.5
+  },
+  "SpawnRate": {
+    "Min": 80,
+    "Max": 100
+  },
+  "InitialVelocity": {
+    "Speed": {
+      "Min": 2.0,
+      "Max": 4.5
+    },
+    "Yaw": {
+      "Min": 0,
+      "Max": 360
+    },
+    "Pitch": {
+      "Min": 45,
+      "Max": 90
+    }
+  },
+  "Attractors": [
+    {
+      "LinearAcceleration": {
+        "X": 0,
+        "Y": 3.5,
+        "Z": 0
+      }
+    }
+  ],
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Spark2.png",
+    "FrameSize": {
+      "Width": 32,
+      "Height": 32
+    },
+    "ScaleRatioConstraint": "OneToOne",
+    "Animation": {
+      "0": {
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          }
+        },
+        "Rotation": {
+          "X": {
+            "Min": 0,
+            "Max": 0
+          },
+          "Y": {
+            "Min": 0,
+            "Max": 0
+          },
+          "Z": {
+            "Min": 0,
+            "Max": 0
+          }
+        },
+        "Opacity": 0.6
+      },
+      "50": {
+        "Opacity": 0.4
+      },
+      "100": {
+        "Scale": {
+          "X": {
+            "Min": 0.2,
+            "Max": 0.5
+          }
+        },
+        "Opacity": 0
+      }
+    },
+    "InitialAnimationFrame": {
+      "Rotation": {
+        "X": {
+          "Min": 0,
+          "Max": 360
+        },
+        "Y": {
+          "Min": 0,
+          "Max": 360
+        },
+        "Z": {
+          "Min": 0,
+          "Max": 360
+        }
+      },
+      "Scale": {
+        "X": {
+          "Min": 1.2,
+          "Max": 2.0
+        }
+      },
+      "Opacity": 0.6,
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 0
+      },
+      "Color": "#FFE600"
+    }
+  }
+}

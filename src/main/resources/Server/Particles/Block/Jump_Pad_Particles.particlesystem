@@ -1,0 +1,18 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Jump_Pad_Particles_Sub",
+      "PositionOffset": {
+        "Y": 0.25
+      }
+    },
+    {
+      "SpawnerId": "Jump_Pad_Particles_Sub2",
+      "PositionOffset": {
+        "Y": 0.25
+      }
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 100
+}

@@ -17,7 +17,15 @@
               "ApplicationEffects": {
                 "LocalSoundEventId": "SFX_Wind",
                 "WorldSoundEventId": "SFX_Wind",
-                "EntityAnimationId": "Launch"
+                "EntityAnimationId": "Launch",
+                "Particles": [
+                  {
+                    "SystemId": "Dance_Lights3",
+                    "PositionOffset": {
+                      "Y": 10
+                    }
+                  }
+                ]
               },
               "OverlapBehavior": "Overwrite"
             },
