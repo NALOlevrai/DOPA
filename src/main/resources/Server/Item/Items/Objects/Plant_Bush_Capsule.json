@@ -68,25 +68,7 @@
     "HitboxType": "Bush_Hitbox",
     "Material": "Empty",
     "Interactions": {
-      "Collision": {
-        "Interactions": [
-          {
-            "Type": "ApplyEffect",
-            "EffectId": {
-              "Parent": "Small_FallDamage_Invulnerability"
-            }
-          },
-          {
-            "Type": "ApplyEffect",
-            "EffectId": {
-              "ModelOverride": {
-                "Texture": "Characters/Empty_Cube_Texture.png",
-                "Model": "Characters/Empty_Cube.blockymodel"
-              }
-            }
-          }
-        ]
-      }
+      "Collision": {}
     },
     "Support": {
       "BlockSides": [

@@ -12,10 +12,8 @@
     "Opacity": "Solid",
     "HitboxType": "Fin_Hitbox",
     "MovementSettings": {
-      "HorizontalSpeedMultiplier": 5.5,
-      "JumpForceMultiplier": 1.75,
-      "IsClimbable": false,
-      "IsBouncy": false
+      "HorizontalSpeedMultiplier": 5,
+      "JumpForceMultiplier": 1.75
     },
     "Material": "Solid",
     "ParticleColor": "#ffffff",

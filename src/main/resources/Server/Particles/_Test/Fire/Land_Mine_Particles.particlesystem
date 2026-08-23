@@ -1,0 +1,19 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Fire_AoE_Sparks",
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "Fire_AoE_Floor2"
+    },
+    {
+      "SpawnerId": "Fire_AoE_Floor",
+      "PositionOffset": {
+        "Y": 0.2
+      }
+    }
+  ],
+  "BoundingRadius": 10,
+  "IsImportant": true
+}

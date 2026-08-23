@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Build_White_Roof_Flat.name"
+    "Name": "Jump Pad"
   },
   "ItemLevel": 10,
   "MaxStack": 10,
@@ -20,8 +20,7 @@
         "Weight": 1
       }
     ],
-    "Group": "Roof",
-    "HitboxType": "Platform_Thin",
+    "HitboxType": "Block_Flat",
     "Flags": {},
     "VariantRotation": "UpDownNESW",
     "BlockParticleSetId": "Metal",
@@ -115,7 +114,12 @@
         "SystemId": "Jump_Pad_Particles",
         "Scale": 1.5
       }
-    ]
+    ],
+    "Light": {
+      "Color": "#056",
+      "Radius": 1
+    },
+    "CubeShadingMode": "Fullbright"
   },
   "Tags": {
     "Type": [

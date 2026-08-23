@@ -447,10 +447,19 @@
       "Effects": [
         {
           "Type": "SetWeather",
-          "Event": "TICK",
+          "Event": "ENTER",
           "Interval": 0.0,
           "Delay": 0.0,
           "Weather": "Blood_Moon",
+          "PlayerOnly": true,
+          "ResetWeather": false
+        },
+        {
+          "Type": "SetWeather",
+          "Event": "EXIT",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "Weather": "Weather_Lobby",
           "PlayerOnly": true,
           "ResetWeather": false
         }

@@ -1,0 +1,189 @@
+{
+  "TranslationProperties": {
+    "Name": "Land_Mine"
+  },
+  "ItemLevel": 10,
+  "MaxStack": 10,
+  "Icon": "Icons/ItemsGenerated/Land_Mine.png",
+  "Categories": [
+    "Category_DOPA.DOPA"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Build",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Objects/Land_Mine/Land_Mine_Model.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Items/Objects/Land_Mine/Land_Mine_Texture.png"
+      }
+    ],
+    "HitboxType": "Block_Flat",
+    "BlockParticleSetId": "Metal",
+    "Supporting": {
+      "Down": [
+        {}
+      ]
+    },
+    "ParticleColor": "#4f4f4f",
+    "BlockSoundSetId": "Metal",
+    "PhysicalMaterialId": "Metal",
+    "TextureComputedColor": "#4f4f4f",
+    "ExplosionReactionState": "Exploding",
+    "ExplosionConfig": {
+      "DamageEntities": true,
+      "DamageBlocks": true,
+      "BlockDamageRadius": 5,
+      "EntityDamage": 35,
+      "EntityDamageRadius": 5,
+      "Knockback": {
+        "Type": "Directional",
+        "Force": -25,
+        "VelocityConfig": {
+          "Style": "Linear"
+        },
+        "VelocityType": "Add"
+      },
+      "ItemTool": {
+        "Specs": [
+          {
+            "Power": 2,
+            "GatherType": "SoftBlocks"
+          },
+          {
+            "Power": 2,
+            "GatherType": "Soils"
+          },
+          {
+            "Power": 2,
+            "GatherType": "Woods"
+          },
+          {
+            "Power": 2,
+            "GatherType": "Rocks"
+          },
+          {
+            "Power": 2,
+            "GatherType": "Benches"
+          }
+        ]
+      },
+      "SoundEventId": "SFX_Goblin_Lobber_Bomb_Death",
+      "Particles": [
+        {
+          "SystemId": "Explosion_Medium",
+          "Scale": 1
+        }
+      ],
+      "BlockDropChance": 0.25
+    },
+    "Interactions": {
+      "Collision": {
+        "Cooldown": {
+          "Cooldown": 0.5
+        },
+        "Interactions": [
+          {
+            "Type": "ChangeState",
+            "Changes": {
+              "default": "Exploding"
+            },
+            "UpdateBlockState": true
+          }
+        ]
+      }
+    },
+    "State": {
+      "Definitions": {
+        "Exploding": {
+          "BlockEntity": {
+            "Components": {
+              "BlockExplosive": {
+                "PrimedOnPlace": true,
+                "FuseDuration": 0.1
+              }
+            }
+          }
+        }
+      }
+    },
+    "Particles": [
+      {
+        "SystemId": "Land_Mine_Particles",
+        "Scale": 0.15,
+        "PositionOffset": {
+          "Y": 0.175
+        }
+      }
+    ],
+    "Light": {
+      "Color": "#811",
+      "Radius": 1
+    },
+    "CubeShadingMode": "Fullbright",
+    "Gathering": {
+      "Breaking": {
+        "ItemId": "Land_Mine",
+        "Quality": 1,
+        "GatherType": "Metal"
+      }
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Cloth"
+    ],
+    "SubType": [
+      "Roof"
+    ],
+    "Family": [
+      "Build"
+    ]
+  },
+  "Quality": "Rare",
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "IconProperties": {
+    "Scale": 1,
+    "Rotation": [
+      15,
+      45,
+      15
+    ],
+    "Translation": [
+      -0.1,
+      -2.7
+    ]
+  },
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Tools"
+        ],
+        "Id": "Fieldcraft"
+      },
+      {
+        "Id": "Workbench",
+        "Type": "Crafting",
+        "Categories": [
+          "Workbench_Survival"
+        ]
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Coin",
+        "Quantity": 15
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Jump_Pad",
+        "Quantity": 1
+      }
+    ]
+  }
+}
