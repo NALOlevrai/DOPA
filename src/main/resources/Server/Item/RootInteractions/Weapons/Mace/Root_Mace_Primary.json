@@ -1,0 +1,15 @@
+{
+  "RequireNewClick": true,
+  "ClickQueuingTimeout": 0.15,
+  "Interactions": [
+    "Mace_Primary"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  },
+  "Cooldown": {
+    "Cooldown": 0.25
+  }
+}

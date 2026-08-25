@@ -22,6 +22,7 @@
     ]
   },
   "Interactions": {
+    "Primary": "Root_Sword_Primary",
     "Secondary": "Root_Sword_Secondary_Guard",
     "Ability1": {
       "Interactions": [
@@ -36,8 +37,7 @@
           "Var": "Thrust_Stamina"
         }
       ]
-    },
-    "Primary": "Root_Sword_Primary"
+    }
   },
   "Tags": {
     "Type": [
@@ -54,5 +54,6 @@
   "Weapon": {},
   "Utility": {
     "Compatible": true
-  }
+  },
+  "Reticle": "Reticle"
 }

@@ -2,7 +2,7 @@
   "TranslationProperties": {
     "Name": "Jump Pad"
   },
-  "ItemLevel": 10,
+  "ItemLevel": 3,
   "MaxStack": 10,
   "Icon": "Icons/ItemsGenerated/Jump_Pad.png",
   "Categories": [
@@ -166,7 +166,7 @@
     "Input": [
       {
         "ItemId": "Coin",
-        "Quantity": 15
+        "Quantity": 10
       }
     ],
     "Output": [
@@ -175,5 +175,8 @@
         "Quantity": 1
       }
     ]
+  },
+  "Utility": {
+    "Usable": true
   }
 }

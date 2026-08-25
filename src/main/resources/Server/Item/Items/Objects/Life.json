@@ -3,7 +3,7 @@
     "Name": "Life"
   },
   "Quality": "Legendary",
-  "MaxStack": 3,
+  "MaxStack": 1,
   "Icon": "Icons/ItemsGenerated/Life.png",
   "Categories": [
     "Category_DOPA.DOPA"

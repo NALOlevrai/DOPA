@@ -1,8 +1,8 @@
 {
   "TranslationProperties": {
-    "Name": "Land_Mine"
+    "Name": "Land Mine"
   },
-  "ItemLevel": 10,
+  "ItemLevel": 4,
   "MaxStack": 10,
   "Icon": "Icons/ItemsGenerated/Land_Mine.png",
   "Categories": [
@@ -14,12 +14,6 @@
     "Material": "Empty",
     "DrawType": "Model",
     "CustomModel": "Items/Objects/Land_Mine/Land_Mine_Model.blockymodel",
-    "CustomModelTexture": [
-      {
-        "Weight": 1,
-        "Texture": "Items/Objects/Land_Mine/Land_Mine_Texture.png"
-      }
-    ],
     "HitboxType": "Block_Flat",
     "BlockParticleSetId": "Metal",
     "Supporting": {
@@ -36,7 +30,7 @@
       "DamageEntities": true,
       "DamageBlocks": true,
       "BlockDamageRadius": 5,
-      "EntityDamage": 35,
+      "EntityDamage": 55,
       "EntityDamageRadius": 5,
       "Knockback": {
         "Type": "Directional",
@@ -44,7 +38,8 @@
         "VelocityConfig": {
           "Style": "Linear"
         },
-        "VelocityType": "Add"
+        "VelocityType": "Add",
+        "VelocityY": 10
       },
       "ItemTool": {
         "Specs": [
@@ -74,13 +69,27 @@
       "Particles": [
         {
           "SystemId": "Explosion_Medium",
-          "Scale": 1
+          "Scale": 2
         }
       ],
       "BlockDropChance": 0.25
     },
     "Interactions": {
       "Collision": {
+        "Cooldown": {
+          "Cooldown": 0.5
+        },
+        "Interactions": [
+          {
+            "Type": "ChangeState",
+            "Changes": {
+              "default": "Exploding"
+            },
+            "UpdateBlockState": true
+          }
+        ]
+      },
+      "Primary": {
         "Cooldown": {
           "Cooldown": 0.5
         },
@@ -122,14 +131,19 @@
       "Color": "#811",
       "Radius": 1
     },
-    "CubeShadingMode": "Fullbright",
     "Gathering": {
       "Breaking": {
-        "ItemId": "Land_Mine",
-        "Quality": 1,
-        "GatherType": "Metal"
+        "DropList": {
+          "Parent": "Empty"
+        }
       }
-    }
+    },
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Items/Objects/Land_Mine/Land_Mine_Texture.png"
+      }
+    ]
   },
   "Tags": {
     "Type": [
@@ -142,18 +156,18 @@
       "Build"
     ]
   },
-  "Quality": "Rare",
+  "Quality": "Epic",
   "ItemSoundSetId": "ISS_Blocks_Stone",
   "IconProperties": {
-    "Scale": 1,
+    "Scale": 0.9,
     "Rotation": [
-      15,
-      45,
-      15
+      43,
+      0,
+      0
     ],
     "Translation": [
-      -0.1,
-      -2.7
+      0.1,
+      -1.2
     ]
   },
   "Recipe": {
@@ -181,9 +195,12 @@
     ],
     "Output": [
       {
-        "ItemId": "Jump_Pad",
+        "ItemId": "Land_Mine",
         "Quantity": 1
       }
     ]
+  },
+  "Utility": {
+    "Usable": true
   }
 }
