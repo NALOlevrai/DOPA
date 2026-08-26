@@ -3,8 +3,8 @@
   "TranslationProperties": {
     "Name": "Mace"
   },
-  "Model": "Items/Weapons/Mace/Thorium.blockymodel",
-  "Texture": "Items/Weapons/Mace/Thorium_Texture.png",
+  "Model": "Items/Weapons/Mace/Mace_Model.blockymodel",
+  "Texture": "Items/Weapons/Mace/Mace_Texture.png",
   "Icon": "Icons/ItemsGenerated/Weapon_Mace_Thorium.png",
   "Quality": "Quality_DOPA",
   "ItemLevel": 100,
@@ -57,79 +57,13 @@
         }
       ]
     },
-    "Swing_Left_Charged_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Mace_Primary_Swing_Left_Charged_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 52
-            }
-          },
-          "EntityStatsOnHit": [
-            {
-              "EntityStatId": "SignatureEnergy",
-              "Amount": 2
-            }
-          ],
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Mace_T2_Impact",
-            "LocalSoundEventId": "SFX_Mace_T2_Impact"
-          }
-        }
-      ]
-    },
-    "Swing_Right_Charged_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Mace_Primary_Swing_Right_Charged_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 52
-            }
-          },
-          "EntityStatsOnHit": [
-            {
-              "EntityStatId": "SignatureEnergy",
-              "Amount": 2
-            }
-          ],
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Mace_T2_Impact",
-            "LocalSoundEventId": "SFX_Mace_T2_Impact"
-          }
-        }
-      ]
-    },
-    "Swing_Up_Left_Charged_Damage": {
-      "Interactions": [
-        {
-          "Parent": "Weapon_Mace_Primary_Swing_Up_Left_Charged_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 52
-            }
-          },
-          "EntityStatsOnHit": [
-            {
-              "EntityStatId": "SignatureEnergy",
-              "Amount": 2
-            }
-          ],
-          "DamageEffects": {
-            "WorldSoundEventId": "SFX_Mace_T2_Impact",
-            "LocalSoundEventId": "SFX_Mace_T2_Impact"
-          }
-        }
-      ]
-    },
     "Groundslam_Damage": {
       "Interactions": [
         {
           "Parent": "Mace_Signature_Groundslam_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 35
+              "Physical": 45
             }
           },
           "EntityStatsOnHit": [],

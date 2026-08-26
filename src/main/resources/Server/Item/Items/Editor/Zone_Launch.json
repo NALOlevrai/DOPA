@@ -17,15 +17,7 @@
               "ApplicationEffects": {
                 "LocalSoundEventId": "SFX_Wind",
                 "WorldSoundEventId": "SFX_Wind",
-                "EntityAnimationId": "Launch",
-                "Particles": [
-                  {
-                    "SystemId": "Dance_Lights3",
-                    "PositionOffset": {
-                      "Y": 10
-                    }
-                  }
-                ]
+                "EntityAnimationId": "Launch"
               },
               "OverlapBehavior": "Overwrite"
             },
@@ -77,7 +69,10 @@
       "UseDefaultDropWhenPlaced": false
     },
     "HitboxType": "Empty_Hitbox",
-    "DrawType": "Empty"
+    "DrawType": "Empty",
+    "CubeShadingMode": "Fullbright",
+    "Material": "Empty",
+    "Opacity": "Transparent"
   },
   "Tags": {
     "Type": [

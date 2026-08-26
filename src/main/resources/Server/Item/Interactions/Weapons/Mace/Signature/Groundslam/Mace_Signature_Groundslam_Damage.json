@@ -31,11 +31,5 @@
       }
     ],
     "CameraEffect": "Impact_Light"
-  },
-  "EntityStatsOnHit": [
-    {
-      "EntityStatId": "SignatureEnergy",
-      "Amount": 2
-    }
-  ]
+  }
 }
