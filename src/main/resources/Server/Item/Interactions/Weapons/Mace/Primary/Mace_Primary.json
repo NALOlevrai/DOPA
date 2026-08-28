@@ -6,7 +6,7 @@
     "DefaultOk": true,
     "DefaultValue": {
       "Interactions": [
-        "Weapon_Mace_Primary_Swing_Left_Charged_StaminaCondition"
+        "Mace_Primary_Swing_Left_Charged_StaminaCondition"
       ]
     }
   },
@@ -16,17 +16,17 @@
     "DefaultOk": true,
     "DefaultValue": {
       "Interactions": [
-        "Weapon_Mace_Primary_Swing_Right_Charged_StaminaCondition"
+        "Mace_Primary_Swing_Right_Charged_StaminaCondition"
       ]
     }
   },
   "Back": {
     "Type": "Replace",
-    "Var": "Swing_Up_Left_Charged_StaminaCondition",
+    "Var": "Swing_Up_Charged_StaminaCondition",
     "DefaultOk": true,
     "DefaultValue": {
       "Interactions": [
-        "Weapon_Mace_Primary_Swing_Up_Left_Charged_StaminaCondition"
+        "Mace_Primary_Swing_Up_Charged_StaminaCondition"
       ]
     }
   },
@@ -56,7 +56,7 @@
       },
       {
         "Type": "Replace",
-        "Var": "Swing_Up_Left_Charged_StaminaCondition",
+        "Var": "Swing_Up_Charged_StaminaCondition",
         "DefaultOk": true,
         "DefaultValue": {
           "Interactions": [

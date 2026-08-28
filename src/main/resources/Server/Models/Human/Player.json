@@ -763,6 +763,11 @@
           "Animation": "Characters/Animations/Damage/Default/Death2.blockyanim",
           "Looping": false,
           "SoundEventId": "SFX_Player_Death"
+        },
+        {
+          "Animation": "Characters/Animations/Players/Death.blockyanim",
+          "Looping": false,
+          "SoundEventId": "SFX_Player_Death"
         }
       ]
     },

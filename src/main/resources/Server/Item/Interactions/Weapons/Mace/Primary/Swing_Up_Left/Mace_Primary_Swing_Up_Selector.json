@@ -55,7 +55,7 @@
     "Interactions": [
       {
         "Type": "Replace",
-        "Var": "Swing_Up_Left_Damage",
+        "Var": "Swing_Up_Damage",
         "DefaultOk": true,
         "DefaultValue": {
           "Interactions": [

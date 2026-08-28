@@ -41,7 +41,7 @@
         }
       ]
     },
-    "Swing_Up_Left_Damage": {
+    "Swing_Up_Damage": {
       "Interactions": [
         {
           "Parent": "Mace_Primary_Swing_Up_Damage",
@@ -63,7 +63,7 @@
           "Parent": "Mace_Signature_Groundslam_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 45
+              "Physical": 55
             }
           },
           "EntityStatsOnHit": [],

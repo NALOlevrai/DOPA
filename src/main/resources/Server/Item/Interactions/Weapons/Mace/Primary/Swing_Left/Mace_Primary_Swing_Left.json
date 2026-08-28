@@ -12,7 +12,7 @@
     "DefaultOk": true,
     "DefaultValue": {
       "Interactions": [
-        "Weapon_Mace_Primary_Swing_Left_Selector"
+        "Mace_Primary_Swing_Left_Selector"
       ]
     }
   }

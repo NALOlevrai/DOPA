@@ -59,7 +59,7 @@
         "DefaultOk": true,
         "DefaultValue": {
           "Interactions": [
-            "Weapon_Mace_Primary_Swing_Right_Damage"
+            "Mace_Primary_Swing_Right_Damage"
           ]
         }
       }

@@ -1,7 +1,7 @@
 {
   "Parent": "DamageEntityParent",
   "DamageCalculator": {
-    "Class": "Light"
+    "Class": "Charged"
   },
   "Effects": {
     "CameraEffect": "Impact"
@@ -19,15 +19,15 @@
       },
       "Direction": {
         "X": 0,
-        "Y": 2,
-        "Z": 0
+        "Y": 5,
+        "Z": -3
       },
-      "Force": 17.5,
+      "Force": 20,
       "VelocityType": "Set"
     },
     "WorldParticles": [
       {
-        "SystemId": "Impact_Mace_Basic"
+        "SystemId": "Impact_Mace_Charged"
       }
     ],
     "CameraEffect": "Impact_Light"

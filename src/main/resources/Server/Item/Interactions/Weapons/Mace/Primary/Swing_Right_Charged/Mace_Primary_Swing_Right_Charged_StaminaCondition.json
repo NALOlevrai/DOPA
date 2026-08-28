@@ -15,9 +15,17 @@
         "DefaultOk": true,
         "DefaultValue": {
           "Interactions": [
-            "Weapon_Mace_Primary_Swing_Right"
+            "Mace_Primary_Swing_Right"
           ]
         }
+      },
+      "0.1": {
+        "Type": "ChangeStat",
+        "Behaviour": "Set",
+        "StatModifiers": {
+          "StaminaRegenDelay": 0
+        },
+        "Next": "Mace_Primary_Swing_Right_Charge"
       }
     }
   }

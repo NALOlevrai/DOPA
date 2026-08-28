@@ -77,9 +77,43 @@
           },
           {
             "Type": "ApplyEffect",
-            "EffectId": "Small_FallDamage_Invulnerability",
             "OnItemChangeBehavior": "Ignore",
-            "CancelOnItemChange": false
+            "CancelOnItemChange": false,
+            "EffectId": {
+              "Parent": "Fall_Damage_Invulnerability",
+              "ApplicationEffects": {
+                "Particles": [
+                  {
+                    "SystemId": "Impulse_Ground_Particles",
+                    "Scale": 0.5
+                  }
+                ],
+                "FirstPersonParticles": [
+                  {
+                    "SystemId": "Impulse_Ground_Particles",
+                    "Scale": 0.25,
+                    "RotationOffset": {
+                      "Pitch": 90
+                    },
+                    "PositionOffset": {
+                      "Z": 1.25,
+                      "Y": 1
+                    },
+                    "DetachedFromModel": false
+                  }
+                ],
+                "EntityAnimationId": "Land",
+                "MovementEffects": {
+                  "DisableForward": true,
+                  "DisableBackward": true,
+                  "DisableLeft": true,
+                  "DisableRight": true,
+                  "DisableJump": true
+                },
+                "LocalSoundEventId": "SFX_Golem_Earth_Slam_Impact",
+                "WorldSoundEventId": "SFX_Golem_Earth_Slam_Impact"
+              }
+            }
           },
           {
             "Type": "ApplyForce",

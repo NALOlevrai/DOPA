@@ -22,10 +22,6 @@
               "StatModifiers": {
                 "Stamina": -9.5
               }
-            },
-            {
-              "Type": "ApplyEffect",
-              "EffectId": "FallDamage_Invulnerability"
             }
           ]
         }
@@ -65,7 +61,11 @@
         "DefaultOk": true,
         "DefaultValue": {
           "Interactions": [
-            "Mace_Signature_Groundslam_Jump_Force"
+            "Mace_Signature_Groundslam_Jump_Force",
+            {
+              "Type": "ApplyEffect",
+              "EffectId": "Fall_Damage_Invulnerability"
+            }
           ]
         }
       },
@@ -79,11 +79,7 @@
         "DefaultOk": true,
         "DefaultValue": {
           "Interactions": [
-            "Mace_Signature_Groundslam_Swing_Selector",
-            {
-              "Type": "ClearEntityEffect",
-              "EntityEffectId": "FallDamage_Invulnerability"
-            }
+            "Mace_Signature_Groundslam_Swing_Selector"
           ]
         }
       }

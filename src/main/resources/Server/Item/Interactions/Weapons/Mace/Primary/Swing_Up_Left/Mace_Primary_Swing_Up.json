@@ -8,7 +8,7 @@
   "RunTime": 0.6,
   "Next": {
     "Type": "Replace",
-    "Var": "Swing_Up_Left_Selector",
+    "Var": "Swing_Up_Selector",
     "DefaultOk": true,
     "DefaultValue": {
       "Interactions": [
