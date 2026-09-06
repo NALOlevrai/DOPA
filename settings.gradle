@@ -3,7 +3,7 @@ pluginManagement {
         gradlePluginPortal()
         mavenCentral()
         maven {
-            name = "AzureDoom Maven"
+            name = 'AzureDoom Maven'
             url = uri("https://maven.azuredoom.com/mods")
         }
     }
@@ -13,4 +13,4 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
 }
 
-rootProject.name = "DOPA"
+rootProject.name = 'DOPA'

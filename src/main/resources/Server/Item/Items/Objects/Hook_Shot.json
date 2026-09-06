@@ -1,0 +1,119 @@
+{
+  "TranslationProperties": {
+    "Name": "HookShot"
+  },
+  "Model": "Items/Tools/Hookshot/Hookshot_Goblin.blockymodel",
+  "Texture": "Items/Tools/Hookshot/Hookshot_Goblin_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Tool_Hookshot.png",
+  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
+  "PlayerAnimationsId": "Hookshot",
+  "Quality": "Epic",
+  "MaxStack": 1,
+  "ItemLevel": 1,
+  "Categories": [
+    "Category_DOPA.DOPA"
+  ],
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      333,
+      64,
+      0
+    ],
+    "Translation": [
+      -18,
+      -24
+    ]
+  },
+  "Interactions": {
+    "Primary": {
+      "RequireNewClick": true,
+      "Cooldown": {
+        "Cooldown": 1
+      },
+      "Interactions": [
+        {
+          "Type": "Parallel",
+          "Interactions": [
+            {
+              "Interactions": [
+                {
+                  "Type": "Simple",
+                  "Effects": {
+                    "ItemAnimationId": "Shoot",
+                    "ClearAnimationOnFinish": false
+                  },
+                  "RunTime": 0.25,
+                  "OnItemChangeBehavior": "Finish"
+                }
+              ]
+            },
+            {
+              "Interactions": [
+                {
+                  "Type": "ModifyInventory",
+                  "RequiredGameMode": "Adventure",
+                  "AdjustHeldItemDurability": -20,
+                  "OnItemChangeBehavior": "Finish",
+                  "BrokenItem": "Empty",
+                  "NotifyOnBreak": false
+                },
+                {
+                  "Type": "Projectile",
+                  "Config": "Projectile_Config_Hook_Shot"
+                }
+              ]
+            }
+          ],
+          "OnItemChangeBehavior": "Finish"
+        }
+      ]
+    }
+  },
+  "InteractionVars": {},
+  "Tags": {
+    "Type": [
+      "Tool"
+    ],
+    "Family": [
+      "Hookshot"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Weapons_Wood",
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Id": "GoblinLab_Workbench",
+        "RequiredAugmentTags": [
+          "goblin_lab_power",
+          "goblin_lab_recipe_a"
+        ],
+        "Categories": [
+          "GoblinLab_Survival"
+        ]
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Scrap_Hook",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Weapon_Crossbow_Iron"
+      },
+      {
+        "ItemId": "Ore_Iron_Scrap",
+        "Quantity": 40
+      },
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 20
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 2
+  },
+  "MaxDurability": 100,
+  "DurabilityLossOnDeath": false,
+  "Repairable": false
+}

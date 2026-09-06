@@ -37,8 +37,9 @@
               {
                 "Type": "ChangeStat",
                 "StatModifiers": {
-                  "Stamina": -5
-                }
+                  "Mana": -1
+                },
+                "ValueType": "Absolute"
               }
             ]
           }
@@ -51,9 +52,9 @@
             "Interactions": [
               {
                 "Type": "ChangeStat",
-                "Behaviour": "Set",
+                "Behaviour": "Min",
                 "StatModifiers": {
-                  "StaminaRegenDelay": -2
+                  "Mana": 0
                 }
               }
             ]

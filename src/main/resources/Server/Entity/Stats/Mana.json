@@ -1,0 +1,41 @@
+{
+  "InitialValue": 100,
+  "Min": 0,
+  "Max": 100,
+  "Shared": false,
+  "ResetType": "MaxValue",
+  "Regenerating": [
+    {
+      "Interval": 0.2,
+      "Amount": 2.75,
+      "RegenType": "Additive",
+      "Conditions": [
+        {
+          "Id": "Alive"
+        },
+        {
+          "Id": "NoDamageTaken",
+          "Delay": 0.1
+        },
+        {
+          "Id": "Charging",
+          "Inverse": true
+        }
+      ]
+    },
+    {
+      "Interval": 0.5,
+      "Amount": 1.0,
+      "RegenType": "Percentage",
+      "Conditions": [
+        {
+          "Id": "Alive"
+        },
+        {
+          "Id": "CheckPlayerGameMode",
+          "GameMode": "Creative"
+        }
+      ]
+    }
+  ]
+}

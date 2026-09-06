@@ -48,16 +48,12 @@
                   {
                     "SystemId": "Launch_Particles"
                   }
-                ]
+                ],
+                "LocalSoundEventId": "SFX_Jump_Pad",
+                "WorldSoundEventId": "SFX_Jump_Pad"
               },
               "OverlapBehavior": "Overwrite"
             }
-          },
-          {
-            "Type": "BreakBlock",
-            "OnItemChangeBehavior": "Ignore",
-            "CancelOnItemChange": false,
-            "UseLatestTarget": true
           },
           {
             "Type": "ApplyForce",
@@ -127,6 +123,17 @@
             "VelocityConfig": {
               "Style": "Linear"
             }
+          },
+          {
+            "Type": "Simple",
+            "RunTime": 5,
+            "OnItemChangeBehavior": "Ignore",
+            "CancelOnItemChange": false
+          },
+          {
+            "Type": "BreakBlock",
+            "OnItemChangeBehavior": "Ignore",
+            "CancelOnItemChange": false
           }
         ],
         "Cooldown": {
@@ -136,8 +143,8 @@
     },
     "Gathering": {
       "Soft": {
-        "DropList": "Empty",
-        "IsWeaponBreakable": false
+        "IsWeaponBreakable": false,
+        "DropList": "Empty"
       }
     },
     "Tint": [
@@ -146,7 +153,8 @@
     "Particles": [
       {
         "SystemId": "Jump_Pad_Particles",
-        "Scale": 1.5
+        "Scale": 1.5,
+        "DetachedFromModel": false
       }
     ],
     "Light": {

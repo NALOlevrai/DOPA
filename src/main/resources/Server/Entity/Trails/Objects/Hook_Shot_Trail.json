@@ -1,0 +1,16 @@
+{
+  "TexturePath": "Trails/Rope.png",
+  "LifeSpan": 350,
+  "Roll": 90,
+  "LightInfluence": 1,
+  "Start": {
+    "Color": "#ffffff",
+    "Width": 1.25
+  },
+  "End": {
+    "Color": "#ffffff",
+    "Width": 1.25
+  },
+  "RenderMode": "BlendLinear",
+  "Smooth": true
+}

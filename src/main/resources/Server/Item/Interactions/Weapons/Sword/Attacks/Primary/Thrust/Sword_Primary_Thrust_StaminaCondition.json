@@ -1,13 +1,13 @@
 {
   "Type": "StatsCondition",
   "Costs": {
-    "Stamina": 4.5
+    "Mana": 5
   },
   "Next": {
     "Type": "ChangeStat",
     "Behaviour": "Set",
     "StatModifiers": {
-      "StaminaRegenDelay": -2
+      "Mana": 50
     },
     "Next": {
       "Type": "Replace",

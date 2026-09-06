@@ -1,0 +1,140 @@
+{
+  "Parent": "Projectile_Config_Arrow_Base",
+  "Model": "Hook_Shot_Model",
+  "SpawnRotationOffset": {
+    "Pitch": 0,
+    "Yaw": 0.0,
+    "Roll": 0
+  },
+  "Physics": {
+    "Type": "Standard",
+    "TerminalVelocityAir": 50,
+    "TerminalVelocityWater": 15,
+    "RotationMode": "VelocityDamped",
+    "Bounciness": 0.0,
+    "SticksVertically": true,
+    "Gravity": 0
+  },
+  "LaunchForce": 75,
+  "Interactions": {
+    "ProjectileSpawn": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 0.325,
+          "OnItemChangeBehavior": "Cancel",
+          "Rules": {
+            "BlockedBy": [
+              "ProjectileMiss"
+            ],
+            "InterruptedBy": [
+              "ProjectileMiss"
+            ]
+          }
+        },
+        {
+          "Type": "RemoveEntity"
+        }
+      ]
+    },
+    "ProjectileMiss": {
+      "Type": "Serial",
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "OnItemChangeBehavior": "Finish",
+          "Effects": {
+            "LocalSoundEventId": "SFX_Hook_Shot",
+            "WorldSoundEventId": "SFX_Hook_Shot"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "OnItemChangeBehavior": "Finish",
+          "Entity": "Owner",
+          "EffectId": {
+            "ApplicationEffects": {
+              "EntityAnimationId": "HookShot"
+            },
+            "Duration": 0.25,
+            "RemovalBehavior": "Duration",
+            "ValueType": "Absolute",
+            "OverlapBehavior": "Overwrite"
+          }
+        },
+        {
+          "Type": "ApplyForce",
+          "Direction": {
+            "X": 0,
+            "Y": 0.55,
+            "Z": -1
+          },
+          "AdjustVertical": true,
+          "WaitForGround": false,
+          "UseTargetBlockForDirection": true,
+          "Force": 30,
+          "Duration": 0.735,
+          "OnItemChangeBehavior": "Finish",
+          "Effects": {
+            "ItemAnimationId": "HookShot_Empty",
+            "ItemPlayerAnimationsId": "Hookshot"
+          },
+          "ChangeVelocityType": "Set"
+        },
+        {
+          "Type": "Simple",
+          "RunTime": 0.75,
+          "OnItemChangeBehavior": "Finish"
+        },
+        {
+          "Type": "RemoveEntity",
+          "Entity": "User",
+          "OnItemChangeBehavior": "Finish"
+        }
+      ]
+    },
+    "ProjectileHit": {
+      "Interrupting": [
+        "ProjectileSpawn"
+      ],
+      "Interactions": [
+        {
+          "Type": "DamageEntity",
+          "DamageCalculator": {
+            "Type": "Absolute",
+            "BaseDamage": {
+              "Physical": 0
+            }
+          },
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "VelocityConfig": {
+                "AirResistance": 0.97,
+                "AirResistanceMax": 0.96,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Exp"
+              },
+              "Direction": {
+                "X": 0,
+                "Y": 0.55,
+                "Z": 1
+              },
+              "Force": 45,
+              "VelocityType": "Set"
+            }
+          },
+          "Effects": {}
+        },
+        {
+          "Type": "RemoveEntity",
+          "Entity": "User"
+        }
+      ]
+    }
+  },
+  "LaunchWorldSoundEventId": "SFX_Spear_Throw",
+  "LaunchLocalSoundEventId": "SFX_Spear_Throw_Local"
+}

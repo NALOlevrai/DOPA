@@ -21,12 +21,6 @@
       "Parts": [
         "UI/Reticles/ServerEvents/OnHit/Default.png"
       ]
-    },
-    "Wielding": {
-      "HideBase": true,
-      "Parts": [
-        "UI/Reticles/ClientEvents/Wielding/Blocking.png"
-      ]
     }
   }
 }

@@ -768,6 +768,11 @@
           "Animation": "Characters/Animations/Players/Death.blockyanim",
           "Looping": false,
           "SoundEventId": "SFX_Player_Death"
+        },
+        {
+          "Animation": "Characters/Animations/Players/Death2.blockyanim",
+          "Looping": false,
+          "SoundEventId": "SFX_Player_Death"
         }
       ]
     },
@@ -1337,6 +1342,15 @@
       "Animations": [
         {
           "Animation": "Characters/Animations/Items/Dual_Handed/Unarmed/Attacks/Guard/Guard.blockyanim"
+        }
+      ]
+    },
+    "HookShot": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Players/Hook_Shot.blockyanim",
+          "Looping": false,
+          "BlendingDuration": 0.5
         }
       ]
     }

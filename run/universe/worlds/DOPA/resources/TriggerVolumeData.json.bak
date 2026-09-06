@@ -225,11 +225,12 @@
           "Delay": 0.0,
           "PrimaryTitle": "Extraction",
           "SecondaryTitle": "Stay 3 Seconds",
-          "IsMajor": false,
+          "Style": "Major",
           "Icon": "",
           "Duration": 1.0,
           "FadeInDuration": 0.10000000149011612,
-          "FadeOutDuration": 0.3499999940395355
+          "FadeOutDuration": 0.3499999940395355,
+          "Recipient": "TriggeringPlayer"
         },
         {
           "Type": "PlayVfx",

@@ -1,0 +1,11 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Objects/SFX_Hook_Shot.ogg"
+      ]
+    }
+  ],
+  "Volume": -5,
+  "Parent": "SFX_Attn_VeryLoud"
+}

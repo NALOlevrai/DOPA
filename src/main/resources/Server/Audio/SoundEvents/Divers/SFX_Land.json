@@ -1,0 +1,19 @@
+{
+  "Layers": [
+    {
+      "RandomSettings": {
+        "MinPitch": -1.8240371213405997,
+        "MinVolume": -0.9151498112135024,
+        "MaxPitch": 1.6500422849992202
+      },
+      "Files": [
+        "Sounds/Objects/SFX_Land.ogg"
+      ],
+      "Volume": -10
+    }
+  ],
+  "PreventSoundInterruption": true,
+  "Volume": 1.5630250076728727,
+  "Parent": "SFX_Attn_Moderate",
+  "SpatialBlend": 0.4
+}
