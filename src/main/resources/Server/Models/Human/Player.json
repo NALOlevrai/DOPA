@@ -1345,7 +1345,7 @@
         }
       ]
     },
-    "HookShot": {
+    "GrapplingHook": {
       "Animations": [
         {
           "Animation": "Characters/Animations/Players/Hook_Shot.blockyanim",

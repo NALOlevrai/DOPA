@@ -5,11 +5,11 @@
   "LightInfluence": 1,
   "Start": {
     "Color": "#ffffff",
-    "Width": 1.25
+    "Width": 1.35
   },
   "End": {
     "Color": "#ffffff",
-    "Width": 1.25
+    "Width": 1.35
   },
   "RenderMode": "BlendLinear",
   "Smooth": true

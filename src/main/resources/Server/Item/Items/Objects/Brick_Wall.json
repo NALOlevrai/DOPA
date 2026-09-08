@@ -36,12 +36,6 @@
         "Quantity": 5
       }
     ],
-    "Output": [
-      {
-        "ItemId": "Brick_Wall",
-        "Quantity": 1
-      }
-    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",

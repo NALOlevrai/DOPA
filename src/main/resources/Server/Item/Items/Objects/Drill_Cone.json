@@ -83,11 +83,6 @@
         "ItemId": "Coin",
         "Quantity": 10
       }
-    ],
-    "Output": [
-      {
-        "ItemId": "Drill_Cone"
-      }
     ]
   },
   "IconProperties": {

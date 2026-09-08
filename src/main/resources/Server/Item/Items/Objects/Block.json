@@ -58,12 +58,7 @@
         "Quantity": 1
       }
     ],
-    "Output": [
-      {
-        "ItemId": "Block",
-        "Quantity": 10
-      }
-    ]
+    "OutputQuantity": 10
   },
   "IconProperties": {
     "Scale": 0.58823,

@@ -210,12 +210,6 @@
         "ItemId": "Coin",
         "Quantity": 10
       }
-    ],
-    "Output": [
-      {
-        "ItemId": "Jump_Pad",
-        "Quantity": 1
-      }
     ]
   },
   "Utility": {

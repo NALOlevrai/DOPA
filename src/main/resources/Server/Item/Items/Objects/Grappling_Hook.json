@@ -1,0 +1,55 @@
+{
+  "TranslationProperties": {
+    "Name": "Grappling Hook"
+  },
+  "Model": "Items/Objects/Grappling_Hook/Grappling_Hook_Model.blockymodel",
+  "Texture": "Items/Objects/Grappling_Hook/Grappling_Hook_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Grappling_Hook.png",
+  "PlayerAnimationsId": "Item",
+  "Quality": "Rare",
+  "MaxStack": 10,
+  "ItemLevel": 3,
+  "Categories": [
+    "Category_DOPA.DOPA"
+  ],
+  "IconProperties": {
+    "Scale": 0.65,
+    "Rotation": [
+      37,
+      0,
+      317
+    ],
+    "Translation": [
+      -21.3,
+      -22.4
+    ]
+  },
+  "ItemSoundSetId": "ISS_Weapons_Wood",
+  "DurabilityLossOnDeath": false,
+  "Repairable": false,
+  "DurabilityLossOnHit": 0,
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Tools"
+        ],
+        "Id": "Fieldcraft"
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Coin",
+        "Quantity": 10
+      }
+    ]
+  },
+  "DropOnDeath": true,
+  "Interactions": {
+    "Secondary": "Root_Grappling_Hook"
+  },
+  "Utility": {
+    "Usable": true
+  }
+}

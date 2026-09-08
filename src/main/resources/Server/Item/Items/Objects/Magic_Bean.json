@@ -61,12 +61,6 @@
         "ItemId": "Coin",
         "Quantity": 5
       }
-    ],
-    "Output": [
-      {
-        "ItemId": "Magic_Bean",
-        "Quantity": 1
-      }
     ]
   },
   "ItemLevel": 1,

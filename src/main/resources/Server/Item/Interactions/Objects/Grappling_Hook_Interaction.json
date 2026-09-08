@@ -22,8 +22,7 @@
     },
     {
       "Type": "Projectile",
-      "Config": "Bush_Capsule_Projectile_Config",
-      "CancelOnItemChange": false,
+      "Config": "Grappling_Hook_Projectile_Config",
       "OnItemChangeBehavior": "Ignore"
     }
   ]

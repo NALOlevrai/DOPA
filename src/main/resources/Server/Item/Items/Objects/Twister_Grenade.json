@@ -59,12 +59,6 @@
         "Quantity": 10
       }
     ],
-    "Output": [
-      {
-        "ItemId": "Twister_Grenade",
-        "Quantity": 1
-      }
-    ],
     "OutputQuantity": 1
   },
   "ItemLevel": 3,

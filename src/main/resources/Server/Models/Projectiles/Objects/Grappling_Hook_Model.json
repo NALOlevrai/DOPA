@@ -21,7 +21,7 @@
         "Z": 0
       },
       "TargetNodeName": "Handle",
-      "TrailId": "Hook_Shot_Trail",
+      "TrailId": "Grappling_Hook_Trail",
       "RotationOffset": {
         "Yaw": 0,
         "Pitch": 0,
@@ -35,7 +35,7 @@
         "Z": 0
       },
       "TargetNodeName": "Handle",
-      "TrailId": "Hook_Shot_Trail",
+      "TrailId": "Grappling_Hook_Trail",
       "RotationOffset": {
         "Yaw": 90,
         "Pitch": 0,
@@ -45,8 +45,8 @@
   ],
   "DefaultAttachments": [
     {
-      "Model": "Items/Tools/Hookshot/Hookshot_Goblin_Projectile.blockymodel",
-      "Texture": "Items/Tools/Hookshot/Hookshot_Goblin_Texture.png"
+      "Model": "Items/Objects/Grappling_Hook/Grappling_Hook_Model.blockymodel",
+      "Texture": "Items/Objects/Grappling_Hook/Grappling_Hook_Texture.png"
     }
   ],
   "Model": "Items/Projectiles/Projectile.blockymodel",

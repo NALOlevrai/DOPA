@@ -120,11 +120,6 @@
         "ItemId": "Coin",
         "Quantity": 50
       }
-    ],
-    "Output": [
-      {
-        "ItemId": "Life"
-      }
     ]
   },
   "Utility": {

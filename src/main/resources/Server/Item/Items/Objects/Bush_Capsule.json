@@ -53,12 +53,6 @@
         "ItemId": "Coin",
         "Quantity": 5
       }
-    ],
-    "Output": [
-      {
-        "ItemId": "Bush_Capsule",
-        "Quantity": 1
-      }
     ]
   },
   "ItemLevel": 2,

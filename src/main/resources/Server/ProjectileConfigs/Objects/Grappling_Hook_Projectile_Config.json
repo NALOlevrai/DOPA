@@ -1,6 +1,5 @@
 {
   "Parent": "Projectile_Config_Arrow_Base",
-  "Model": "Hook_Shot_Model",
   "SpawnRotationOffset": {
     "Pitch": 0,
     "Yaw": 0.0,
@@ -15,27 +14,47 @@
     "SticksVertically": true,
     "Gravity": 0
   },
-  "LaunchForce": 75,
+  "LaunchForce": 85,
   "Interactions": {
     "ProjectileSpawn": {
       "Interactions": [
         {
           "Type": "Simple",
-          "RunTime": 0.325,
+          "RunTime": 0.3,
           "OnItemChangeBehavior": "Cancel",
           "Rules": {
             "BlockedBy": [
-              "ProjectileMiss"
+              "ProjectileMiss",
+              "ProjectileHit"
             ],
             "InterruptedBy": [
-              "ProjectileMiss"
+              "ProjectileMiss",
+              "ProjectileHit"
             ]
           }
         },
         {
-          "Type": "RemoveEntity"
+          "Type": "ModifyInventory",
+          "OnItemChangeBehavior": "Cancel",
+          "ItemToAdd": {
+            "Id": "Grappling_Hook"
+          }
+        },
+        {
+          "Type": "RemoveEntity",
+          "OnItemChangeBehavior": "Finish"
         }
-      ]
+      ],
+      "Rules": {
+        "BlockedBy": [
+          "ProjectileMiss",
+          "ProjectileHit"
+        ],
+        "InterruptedBy": [
+          "ProjectileMiss",
+          "ProjectileHit"
+        ]
+      }
     },
     "ProjectileMiss": {
       "Type": "Serial",
@@ -44,8 +63,8 @@
           "Type": "Simple",
           "OnItemChangeBehavior": "Finish",
           "Effects": {
-            "LocalSoundEventId": "SFX_Hook_Shot",
-            "WorldSoundEventId": "SFX_Hook_Shot"
+            "LocalSoundEventId": "SFX_Grappling_Hook",
+            "WorldSoundEventId": "SFX_Grappling_Hook"
           }
         },
         {
@@ -54,7 +73,7 @@
           "Entity": "Owner",
           "EffectId": {
             "ApplicationEffects": {
-              "EntityAnimationId": "HookShot"
+              "EntityAnimationId": "GrapplingHook"
             },
             "Duration": 0.25,
             "RemovalBehavior": "Duration",
@@ -75,10 +94,7 @@
           "Force": 30,
           "Duration": 0.735,
           "OnItemChangeBehavior": "Finish",
-          "Effects": {
-            "ItemAnimationId": "HookShot_Empty",
-            "ItemPlayerAnimationsId": "Hookshot"
-          },
+          "Effects": {},
           "ChangeVelocityType": "Set"
         },
         {
@@ -122,11 +138,33 @@
                 "Y": 0.55,
                 "Z": 1
               },
-              "Force": 45,
+              "Force": 50,
               "VelocityType": "Set"
-            }
+            },
+            "LocalSoundEventId": "SFX_Grappling_Hook",
+            "WorldSoundEventId": "SFX_Grappling_Hook"
+          }
+        },
+        {
+          "Type": "ApplyForce",
+          "Direction": {
+            "X": 0,
+            "Y": 0.55,
+            "Z": -1
           },
-          "Effects": {}
+          "AdjustVertical": true,
+          "WaitForGround": false,
+          "UseTargetBlockForDirection": true,
+          "Force": 25,
+          "Duration": 0,
+          "OnItemChangeBehavior": "Finish",
+          "Effects": {},
+          "ChangeVelocityType": "Set"
+        },
+        {
+          "Type": "Simple",
+          "RunTime": 0.05,
+          "OnItemChangeBehavior": "Finish"
         },
         {
           "Type": "RemoveEntity",
@@ -136,5 +174,7 @@
     }
   },
   "LaunchWorldSoundEventId": "SFX_Spear_Throw",
-  "LaunchLocalSoundEventId": "SFX_Spear_Throw_Local"
+  "LaunchLocalSoundEventId": "SFX_Spear_Throw_Local",
+  "UseModelScale": true,
+  "Model": "Grappling_Hook_Model"
 }

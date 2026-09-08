@@ -192,12 +192,6 @@
         "ItemId": "Coin",
         "Quantity": 15
       }
-    ],
-    "Output": [
-      {
-        "ItemId": "Land_Mine",
-        "Quantity": 1
-      }
     ]
   },
   "Utility": {

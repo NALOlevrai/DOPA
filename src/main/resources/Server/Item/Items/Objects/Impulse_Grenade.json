@@ -51,12 +51,6 @@
         "ItemId": "Coin",
         "Quantity": 15
       }
-    ],
-    "Output": [
-      {
-        "ItemId": "Impulse_Grenade",
-        "Quantity": 1
-      }
     ]
   },
   "ItemLevel": 4,
