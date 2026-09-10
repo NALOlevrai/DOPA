@@ -1,0 +1,14 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Land_Particles_Sub",
+      "PositionOffset": {
+        "Z": 1,
+        "Y": 1
+      },
+      "RotationOffset": {
+        "Pitch": 90
+      }
+    }
+  ]
+}

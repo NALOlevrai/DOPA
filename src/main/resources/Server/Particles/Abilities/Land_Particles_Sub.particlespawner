@@ -1,0 +1,144 @@
+{
+  "RenderMode": "BlendAdd",
+  "EmitOffset": {
+    "X": {
+      "Min": -1.4,
+      "Max": 1.4
+    },
+    "Y": {
+      "Min": 0,
+      "Max": 0.3
+    },
+    "Z": {
+      "Min": -0.4,
+      "Max": 0.4
+    }
+  },
+  "ParticleRotationInfluence": "Billboard",
+  "LinearFiltering": false,
+  "LightInfluence": 1,
+  "ParticleRotateWithSpawner": false,
+  "TrailSpawnerPositionMultiplier": 1,
+  "TrailSpawnerRotationMultiplier": 1,
+  "MaxConcurrentParticles": 150,
+  "SpawnRate": {
+    "Max": 100,
+    "Min": 100
+  },
+  "InitialVelocity": {
+    "Speed": {
+      "Min": 3,
+      "Max": 4.8
+    },
+    "Yaw": {
+      "Min": 0,
+      "Max": 360
+    },
+    "Pitch": {
+      "Min": 30,
+      "Max": 150
+    }
+  },
+  "Attractors": [
+    {
+      "Position": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "RadialAxis": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "Radius": 0,
+      "RadialAcceleration": 0,
+      "RadialTangentAcceleration": 0,
+      "LinearAcceleration": {
+        "X": 0,
+        "Y": -9,
+        "Z": 0
+      },
+      "DampingMultiplier": {
+        "X": 0.8,
+        "Y": 0.8,
+        "Z": 0.8
+      }
+    }
+  ],
+  "Particle": {
+    "Texture": "Particles/Textures/Rnd/Cone_Shockwave.png",
+    "Animation": {
+      "0": {
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          }
+        },
+        "Rotation": {
+          "X": {
+            "Min": 0,
+            "Max": 0
+          },
+          "Y": {
+            "Min": 0,
+            "Max": 0
+          },
+          "Z": {
+            "Min": 0,
+            "Max": 0
+          }
+        },
+        "Opacity": 1
+      },
+      "70": {
+        "Opacity": 1
+      },
+      "100": {
+        "Opacity": 0,
+        "Scale": {
+          "X": {
+            "Min": 0.01,
+            "Max": 0.01
+          }
+        }
+      }
+    },
+    "UVOption": "RandomFlipU",
+    "InitialAnimationFrame": {
+      "Rotation": {
+        "X": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Y": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Z": {
+          "Min": 0,
+          "Max": 0
+        }
+      },
+      "Scale": {
+        "X": {
+          "Min": 0.15,
+          "Max": 0.15
+        }
+      },
+      "Opacity": 0.376,
+      "Color": "#ffffff",
+      "FrameIndex": {
+        "Max": 3
+      }
+    },
+    "FrameSize": {
+      "Width": 64,
+      "Height": 64
+    }
+  },
+  "SpawnBurst": false,
+  "LifeSpan": 5.0,
+  "Shape": "Sphere"
+}

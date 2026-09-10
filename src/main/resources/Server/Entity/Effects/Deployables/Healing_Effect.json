@@ -1,0 +1,14 @@
+{
+  "ApplicationEffects": {
+    "ScreenEffect": "ScreenEffects/Daggers.png",
+    "LocalSoundEventId": "SFX_Deployable_Totem_Heal_Effect_Local",
+    "EntityBottomTint": "#61d3c0"
+  },
+  "OverlapBehavior": "Overwrite",
+  "StatModifiers": {
+    "Health": 5
+  },
+  "DamageCalculatorCooldown": 1,
+  "Debuff": false,
+  "Duration": 0.75
+}

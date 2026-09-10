@@ -7,10 +7,10 @@
   },
   "DamageEffects": {
     "Knockback": {
-      "Force": -5.5,
+      "Force": -10,
       "RelativeX": 0,
       "RelativeZ": 0,
-      "VelocityY": 15
+      "VelocityY": 50
     },
     "WorldSoundEventId": "SFX_Bat_Thud",
     "LocalSoundEventId": "SFX_Bat_Thud",

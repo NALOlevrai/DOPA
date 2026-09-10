@@ -1,5 +1,4 @@
 {
-  "Parent": "Projectile_Config_Arrow_Base",
   "SpawnRotationOffset": {
     "Pitch": 0,
     "Yaw": 0.0,
@@ -20,29 +19,16 @@
       "Interactions": [
         {
           "Type": "Simple",
-          "RunTime": 0.3,
-          "OnItemChangeBehavior": "Cancel",
-          "Rules": {
-            "BlockedBy": [
-              "ProjectileMiss",
-              "ProjectileHit"
-            ],
-            "InterruptedBy": [
-              "ProjectileMiss",
-              "ProjectileHit"
-            ]
-          }
+          "RunTime": 0.3
         },
         {
           "Type": "ModifyInventory",
-          "OnItemChangeBehavior": "Cancel",
           "ItemToAdd": {
             "Id": "Grappling_Hook"
           }
         },
         {
-          "Type": "RemoveEntity",
-          "OnItemChangeBehavior": "Finish"
+          "Type": "RemoveEntity"
         }
       ],
       "Rules": {
@@ -61,7 +47,6 @@
       "Interactions": [
         {
           "Type": "Simple",
-          "OnItemChangeBehavior": "Finish",
           "Effects": {
             "LocalSoundEventId": "SFX_Grappling_Hook",
             "WorldSoundEventId": "SFX_Grappling_Hook"
@@ -69,7 +54,6 @@
         },
         {
           "Type": "ApplyEffect",
-          "OnItemChangeBehavior": "Finish",
           "Entity": "Owner",
           "EffectId": {
             "ApplicationEffects": {
@@ -89,25 +73,45 @@
             "Z": -1
           },
           "AdjustVertical": true,
-          "WaitForGround": false,
-          "UseTargetBlockForDirection": true,
-          "Force": 30,
+          "Force": 25.5,
           "Duration": 0.735,
-          "OnItemChangeBehavior": "Finish",
           "Effects": {},
-          "ChangeVelocityType": "Set"
+          "ChangeVelocityType": "Set",
+          "UseTargetBlockForDirection": true
         },
         {
           "Type": "Simple",
           "RunTime": 0.75,
-          "OnItemChangeBehavior": "Finish"
+          "Rules": {
+            "Blocking": [
+              "ProjectileSpawn"
+            ],
+            "Interrupting": [
+              "ProjectileSpawn"
+            ]
+          }
         },
         {
           "Type": "RemoveEntity",
           "Entity": "User",
-          "OnItemChangeBehavior": "Finish"
+          "Rules": {
+            "Blocking": [
+              "ProjectileSpawn"
+            ],
+            "Interrupting": [
+              "ProjectileSpawn"
+            ]
+          }
         }
-      ]
+      ],
+      "Rules": {
+        "Blocking": [
+          "ProjectileSpawn"
+        ],
+        "Interrupting": [
+          "ProjectileSpawn"
+        ]
+      }
     },
     "ProjectileHit": {
       "Interrupting": [
@@ -153,28 +157,33 @@
             "Z": -1
           },
           "AdjustVertical": true,
-          "WaitForGround": false,
           "UseTargetBlockForDirection": true,
           "Force": 25,
-          "Duration": 0,
-          "OnItemChangeBehavior": "Finish",
           "Effects": {},
-          "ChangeVelocityType": "Set"
-        },
-        {
-          "Type": "Simple",
-          "RunTime": 0.05,
-          "OnItemChangeBehavior": "Finish"
+          "ChangeVelocityType": "Set",
+          "Duration": 0.15
         },
         {
           "Type": "RemoveEntity",
           "Entity": "User"
         }
-      ]
+      ],
+      "Rules": {
+        "Blocking": [
+          "ProjectileSpawn"
+        ],
+        "Interrupting": [
+          "ProjectileSpawn"
+        ]
+      }
     }
   },
   "LaunchWorldSoundEventId": "SFX_Spear_Throw",
   "LaunchLocalSoundEventId": "SFX_Spear_Throw_Local",
   "UseModelScale": true,
-  "Model": "Grappling_Hook_Model"
+  "Model": "Grappling_Hook_Model",
+  "SpawnOffset": {
+    "Y": -0.2,
+    "Z": -0.5
+  }
 }

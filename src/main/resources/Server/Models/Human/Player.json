@@ -1348,7 +1348,7 @@
     "GrapplingHook": {
       "Animations": [
         {
-          "Animation": "Characters/Animations/Players/Hook_Shot.blockyanim",
+          "Animation": "Characters/Animations/Players/Grappling_Hook_Animation.blockyanim",
           "Looping": false,
           "BlendingDuration": 0.5
         }

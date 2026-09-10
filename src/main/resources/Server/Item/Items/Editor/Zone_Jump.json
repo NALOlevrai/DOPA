@@ -8,7 +8,6 @@
     "Tool.Block"
   ],
   "BlockType": {
-    "Group": "@Tech",
     "BlockParticleSetId": "Stone",
     "DrawType": "Empty",
     "Gathering": {

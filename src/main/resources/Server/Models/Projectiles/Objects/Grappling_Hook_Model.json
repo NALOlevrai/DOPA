@@ -1,18 +1,32 @@
 {
   "HitBox": {
     "Max": {
-      "X": 0.075,
-      "Y": 0.075,
-      "Z": 0.075
+      "Z": 0.125,
+      "Y": 0.125,
+      "X": 0.125
     },
     "Min": {
-      "X": -0.075,
-      "Y": -0.075,
-      "Z": -0.075
+      "X": -0.125,
+      "Y": -0.125,
+      "Z": -0.125
     }
   },
   "MinScale": 1,
   "MaxScale": 1,
+  "DefaultAttachments": [
+    {
+      "Model": "Items/Objects/Grappling_Hook/Grappling_Hook_Model.blockymodel",
+      "Texture": "Items/Objects/Grappling_Hook/Grappling_Hook_Texture.png"
+    }
+  ],
+  "Model": "Items/Projectiles/Projectile.blockymodel",
+  "Texture": "Items/Projectiles/Projectile_default.png",
+  "Particles": [
+    {
+      "SystemId": "Daggers_Dash_Straight",
+      "TargetNodeName": "Handle"
+    }
+  ],
   "Trails": [
     {
       "PositionOffset": {
@@ -20,7 +34,7 @@
         "Y": 0,
         "Z": 0
       },
-      "TargetNodeName": "Handle",
+      "TargetNodeName": "Rope",
       "TrailId": "Grappling_Hook_Trail",
       "RotationOffset": {
         "Yaw": 0,
@@ -34,36 +48,13 @@
         "Y": 0,
         "Z": 0
       },
-      "TargetNodeName": "Handle",
-      "TrailId": "Grappling_Hook_Trail",
+      "TargetNodeName": "Rope",
       "RotationOffset": {
         "Yaw": 90,
         "Pitch": 0,
         "Roll": 0
-      }
-    }
-  ],
-  "DefaultAttachments": [
-    {
-      "Model": "Items/Objects/Grappling_Hook/Grappling_Hook_Model.blockymodel",
-      "Texture": "Items/Objects/Grappling_Hook/Grappling_Hook_Texture.png"
-    }
-  ],
-  "Model": "Items/Projectiles/Projectile.blockymodel",
-  "Texture": "Items/Projectiles/Projectile_default.png",
-  "AnimationSets": {
-    "FlyIdle": {
-      "Animations": [
-        {
-          "Animation": "Items/Animations/Fly/Fly_Vertical.blockyanim"
-        }
-      ]
-    }
-  },
-  "Particles": [
-    {
-      "SystemId": "Daggers_Dash_Straight",
-      "TargetNodeName": "Handle"
+      },
+      "TrailId": "Grappling_Hook_Trail"
     }
   ]
 }

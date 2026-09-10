@@ -460,7 +460,7 @@
           "Event": "EXIT",
           "Interval": 0.0,
           "Delay": 0.0,
-          "Weather": "Weather_Lobby",
+          "Weather": "Lobby_Weather",
           "PlayerOnly": true,
           "ResetWeather": false
         }

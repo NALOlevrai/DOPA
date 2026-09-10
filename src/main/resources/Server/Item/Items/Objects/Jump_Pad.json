@@ -48,11 +48,13 @@
                   {
                     "SystemId": "Launch_Particles"
                   }
-                ],
-                "LocalSoundEventId": "SFX_Jump_Pad",
-                "WorldSoundEventId": "SFX_Jump_Pad"
+                ]
               },
               "OverlapBehavior": "Overwrite"
+            },
+            "Effects": {
+              "WorldSoundEventId": "SFX_Jump_Pad",
+              "LocalSoundEventId": "SFX_Jump_Pad"
             }
           },
           {
@@ -86,15 +88,7 @@
                 ],
                 "FirstPersonParticles": [
                   {
-                    "SystemId": "Impulse_Ground_Particles",
-                    "Scale": 0.25,
-                    "RotationOffset": {
-                      "Pitch": 90
-                    },
-                    "PositionOffset": {
-                      "Z": 1.25,
-                      "Y": 1
-                    },
+                    "SystemId": "Land_Particles",
                     "DetachedFromModel": false
                   }
                 ],
@@ -127,11 +121,6 @@
           {
             "Type": "Simple",
             "RunTime": 5,
-            "OnItemChangeBehavior": "Ignore",
-            "CancelOnItemChange": false
-          },
-          {
-            "Type": "BreakBlock",
             "OnItemChangeBehavior": "Ignore",
             "CancelOnItemChange": false
           }

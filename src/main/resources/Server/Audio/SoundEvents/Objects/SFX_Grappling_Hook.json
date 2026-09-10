@@ -3,7 +3,11 @@
     {
       "Files": [
         "Sounds/Objects/SFX_Grappling_Hook.ogg"
-      ]
+      ],
+      "RandomSettings": {
+        "MinPitch": -1,
+        "MaxPitch": 1
+      }
     }
   ],
   "Volume": -5,
