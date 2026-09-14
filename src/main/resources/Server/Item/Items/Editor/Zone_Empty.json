@@ -43,8 +43,8 @@
       },
       "UseDefaultDropWhenPlaced": false
     },
-    "Opacity": "Transparent",
     "Material": "Empty",
-    "HitboxType": "Empty_Hitbox"
+    "HitboxType": "Empty_Hitbox",
+    "Opacity": "Transparent"
   }
 }

@@ -2848,7 +2848,7 @@
       "x": 0,
       "y": 2,
       "z": 0,
-      "name": "Zone_Empty"
+      "name": "Extraction_Active"
     },
     {
       "x": 0,
@@ -5718,7 +5718,7 @@
         "Transform": {
           "Position": {
             "X": 0.5,
-            "Y": 6.0,
+            "Y": 6.5,
             "Z": 0.5
           },
           "Rotation": {
@@ -5732,12 +5732,12 @@
             "Type": "Box",
             "Min": {
               "X": -4.0,
-              "Y": -4.0,
+              "Y": -4.5,
               "Z": -4.0
             },
             "Max": {
               "X": 4.0,
-              "Y": 4.0,
+              "Y": 4.5,
               "Z": 4.0
             }
           },
@@ -5750,7 +5750,7 @@
               "BlockType": "Extraction_Active",
               "Position": {
                 "X": 0.0,
-                "Y": -5.0,
+                "Y": -4.0,
                 "Z": 0.0
               },
               "Origin": "VolumeOrigin",
@@ -5767,7 +5767,7 @@
               "BlockType": "Block_White",
               "Position": {
                 "X": 0.0,
-                "Y": -5.0,
+                "Y": -4.0,
                 "Z": 0.0
               },
               "Origin": "VolumeOrigin",
@@ -5956,7 +5956,7 @@
               "BlockType": "Extraction_Active",
               "Position": {
                 "X": 0.0,
-                "Y": -5.0,
+                "Y": -4.0,
                 "Z": 0.0
               },
               "Origin": "VolumeOrigin",

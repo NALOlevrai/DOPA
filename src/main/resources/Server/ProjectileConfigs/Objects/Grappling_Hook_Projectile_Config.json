@@ -69,15 +69,18 @@
           "Type": "ApplyForce",
           "Direction": {
             "X": 0,
-            "Y": 0.55,
+            "Y": 16.5,
             "Z": -1
           },
-          "AdjustVertical": true,
-          "Force": 25.5,
-          "Duration": 0.735,
+          "Force": 7.5,
           "Effects": {},
-          "ChangeVelocityType": "Set",
-          "UseTargetBlockForDirection": true
+          "ChangeVelocityType": "Add",
+          "UseTargetBlockForDirection": true,
+          "AdjustVertical": true,
+          "Duration": 0.1,
+          "VelocityConfig": {
+            "GroundResistance": 0.8
+          }
         },
         {
           "Type": "Simple",

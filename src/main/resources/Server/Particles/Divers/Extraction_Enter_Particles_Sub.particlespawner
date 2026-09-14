@@ -140,7 +140,7 @@
   "TrailSpawnerPositionMultiplier": 1.0,
   "TrailSpawnerRotationMultiplier": 1.0,
   "SpawnBurst": true,
-  "LinearFiltering": true,
+  "LinearFiltering": false,
   "InitialVelocity": {
     "Speed": {
       "Min": 7.5,

@@ -107,7 +107,8 @@
       }
     },
     "InitialAnimationFrame": {
-      "Color": "#ffffff"
+      "Color": "#ffffff",
+      "Opacity": 0.85
     }
   },
   "EmitOffset": {

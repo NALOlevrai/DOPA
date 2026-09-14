@@ -1,7 +1,6 @@
 {
   "RenderMode": "Erosion",
   "ParticleRotationInfluence": "BillboardY",
-  "LinearFiltering": true,
   "LightInfluence": 0,
   "MaxConcurrentParticles": 50,
   "ParticleLifeSpan": {
@@ -103,7 +102,7 @@
           "Max": 0.5
         }
       },
-      "Opacity": 0.95,
+      "Opacity": 0.75,
       "Color": "#ffffff"
     }
   },

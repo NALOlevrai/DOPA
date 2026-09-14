@@ -11,6 +11,9 @@
     },
     {
       "SpawnerId": "Extraction_Active_Particles_Sub2"
+    },
+    {
+      "SpawnerId": "Extraction_Active_Particles_Sub3"
     }
   ],
   "IsImportant": true,
