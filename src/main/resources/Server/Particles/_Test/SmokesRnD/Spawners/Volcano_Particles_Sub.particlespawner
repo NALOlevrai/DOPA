@@ -1,0 +1,141 @@
+{
+  "RenderMode": "BlendLinear",
+  "EmitOffset": {
+    "X": {
+      "Min": 0,
+      "Max": 0.5
+    },
+    "Z": {
+      "Min": 0,
+      "Max": 0.5
+    }
+  },
+  "ParticleRotationInfluence": "Billboard",
+  "LinearFiltering": true,
+  "LightInfluence": 0,
+  "ParticleRotateWithSpawner": false,
+  "TrailSpawnerPositionMultiplier": 1,
+  "TrailSpawnerRotationMultiplier": 1,
+  "MaxConcurrentParticles": 500,
+  "ParticleLifeSpan": {
+    "Min": 7,
+    "Max": 15
+  },
+  "SpawnRate": {
+    "Min": 3,
+    "Max": 5
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Rnd/Smoke_Test.png",
+    "FrameSize": {
+      "Width": 64,
+      "Height": 64
+    },
+    "ScaleRatioConstraint": "None",
+    "UVOption": "RandomFlipUV",
+    "Animation": {
+      "0": {
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 3
+        },
+        "Scale": {
+          "X": {
+            "Min": 1.5,
+            "Max": 2.5
+          },
+          "Y": {
+            "Min": 1.5,
+            "Max": 2.5
+          }
+        },
+        "Opacity": 0,
+        "Color": "#ffffff"
+      },
+      "10": {
+        "Opacity": 1
+      },
+      "30": {
+        "Opacity": 0.85
+      },
+      "39": {
+        "Scale": {
+          "X": {
+            "Min": 20,
+            "Max": 30
+          },
+          "Y": {
+            "Min": 20,
+            "Max": 30
+          }
+        }
+      },
+      "50": {
+        "Color": "#f2f2f2",
+        "Opacity": 0.6
+      },
+      "80": {
+        "Opacity": 0.25
+      },
+      "100": {
+        "Color": "#aaaaaa",
+        "Opacity": 0,
+        "Scale": {
+          "X": {
+            "Min": 35,
+            "Max": 50
+          },
+          "Y": {
+            "Min": 35,
+            "Max": 50
+          }
+        }
+      }
+    },
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 0.5,
+          "Max": 0.5
+        },
+        "Y": {
+          "Min": 0.5,
+          "Max": 0.5
+        }
+      },
+      "Opacity": 1,
+      "Color": "#ffffff",
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 3
+      }
+    },
+    "SoftParticles": "Require"
+  },
+  "InitialVelocity": {
+    "Speed": {
+      "Min": 8,
+      "Max": 12
+    },
+    "Pitch": {
+      "Min": 85,
+      "Max": 95
+    }
+  },
+  "Attractors": [
+    {
+      "DampingMultiplier": {
+        "X": 0.98,
+        "Y": 1.001,
+        "Z": 0.98
+      }
+    }
+  ],
+  "UVMotion": {
+    "Texture": "Particles/Textures/UVMotion/FlowMap.png",
+    "Scale": 1.5,
+    "Strength": 2.5,
+    "SpeedX": 0.09,
+    "SpeedY": -0.12
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Volcano_Particles_Sub",
+      "PositionOffset": {
+        "X": 0,
+        "Y": 35,
+        "Z": 0
+      }
+    }
+  ],
+  "CullDistance": 2500,
+  "IsImportant": true
+}

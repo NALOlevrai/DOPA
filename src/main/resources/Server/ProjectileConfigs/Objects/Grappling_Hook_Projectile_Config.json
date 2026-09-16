@@ -19,7 +19,7 @@
       "Interactions": [
         {
           "Type": "Simple",
-          "RunTime": 0.3
+          "RunTime": 0.375
         },
         {
           "Type": "ModifyInventory",
@@ -62,29 +62,28 @@
             "Duration": 0.25,
             "RemovalBehavior": "Duration",
             "ValueType": "Absolute",
-            "OverlapBehavior": "Overwrite"
+            "OverlapBehavior": "Overwrite",
+            "Parent": "Fall_Damage_Invulnerability"
           }
         },
         {
           "Type": "ApplyForce",
           "Direction": {
             "X": 0,
-            "Y": 16.5,
-            "Z": -1
+            "Z": -1,
+            "Y": 1000
           },
-          "Force": 7.5,
+          "Force": 35,
           "Effects": {},
-          "ChangeVelocityType": "Add",
+          "ChangeVelocityType": "Set",
           "UseTargetBlockForDirection": true,
           "AdjustVertical": true,
-          "Duration": 0.1,
-          "VelocityConfig": {
-            "GroundResistance": 0.8
-          }
+          "Duration": 0.125,
+          "RaycastMode": "FollowLook"
         },
         {
           "Type": "Simple",
-          "RunTime": 0.75,
+          "RunTime": 0.05,
           "Rules": {
             "Blocking": [
               "ProjectileSpawn"
@@ -142,29 +141,15 @@
               },
               "Direction": {
                 "X": 0,
-                "Y": 0.55,
+                "Y": 0.35,
                 "Z": 1
               },
-              "Force": 50,
+              "Force": 35,
               "VelocityType": "Set"
             },
             "LocalSoundEventId": "SFX_Grappling_Hook",
             "WorldSoundEventId": "SFX_Grappling_Hook"
           }
-        },
-        {
-          "Type": "ApplyForce",
-          "Direction": {
-            "X": 0,
-            "Y": 0.55,
-            "Z": -1
-          },
-          "AdjustVertical": true,
-          "UseTargetBlockForDirection": true,
-          "Force": 25,
-          "Effects": {},
-          "ChangeVelocityType": "Set",
-          "Duration": 0.15
         },
         {
           "Type": "RemoveEntity",

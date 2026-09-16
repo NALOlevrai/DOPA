@@ -1,0 +1,44 @@
+{
+  "TranslationProperties": {
+    "Name": "Volcano Particles"
+  },
+  "Categories": [
+    "Blocks.Rocks"
+  ],
+  "PlayerAnimationsId": "Block",
+  "BlockType": {
+    "DrawType": "Cube",
+    "Opacity": "Transparent",
+    "Group": "Stone",
+    "BlockSoundSetId": "Stone",
+    "ParticleColor": "#ffffff",
+    "BlockParticleSetId": "Stone",
+    "Particles": [
+      {
+        "SystemId": "Volcano_Particles"
+      }
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Rock"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "ItemEntity": {
+    "ParticleColor": "#ffffff"
+  },
+  "Icon": "Icons/ItemsGenerated/Block.png"
+}

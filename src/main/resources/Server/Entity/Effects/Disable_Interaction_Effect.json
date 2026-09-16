@@ -5,6 +5,7 @@
   "ApplicationEffects": {
     "AbilityEffects": {
       "Disabled": [
+        "Primary",
         "Secondary",
         "Ability1"
       ]
