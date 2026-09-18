@@ -12,7 +12,7 @@
   },
   "ParticleRotationInfluence": "Billboard",
   "LinearFiltering": true,
-  "LightInfluence": 0,
+  "LightInfluence": 0.85,
   "ParticleRotateWithSpawner": false,
   "TrailSpawnerPositionMultiplier": 1,
   "TrailSpawnerRotationMultiplier": 1,

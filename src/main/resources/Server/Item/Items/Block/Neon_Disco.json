@@ -1,8 +1,8 @@
 {
   "TranslationProperties": {
-    "Name": "Neon Blue"
+    "Name": "Neon Black"
   },
-  "Icon": "Icons/ItemsGenerated/Neon_Blue.png",
+  "Icon": "Icons/ItemsGenerated/Neon_Black.png",
   "Categories": [
     "Blocks.Rocks"
   ],
@@ -11,18 +11,14 @@
     "Material": "Solid",
     "DrawType": "Cube",
     "Group": "Stone",
-    "CubeShadingMode": "Fullbright",
     "BlockSoundSetId": "Stone",
-    "ParticleColor": "#001bff",
+    "ParticleColor": "#000000",
     "Textures": [
       {
-        "All": "Resources/Block_Texture.png"
+        "All": "Resources/Disco_Texture.png"
       }
     ],
     "BlockParticleSetId": "Crystal",
-    "Tint": [
-      "#4350be"
-    ],
     "RequiresAlphaBlending": true
   },
   "Tags": {
@@ -48,10 +44,10 @@
   "ItemSoundSetId": "ISS_Items_Gems",
   "Light": {
     "Radius": 1,
-    "Color": "#00f"
+    "Color": "#000"
   },
   "ItemEntity": {
     "ShowItemParticles": false,
-    "ParticleColor": "#001bff"
+    "ParticleColor": "#000000"
   }
 }

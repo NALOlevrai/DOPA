@@ -1293,13 +1293,12 @@
         }
       ]
     },
-    "Launch": {
+    "FreeFly": {
       "Animations": [
         {
-          "Animation": "Characters/Animations/Players/Free_Fly.blockyanim",
-          "Speed": 2.75,
+          "Animation": "Characters/Animations/Players/FreeFly_Animation.blockyanim",
           "Looping": true,
-          "BlendingDuration": 0.5
+          "BlendingDuration": 0.75
         }
       ]
     },
@@ -1395,5 +1394,13 @@
       "Z": 2.75,
       "Y": 0.4
     }
-  }
+  },
+  "Light": {
+    "Color": "#123"
+  },
+  "Particles": [
+    {
+      "SystemId": "Coin_Model_Particles"
+    }
+  ]
 }

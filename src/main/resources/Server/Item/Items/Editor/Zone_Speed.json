@@ -13,7 +13,9 @@
     "HitboxType": "Fin_Hitbox",
     "MovementSettings": {
       "HorizontalSpeedMultiplier": 5,
-      "JumpForceMultiplier": 1.75
+      "JumpForceMultiplier": 1.75,
+      "Friction": 999,
+      "Drag": 0.1
     },
     "Material": "Solid",
     "ParticleColor": "#ffffff",

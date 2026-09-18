@@ -9,8 +9,6 @@
   "PlayerAnimationsId": "Block",
   "BlockType": {
     "Material": "Solid",
-    "DrawType": "Cube",
-    "Opacity": "Solid",
     "Group": "Stone",
     "CubeShadingMode": "Fullbright",
     "BlockSoundSetId": "Stone",
@@ -23,7 +21,8 @@
     "BlockParticleSetId": "Crystal",
     "Tint": [
       "#cecece"
-    ]
+    ],
+    "RequiresAlphaBlending": true
   },
   "Tags": {
     "Type": [

@@ -43,7 +43,7 @@
             "EffectId": {
               "Duration": 0.5,
               "ApplicationEffects": {
-                "EntityAnimationId": "Launch",
+                "EntityAnimationId": "FreeFly",
                 "Particles": [
                   {
                     "SystemId": "Launch_Particles"
@@ -68,10 +68,7 @@
             },
             "Force": 65,
             "ChangeVelocityType": "Set",
-            "AdjustVertical": false,
-            "VelocityConfig": {
-              "Style": "Linear"
-            }
+            "AdjustVertical": false
           },
           {
             "Type": "ApplyEffect",

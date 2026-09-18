@@ -10,7 +10,6 @@
   "BlockType": {
     "Material": "Solid",
     "DrawType": "Cube",
-    "Opacity": "Solid",
     "Group": "Stone",
     "CubeShadingMode": "Fullbright",
     "BlockSoundSetId": "Stone",
@@ -26,7 +25,8 @@
     ],
     "Light": {
       "Color": "#000"
-    }
+    },
+    "RequiresAlphaBlending": true
   },
   "Tags": {
     "Type": [

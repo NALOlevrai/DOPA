@@ -17,7 +17,7 @@
               "ApplicationEffects": {
                 "LocalSoundEventId": "SFX_Wind",
                 "WorldSoundEventId": "SFX_Wind",
-                "EntityAnimationId": "Launch"
+                "EntityAnimationId": "FreeFly"
               },
               "OverlapBehavior": "Overwrite"
             },
@@ -30,12 +30,13 @@
               "Z": -1,
               "Y": 0.01
             },
-            "RaycastMode": "FollowLook",
-            "Duration": 1,
+            "RaycastMode": "FollowMotion",
+            "Duration": 1.25,
             "ChangeVelocityType": "Add",
-            "Force": 1.5,
+            "Force": 2,
             "OnItemChangeBehavior": "Ignore",
-            "CancelOnItemChange": false
+            "CancelOnItemChange": false,
+            "AdjustVertical": false
           },
           {
             "Type": "ApplyEffect",

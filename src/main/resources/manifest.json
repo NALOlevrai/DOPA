@@ -9,9 +9,10 @@
         }
     ],
     "Website": "",
-    "ServerVersion": ">=0.7.0-pre.2 <0.8.0",
+    "ServerVersion": ">=0.7.0-pre.3 <0.8.0",
     "Dependencies": {
-        "Hytale:AssetModule": "*"
+        "Hytale:AssetModule": "*",
+        "Hytale:EntityModule": "*"
     },
     "OptionalDependencies": {
         
