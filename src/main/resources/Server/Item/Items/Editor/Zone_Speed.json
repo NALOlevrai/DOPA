@@ -12,10 +12,10 @@
     "Opacity": "Solid",
     "HitboxType": "Fin_Hitbox",
     "MovementSettings": {
-      "HorizontalSpeedMultiplier": 5,
+      "HorizontalSpeedMultiplier": 3.5,
       "JumpForceMultiplier": 1.75,
-      "Friction": 999,
-      "Drag": 0.1
+      "Drag": 0.1,
+      "Friction": 0.5
     },
     "Material": "Solid",
     "ParticleColor": "#ffffff",

@@ -1543,7 +1543,7 @@
     "daf0ffe8-e27e-460e-82e6-f7dbe1366f0c": {
       "Position": {
         "X": 0.0,
-        "Y": 200.0,
+        "Y": 1000.0,
         "Z": 0.0
       },
       "Shape": {
@@ -1586,6 +1586,7 @@
       "Rules": [
         {
           "Type": "NoBuild",
+          "Enabled": false,
           "Target": "Self",
           "MatchKey": "",
           "MatchValue": "",
@@ -1597,6 +1598,7 @@
         },
         {
           "Type": "NoDestroy",
+          "Enabled": false,
           "Target": "Self",
           "MatchKey": "",
           "MatchValue": "",
@@ -1626,40 +1628,6 @@
       "Enabled": true,
       "KeepLoaded": true,
       "Name": "Lobby"
-    },
-    "7c0965c7-b18e-40ef-9b4a-ad055074d2f5": {
-      "Position": {
-        "X": -184.0,
-        "Y": 57.0,
-        "Z": 185.5
-      },
-      "Shape": {
-        "Type": "Box",
-        "Min": {
-          "X": -63.0,
-          "Y": -13.0,
-          "Z": -58.5
-        },
-        "Max": {
-          "X": 63.0,
-          "Y": 13.0,
-          "Z": 58.5
-        }
-      },
-      "Rules": [
-        {
-          "Type": "DamageMultiplier",
-          "Multiplier": 0.0,
-          "Direction": "Both",
-          "EntityFilter": "All"
-        }
-      ],
-      "TargetTypes": [
-        "Player"
-      ],
-      "Enabled": true,
-      "KeepLoaded": false,
-      "Name": "tv_htas76"
     },
     "78868b0e-9411-4f47-90b0-6f1844b24335": {
       "Position": {
@@ -3779,6 +3747,47 @@
       "RotateEffectsOnPaste": false,
       "CancelDelayedOnExit": true,
       "Name": "Extraction (7)"
+    },
+    "ab7752ef-97cd-4c0d-a9b2-e6ba8e7b89ac": {
+      "Position": {
+        "X": 0.5,
+        "Y": 177.0,
+        "Z": 0.5
+      },
+      "Shape": {
+        "Type": "Box",
+        "Min": {
+          "X": -2.5,
+          "Y": -4.5,
+          "Z": -2.5
+        },
+        "Max": {
+          "X": 2.5,
+          "Y": 4.5,
+          "Z": 2.5
+        }
+      },
+      "Effects": [
+        {
+          "Type": "SetVelocity",
+          "Event": "TICK",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "Velocity": {
+            "X": 0.0,
+            "Y": 1.75,
+            "Z": 0.0
+          },
+          "Additive": true,
+          "RelativeMode": "Absolute"
+        }
+      ],
+      "TargetTypes": [
+        "Player"
+      ],
+      "Enabled": true,
+      "KeepLoaded": false,
+      "Name": "tv_bt5qnl"
     },
     "654b65e6-f134-47c7-a70f-c02441d84cfc": {
       "Position": {

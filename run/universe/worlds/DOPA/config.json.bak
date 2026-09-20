@@ -32,7 +32,7 @@
   "IsFallDamageEnabled": true,
   "IsGameTimePaused": false,
   "GameTime": "0001-01-31T12:00:00Z",
-  "ForcedWeather": "Lobby_Weather",
+  "ForcedWeather": "Zone1_Gully",
   "ClientEffects": {
     "SunHeightPercent": 100.0,
     "SunAngleDegrees": 0.0,

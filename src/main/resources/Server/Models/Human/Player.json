@@ -1396,11 +1396,7 @@
     }
   },
   "Light": {
-    "Color": "#123"
-  },
-  "Particles": [
-    {
-      "SystemId": "Coin_Model_Particles"
-    }
-  ]
+    "Color": "#10a",
+    "Radius": 0
+  }
 }

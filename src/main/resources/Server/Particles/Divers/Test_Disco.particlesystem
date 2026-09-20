@@ -1,0 +1,12 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Test_Disco_Sub",
+      "PositionOffset": {
+        "Y": 0
+      }
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 1000
+}

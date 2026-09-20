@@ -1,0 +1,30 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Disco_Particles_Sub",
+      "PositionOffset": {
+        "Y": 10
+      }
+    },
+    {
+      "SpawnerId": "Disco_Particles_Sub2",
+      "PositionOffset": {
+        "Y": 10
+      }
+    },
+    {
+      "SpawnerId": "Disco_Particles_Sub3"
+    },
+    {
+      "PositionOffset": {
+        "Y": -1
+      },
+      "SpawnerId": "Disco_Particles_Sub4"
+    },
+    {
+      "SpawnerId": "Discooo"
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 42
+}

@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "Neon Black"
+    "Name": "Neon Disco"
   },
   "Icon": "Icons/ItemsGenerated/Neon_Black.png",
   "Categories": [
@@ -9,17 +9,20 @@
   "PlayerAnimationsId": "Block",
   "BlockType": {
     "Material": "Solid",
-    "DrawType": "Cube",
     "Group": "Stone",
     "BlockSoundSetId": "Stone",
+    "BlockParticleSetId": "Crystal",
     "ParticleColor": "#000000",
-    "Textures": [
+    "TextureComputedColor": "#ffffff",
+    "CustomModelTexture": [
       {
-        "All": "Resources/Disco_Texture.png"
+        "Texture": "Resources/Disco/Disco_Texture.png"
       }
     ],
-    "BlockParticleSetId": "Crystal",
-    "RequiresAlphaBlending": true
+    "DrawType": "Model",
+    "CustomModel": "Resources/Disco/Disco_Model.blockymodel",
+    "FlipType": "Symmetric",
+    "CubeShadingMode": "Flat"
   },
   "Tags": {
     "Type": [

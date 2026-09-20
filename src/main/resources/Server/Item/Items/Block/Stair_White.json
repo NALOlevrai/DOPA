@@ -21,9 +21,7 @@
     ]
   },
   "BlockType": {
-    "Material": "Solid",
     "DrawType": "Model",
-    "Opacity": "Solid",
     "CustomModel": "Blocks/Structures/Stairs/Stairs.blockymodel",
     "CustomModelTexture": [
       {
@@ -125,7 +123,8 @@
       }
     },
     "SupportDropType": "Destroy",
-    "CubeShadingMode": "Standard"
+    "Material": "Solid",
+    "CubeShadingMode": "Flat"
   },
   "Tags": {
     "Type": [
