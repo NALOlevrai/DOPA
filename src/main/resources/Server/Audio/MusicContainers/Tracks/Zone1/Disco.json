@@ -1,0 +1,11 @@
+{
+  "AudioCategory": "AudioCat_Music_In_Game",
+  "Type": "SingleTrack",
+  "NameTranslationKey": "Disco",
+  "Track": "Music/Disco_Music.ogg",
+  "LoopCount": 0,
+  "Volume": 10,
+  "ExitAt": {
+    "Point": "Immediate"
+  }
+}

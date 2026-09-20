@@ -23,7 +23,7 @@
     "Tint": [
       "#ccb332"
     ],
-    "RequiresAlphaBlending": true
+    "RequiresAlphaBlending": false
   },
   "Tags": {
     "Type": [

@@ -1,0 +1,35 @@
+{
+  "Particle": {
+    "SystemId": "Disco_Particles_Weather"
+  },
+  "MoonScales": [
+    {
+      "Hour": 0,
+      "Value": 0
+    }
+  ],
+  "SunScales": [
+    {
+      "Hour": 0,
+      "Value": 0
+    }
+  ],
+  "ScreenEffectColors": [
+    {
+      "Hour": 0,
+      "Color": "#0062ffff"
+    }
+  ],
+  "SunlightColors": [
+    {
+      "Hour": 0,
+      "Color": "#00e1ff"
+    }
+  ],
+  "SunlightDampingMultipliers": [
+    {
+      "Hour": 0,
+      "Value": 20
+    }
+  ]
+}

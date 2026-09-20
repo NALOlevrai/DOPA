@@ -1,32 +1,27 @@
 {
   "TranslationProperties": {
-    "Name": "Neon Green"
+    "Name": "Empty White"
   },
-  "Icon": "Icons/ItemsGenerated/Neon_Green.png",
+  "Icon": "Icons/ItemsGenerated/Neon_Black.png",
   "Categories": [
     "Blocks.Rocks"
   ],
   "PlayerAnimationsId": "Block",
   "BlockType": {
-    "Material": "Solid",
-    "DrawType": "Cube",
     "Group": "Stone",
-    "CubeShadingMode": "Fullbright",
-    "ParticleColor": "#1bff00",
+    "BlockSoundSetId": "Stone",
+    "ParticleColor": "#000000",
     "Textures": [
       {
-        "All": "Resources/Block_Texture.png"
+        "Up": "Resources/Block_Texture.png",
+        "Down": "Resources/Empty_Texture.png",
+        "Sides": "Resources/Empty_Texture.png"
       }
     ],
     "BlockParticleSetId": "Crystal",
-    "Tint": [
-      "#65b536"
-    ],
-    "BlockSoundSetId": "Stone",
     "RequiresAlphaBlending": false,
-    "Light": {
-      "Color": "#080"
-    }
+    "CubeShadingMode": "Fullbright",
+    "DrawType": "Cube"
   },
   "Tags": {
     "Type": [
@@ -51,10 +46,10 @@
   "ItemSoundSetId": "ISS_Items_Gems",
   "Light": {
     "Radius": 1,
-    "Color": "#0f0"
+    "Color": "#000"
   },
   "ItemEntity": {
     "ShowItemParticles": false,
-    "ParticleColor": "#1bff00"
+    "ParticleColor": "#000000"
   }
 }

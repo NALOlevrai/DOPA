@@ -14,7 +14,7 @@
       "TrailPositionMultiplier": 0,
       "RadialAcceleration": -8.5,
       "LinearAcceleration": {
-        "Y": 4.5
+        "Y": 4.35
       }
     }
   ],
@@ -37,7 +37,8 @@
           "Min": 90,
           "Max": 90
         }
-      }
+      },
+      "Color": "#ffffff"
     },
     "SoftParticles": "Disable",
     "Animation": {
@@ -180,13 +181,13 @@
     "Max": 3
   },
   "Shape": "Sphere",
+  "ParticleRotationInfluence": "Velocity",
+  "IsLowRes": true,
+  "VelocityStretchMultiplier": 50,
   "InitialVelocity": {
     "Speed": {
       "Max": 0.45,
       "Min": -0.45
     }
-  },
-  "ParticleRotationInfluence": "Velocity",
-  "IsLowRes": true,
-  "VelocityStretchMultiplier": 50
+  }
 }

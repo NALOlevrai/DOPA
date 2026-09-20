@@ -30,9 +30,9 @@
   "IsBlockTicking": true,
   "IsPvpEnabled": true,
   "IsFallDamageEnabled": true,
-  "IsGameTimePaused": false,
+  "IsGameTimePaused": true,
   "GameTime": "0001-01-31T12:00:00Z",
-  "ForcedWeather": "Zone1_Gully",
+  "ForcedWeather": "Lobby_Weather",
   "ClientEffects": {
     "SunHeightPercent": 100.0,
     "SunAngleDegrees": 0.0,

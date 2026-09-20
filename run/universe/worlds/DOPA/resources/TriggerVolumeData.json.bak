@@ -735,6 +735,54 @@
       "CancelDelayedOnExit": true,
       "Name": "Extraction (11)"
     },
+    "d901bf5b-2b3b-4477-952e-8a71237f0483": {
+      "Position": {
+        "X": 0.0,
+        "Y": 165.0,
+        "Z": 0.0
+      },
+      "Shape": {
+        "Type": "Cylinder",
+        "Center": {
+          "X": 0.0,
+          "Y": 5.0,
+          "Z": 0.0
+        },
+        "Radius": 42.0,
+        "Height": 10.0
+      },
+      "Effects": [
+        {
+          "Type": "SetWeather",
+          "Event": "ENTER",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "Weather": "Disco_Weather",
+          "PlayerOnly": true,
+          "ResetWeather": false
+        },
+        {
+          "Type": "SetWeather",
+          "Event": "EXIT",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "Weather": "Lobby_Weather",
+          "PlayerOnly": true,
+          "ResetWeather": false
+        }
+      ],
+      "TargetTypes": [
+        "Player"
+      ],
+      "Enabled": true,
+      "Color": {
+        "X": 0.0,
+        "Y": 0.6313725709915161,
+        "Z": 1.0
+      },
+      "KeepLoaded": false,
+      "Name": "Disco"
+    },
     "d69f0b21-4d9b-4f87-9dfe-a78b01ef0d46": {
       "Position": {
         "X": 208.0,
@@ -1543,7 +1591,7 @@
     "daf0ffe8-e27e-460e-82e6-f7dbe1366f0c": {
       "Position": {
         "X": 0.0,
-        "Y": 1000.0,
+        "Y": 200.0,
         "Z": 0.0
       },
       "Shape": {
@@ -3786,8 +3834,13 @@
         "Player"
       ],
       "Enabled": true,
+      "Color": {
+        "X": 0.9490196108818054,
+        "Y": 1.0,
+        "Z": 0.0
+      },
       "KeepLoaded": false,
-      "Name": "tv_bt5qnl"
+      "Name": "Disco_Out"
     },
     "654b65e6-f134-47c7-a70f-c02441d84cfc": {
       "Position": {

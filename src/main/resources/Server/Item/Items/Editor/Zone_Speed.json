@@ -13,17 +13,10 @@
     "HitboxType": "Fin_Hitbox",
     "MovementSettings": {
       "HorizontalSpeedMultiplier": 3.5,
-      "JumpForceMultiplier": 1.75,
-      "Drag": 0.1,
-      "Friction": 0.5
+      "JumpForceMultiplier": 1.75
     },
     "Material": "Solid",
     "ParticleColor": "#ffffff",
-    "Textures": [
-      {
-        "All": "Blocks/_Debug/TextureEmpty.png"
-      }
-    ],
     "CustomModelScale": 0,
     "BlockSoundSetId": "Stone",
     "Interactions": {

@@ -23,7 +23,7 @@
     "Tint": [
       "#bc6735"
     ],
-    "RequiresAlphaBlending": true
+    "RequiresAlphaBlending": false
   },
   "Tags": {
     "Type": [

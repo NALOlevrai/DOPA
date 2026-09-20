@@ -10,7 +10,6 @@
   "BlockType": {
     "Material": "Solid",
     "Group": "Stone",
-    "BlockSoundSetId": "Stone",
     "BlockParticleSetId": "Crystal",
     "ParticleColor": "#000000",
     "TextureComputedColor": "#ffffff",
@@ -22,7 +21,33 @@
     "DrawType": "Model",
     "CustomModel": "Resources/Disco/Disco_Model.blockymodel",
     "FlipType": "Symmetric",
-    "CubeShadingMode": "Flat"
+    "CubeShadingMode": "Flat",
+    "Interactions": {
+      "CollisionEnter": {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "Effects": {
+              "Particles": [
+                {
+                  "SystemId": "Block_Hit_Metal",
+                  "TargetEntityPart": "Entity",
+                  "Color": "#ffffff",
+                  "PositionOffset": {
+                    "Y": 0
+                  },
+                  "DetachedFromModel": true,
+                  "Scale": 1.5
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "MovementSettings": {
+      "HorizontalSpeedMultiplier": 2
+    }
   },
   "Tags": {
     "Type": [

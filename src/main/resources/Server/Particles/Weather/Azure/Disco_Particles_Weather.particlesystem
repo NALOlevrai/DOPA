@@ -1,0 +1,9 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Disco_Particles_Weather_Sub"
+    }
+  ],
+  "IsImportant": false,
+  "CullDistance": 40.0
+}

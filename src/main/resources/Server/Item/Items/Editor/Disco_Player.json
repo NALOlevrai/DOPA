@@ -31,14 +31,21 @@
     "Interactions": {
       "Collision": {}
     },
-    "Particles": [
-      {
-        "SystemId": "Disco_Particles"
-      }
-    ],
     "Tint": [
       "#cecece"
     ],
+    "BlockEntity": {
+      "Components": {
+        "MusicEmitterBlock": {
+          "MusicContainer": "Disco",
+          "AudioCategoryOverride": "AudioCat_AmbientMusic",
+          "ReferenceDistance": 15,
+          "Loop": true,
+          "MaxDistance": 45,
+          "Volume": -7
+        }
+      }
+    },
     "Material": "Solid"
   }
 }
