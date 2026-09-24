@@ -1,0 +1,91 @@
+{
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Ball.png",
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 0.75,
+          "Max": 0.75
+        },
+        "Y": {
+          "Max": 0.75,
+          "Min": 0.75
+        }
+      },
+      "Opacity": 0.5
+    },
+    "Animation": {
+      "0": {
+        "Color": "#ffffff",
+        "Opacity": 1,
+        "Scale": {
+          "X": {
+            "Min": 0.25,
+            "Max": 0.25
+          },
+          "Y": {
+            "Max": 0.25,
+            "Min": 0.25
+          }
+        }
+      },
+      "97": {
+        "Scale": {
+          "X": {
+            "Min": 0.25,
+            "Max": 0.25
+          },
+          "Y": {
+            "Max": 0.25,
+            "Min": 0.25
+          }
+        }
+      },
+      "100": {
+        "Scale": {
+          "X": {
+            "Min": 0,
+            "Max": 0
+          },
+          "Y": {
+            "Max": 0,
+            "Min": 0
+          }
+        }
+      }
+    }
+  },
+  "RenderMode": "Erosion",
+  "IsLowRes": true,
+  "ParticleLifeSpan": {
+    "Min": 4.5,
+    "Max": 4.5
+  },
+  "SpawnRate": {
+    "Min": 1,
+    "Max": 1
+  },
+  "SpawnBurst": true,
+  "Shape": "Cube",
+  "Attractors": [
+    {
+      "LinearImpulse": {
+        "Y": 5,
+        "X": -0.5
+      },
+      "LinearAcceleration": {
+        "Y": 2.5,
+        "X": -4.25
+      },
+      "DampingMultiplier": {
+        "Y": 1.01
+      }
+    }
+  ],
+  "WaveDelay": {
+    "Min": 0.5,
+    "Max": 0.5
+  },
+  "VelocityStretchMultiplier": 15,
+  "ParticleRotationInfluence": "Billboard"
+}

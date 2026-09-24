@@ -1,0 +1,49 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "BigTree_Particles_Sub",
+      "PositionOffset": {
+        "X": 8,
+        "Y": 5
+      }
+    },
+    {
+      "SpawnerId": "BigTree_Particles_Sub",
+      "PositionOffset": {
+        "X": -8,
+        "Y": 5
+      },
+      "RotationOffset": {
+        "Yaw": 180
+      }
+    },
+    {
+      "SpawnerId": "BigTree_Particles_Sub",
+      "PositionOffset": {
+        "Y": 5,
+        "Z": -8
+      },
+      "RotationOffset": {
+        "Yaw": 90
+      }
+    },
+    {
+      "SpawnerId": "BigTree_Particles_Sub",
+      "PositionOffset": {
+        "Y": 5,
+        "Z": 8
+      },
+      "RotationOffset": {
+        "Yaw": -90
+      }
+    },
+    {
+      "SpawnerId": "BigTree_Particles_Sub2",
+      "PositionOffset": {
+        "Y": 5
+      }
+    }
+  ],
+  "CullDistance": 200,
+  "IsImportant": true
+}

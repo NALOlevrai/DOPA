@@ -1,6 +1,6 @@
 {
   "ParticleRotationInfluence": "BillboardVelocity",
-  "MaxConcurrentParticles": 1000,
+  "MaxConcurrentParticles": 500,
   "SpawnRate": {
     "Min": 75,
     "Max": 75
@@ -174,11 +174,5 @@
     "Max": 2.15
   },
   "Shape": "Sphere",
-  "InitialVelocity": {
-    "Speed": {
-      "Max": 0.45,
-      "Min": -0.45
-    }
-  },
   "LinearFiltering": false
 }

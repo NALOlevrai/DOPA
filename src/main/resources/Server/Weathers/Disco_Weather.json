@@ -14,16 +14,10 @@
       "Value": 0
     }
   ],
-  "ScreenEffectColors": [
-    {
-      "Hour": 0,
-      "Color": "#0062ffff"
-    }
-  ],
   "SunlightColors": [
     {
       "Hour": 0,
-      "Color": "#00e1ff"
+      "Color": "#00c3ff"
     }
   ],
   "SunlightDampingMultipliers": [

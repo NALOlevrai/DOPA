@@ -177,12 +177,6 @@
     "Max": 5.5
   },
   "Shape": "Sphere",
-  "InitialVelocity": {
-    "Speed": {
-      "Max": 0.45,
-      "Min": -0.45
-    }
-  },
   "ParticleRotationInfluence": "Velocity",
   "IsLowRes": true,
   "VelocityStretchMultiplier": 50

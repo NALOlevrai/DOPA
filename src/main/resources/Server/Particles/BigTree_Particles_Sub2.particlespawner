@@ -1,0 +1,66 @@
+{
+  "Particle": {
+    "Animation": {
+      "0": {
+        "Opacity": 0
+      },
+      "15": {
+        "Opacity": 1,
+        "Color": "#ff0000"
+      },
+      "35": {
+        "Opacity": 0
+      },
+      "50": {
+        "Opacity": 1,
+        "Color": "#15ff00"
+      },
+      "75": {
+        "Opacity": 0
+      },
+      "100": {
+        "Opacity": 1,
+        "Color": "#003bff"
+      }
+    },
+    "Texture": "Particles/Textures/Basic/Ball.png",
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 0.25,
+          "Max": 0.25
+        },
+        "Y": {
+          "Max": 0.25,
+          "Min": 0.25
+        }
+      },
+      "Opacity": 1
+    }
+  },
+  "EmitOffset": {
+    "X": {
+      "Min": 5,
+      "Max": 5
+    },
+    "Z": {
+      "Min": 5,
+      "Max": 5
+    },
+    "Y": {
+      "Max": 25
+    }
+  },
+  "RenderMode": "BlendAdd",
+  "IsLowRes": true,
+  "ParticleLifeSpan": {
+    "Min": 3.5,
+    "Max": 3.5
+  },
+  "SpawnRate": {
+    "Min": 15,
+    "Max": 15
+  },
+  "ParticleRotationInfluence": "Billboard",
+  "Shape": "Cube"
+}

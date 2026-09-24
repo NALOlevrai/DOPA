@@ -8,15 +8,13 @@
             "Name": "NALO"
         }
     ],
-    "Website": "",
-    "ServerVersion": ">=0.7.0-pre.3 <0.8.0",
+    "Website": "https://example.com",
+    "ServerVersion": ">=0.7.0-pre.4 <0.8.0",
     "Dependencies": {
         "Hytale:AssetModule": "*",
         "Hytale:EntityModule": "*"
     },
-    "OptionalDependencies": {
-        
-    },
+    "OptionalDependencies": {},
     "DisabledByDefault": false,
     "Main": "com.dopa.modid.Main",
     "IncludesAssetPack": true,

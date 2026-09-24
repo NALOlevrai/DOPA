@@ -1,0 +1,9 @@
+{
+  "CullDistance": 150,
+  "IsImportant": true,
+  "Spawners": [
+    {
+      "SpawnerId": "Chimney_Particles_Sub"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "Extraction Particles",
+    "Name": "Disco",
     "Description": "server.items.Editor_Empty.description"
   },
   "Icon": "Icons/ItemsGenerated/Editor_Empty.png",
@@ -16,8 +16,11 @@
   },
   "ItemSoundSetId": "ISS_Blocks_Stone",
   "BlockType": {
+    "DrawType": "Cube",
     "RequiresAlphaBlending": false,
+    "Opacity": "Solid",
     "Group": "@Tech",
+    "Flags": {},
     "BlockParticleSetId": "Stone",
     "CubeShadingMode": "Fullbright",
     "Textures": [
@@ -30,16 +33,12 @@
     },
     "Particles": [
       {
-        "SystemId": "Test_Disco"
+        "SystemId": "Fountain_Particles"
       }
     ],
     "Tint": [
       "#cecece"
     ],
-    "Light": {
-      "Radius": 5,
-      "Color": "#fff"
-    },
     "Material": "Solid"
   }
 }

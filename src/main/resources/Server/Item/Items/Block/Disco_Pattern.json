@@ -2,7 +2,7 @@
   "TranslationProperties": {
     "Name": "Neon Disco"
   },
-  "Icon": "Icons/ItemsGenerated/Neon_Black.png",
+  "Icon": "Icons/ItemsGenerated/Disco_Pattern.png",
   "Categories": [
     "Blocks.Rocks"
   ],
@@ -61,7 +61,7 @@
     "Scale": 0.58823,
     "Rotation": [
       22.5,
-      45,
+      49,
       22.5
     ],
     "Translation": [
@@ -70,10 +70,6 @@
     ]
   },
   "ItemSoundSetId": "ISS_Items_Gems",
-  "Light": {
-    "Radius": 1,
-    "Color": "#000"
-  },
   "ItemEntity": {
     "ShowItemParticles": false,
     "ParticleColor": "#000000"

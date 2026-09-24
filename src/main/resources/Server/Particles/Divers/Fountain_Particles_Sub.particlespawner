@@ -1,0 +1,86 @@
+{
+  "ParticleRotationInfluence": "BillboardVelocity",
+  "MaxConcurrentParticles": 100,
+  "SpawnRate": {
+    "Min": 50,
+    "Max": 50
+  },
+  "Attractors": [
+    {
+      "Position": {
+        "X": 0,
+        "Z": 0
+      },
+      "RadialImpulse": 3.5,
+      "TrailPositionMultiplier": 0,
+      "LinearAcceleration": {
+        "Y": -18.5
+      },
+      "LinearImpulse": {
+        "Y": 3.5
+      }
+    }
+  ],
+  "VelocityStretchMultiplier": 100,
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Ball3.png",
+    "ScaleRatioConstraint": "None",
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 0.5,
+          "Max": 0.5
+        },
+        "Y": {
+          "Min": 0.5,
+          "Max": 0.5
+        }
+      },
+      "Color": "#86c6ff",
+      "Opacity": 0.325
+    },
+    "SoftParticles": "Disable",
+    "Animation": {
+      "0": {
+        "Color": "#00bcff"
+      },
+      "25": {
+        "Color": "#c5efff"
+      },
+      "50": {
+        "Color": "#60a0ff"
+      },
+      "75": {
+        "Color": "#acfffc"
+      },
+      "100": {
+        "Color": "#4777ff"
+      }
+    },
+    "CollisionAnimationFrame": {
+      "Color": "#47f1ff"
+    }
+  },
+  "EmitOffset": {
+    "X": {
+      "Min": 1.5,
+      "Max": 1.5
+    },
+    "Y": {
+      "Max": 0,
+      "Min": 0
+    },
+    "Z": {
+      "Max": 1.5,
+      "Min": 1.5
+    }
+  },
+  "IsLowRes": true,
+  "RenderMode": "BlendAdd",
+  "ParticleLifeSpan": {
+    "Min": 1,
+    "Max": 1
+  },
+  "Shape": "Sphere",
+  "LinearFiltering": false
+}

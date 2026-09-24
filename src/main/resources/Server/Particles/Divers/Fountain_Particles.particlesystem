@@ -1,0 +1,18 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Fountain_Particles_Sub",
+      "PositionOffset": {
+        "Y": 3.5
+      }
+    },
+    {
+      "SpawnerId": "Fountain_Particles_Sub2",
+      "PositionOffset": {
+        "Y": 5.5
+      }
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 100
+}
