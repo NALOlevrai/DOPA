@@ -1,0 +1,37 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Editor_Empty.name",
+    "Description": "server.items.Editor_Empty.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Editor_Empty.png",
+  "Quality": "Technical",
+  "Categories": [
+    "Tool.PrefabEditing"
+  ],
+  "SubCategory": "PrefabBlocks",
+  "BlockType": {
+    "DrawType": "Cube",
+    "Group": "@Tech",
+    "Flags": {},
+    "Textures": [
+      {
+        "All": "Blocks/_Debug/TextureEmpty.png"
+      }
+    ],
+    "Particles": [
+      {
+        "Scale": 10,
+        "SystemId": "Sphere_Particles"
+      }
+    ],
+    "RequiresAlphaBlending": true,
+    "Material": "Empty"
+  },
+  "PlayerAnimationsId": "Block",
+  "Tags": {
+    "Type": [
+      "Editor"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone"
+}

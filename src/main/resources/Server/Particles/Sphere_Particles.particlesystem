@@ -1,0 +1,12 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Sphere_Particles_Sub",
+      "PositionOffset": {
+        "Y": 20
+      }
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 500
+}

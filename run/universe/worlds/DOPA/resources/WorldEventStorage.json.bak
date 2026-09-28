@@ -1,4 +1,75 @@
 {
-  "Active": [],
+  "Active": [
+    {
+      "UUID": "e3f1c5d2-4b6a-4f8e-9c3b-1a2b3c4d5e6f",
+      "Asset": "Goblin_Breach_Event",
+      "Stage": {
+        "Id": 4,
+        "Forks": [
+          {
+            "Conditions": [
+              {
+                "Type": "IntervalCondition",
+                "RemainingSeconds": 348.58563232421875
+              }
+            ]
+          }
+        ]
+      },
+      "RepeatCount": -1,
+      "Transient": true,
+      "Context": [
+        {
+          "Key": "BreachLocation",
+          "Context": {
+            "Type": "LocationContext",
+            "Location": {
+              "X": -166,
+              "Y": 52,
+              "Z": -94
+            }
+          }
+        },
+        {
+          "Key": "BreachSpark",
+          "Context": {
+            "Type": "LocationContext",
+            "Location": {
+              "X": -166,
+              "Y": 52,
+              "Z": -94
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 4.71238899230957,
+              "Roll": 0.0
+            }
+          }
+        },
+        {
+          "Key": "BreachPortal",
+          "Context": {
+            "Type": "LocationContext",
+            "Location": {
+              "X": -166,
+              "Y": 52,
+              "Z": -94
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 3.1415927410125732,
+              "Roll": 0.0
+            }
+          }
+        },
+        {
+          "Key": "EndInterval",
+          "Context": {
+            "Type": "IntervalContext"
+          }
+        }
+      ]
+    }
+  ],
   "Complete": []
 }

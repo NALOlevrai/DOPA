@@ -14,7 +14,9 @@
         "Hytale:AssetModule": "*",
         "Hytale:EntityModule": "*"
     },
-    "OptionalDependencies": {},
+    "OptionalDependencies": {
+        
+    },
     "DisabledByDefault": false,
     "Main": "com.dopa.modid.Main",
     "IncludesAssetPack": true,

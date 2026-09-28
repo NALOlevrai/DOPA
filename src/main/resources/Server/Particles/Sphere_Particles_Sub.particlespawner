@@ -1,0 +1,82 @@
+{
+  "Particle": {
+    "Animation": {
+      "0": {}
+    },
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 0.1,
+          "Max": 0.1
+        },
+        "Y": {
+          "Min": 0.1,
+          "Max": 0.1
+        }
+      },
+      "Color": "#00a6ff"
+    },
+    "Texture": "Particles/Textures/Basic/Ball3.png"
+  },
+  "IsLowRes": true,
+  "RenderMode": "Erosion",
+  "Attractors": [
+    {
+      "TrailPositionMultiplier": 0,
+      "Radius": 5,
+      "RadialAcceleration": 0,
+      "RadialTangentAcceleration": 125,
+      "LinearAcceleration": {
+        "X": 0,
+        "Z": 0
+      },
+      "LinearImpulse": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "DampingMultiplier": {
+        "Z": 0.1,
+        "Y": 0.1,
+        "X": 0.1
+      },
+      "RadialTangentImpulse": 0,
+      "RadialImpulse": 0,
+      "Position": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "RadialAxis": {
+        "X": 0,
+        "Y": 1,
+        "Z": 0
+      }
+    }
+  ],
+  "ParticleLifeSpan": {
+    "Min": 0.35,
+    "Max": 0.35
+  },
+  "SpawnRate": {
+    "Min": 2500,
+    "Max": 2500
+  },
+  "EmitOffset": {
+    "X": {
+      "Min": 5,
+      "Max": 5
+    },
+    "Y": {
+      "Min": 5,
+      "Max": 5
+    },
+    "Z": {
+      "Min": 5,
+      "Max": 5
+    }
+  },
+  "SpawnBurst": false,
+  "ParticleRotationInfluence": "BillboardVelocity",
+  "VelocityStretchMultiplier": 100
+}

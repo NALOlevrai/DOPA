@@ -1,0 +1,82 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Glider_Scrap.name",
+    "Description": "server.items.Glider_Scrap.description"
+  },
+  "Parent": "Template_Glider",
+  "Quality": "Rare",
+  "ItemLevel": 20,
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Scraps",
+        "Quantity": 50
+      },
+      {
+        "ItemId": "Ingredient_Spider_Silk",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Gadget_Assembly",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Voidtaken_Grizzly_Hide",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "GoblinLab_Workbench",
+        "Categories": [
+          "GoblinLab_Gadgets"
+        ],
+        "RequiredAugmentTags": [
+          "goblin_lab_power",
+          "goblin_lab_recipe_a"
+        ]
+      }
+    ],
+    "TimeSeconds": 1,
+    "KnowledgeRequired": false
+  },
+  "ItemAppearanceConditions": {
+    "GlidingActive": [
+      {
+        "Condition": [
+          1,
+          1
+        ],
+        "Model": "Items/Glider/Scrap.blockymodel",
+        "Texture": "Items/Glider/Scrap_Texture.png"
+      }
+    ]
+  },
+  "Model": "Items/Glider/Scrap_Closed.blockymodel",
+  "Texture": "Items/Glider/Scrap_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Glider_Scrap.png",
+  "IconProperties": {
+    "Scale": 0.25,
+    "Rotation": [
+      20,
+      69,
+      32
+    ],
+    "Translation": [
+      11,
+      -28
+    ]
+  },
+  "Glider": {
+    "FallSpeedMultiplier": 6,
+    "HorizontalSpeedMultiplier": 1.1,
+    "TerminalVelocity": -2,
+    "Speed": 10,
+    "DiveTerminalVelocity": -6,
+    "DiveSpeed": 20,
+    "DiveFallSpeedMultiplier": 15,
+    "DiveHorizontalSpeedMultiplier": 0.7,
+    "DiveSpeedToEnergyRatio": 2.5,
+    "EnergyClimbRate": 0
+  }
+}

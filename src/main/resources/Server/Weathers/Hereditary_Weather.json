@@ -1,0 +1,137 @@
+{
+  "SunlightDampingMultipliers": [
+    {
+      "Hour": 0,
+      "Value": 2.5
+    }
+  ],
+  "ScreenEffectColors": null,
+  "SkyTopColors": [
+    {
+      "Hour": 0,
+      "Color": "#000000ff"
+    }
+  ],
+  "FogHeightFalloffs": null,
+  "FogDensities": [
+    {
+      "Hour": 0,
+      "Value": 50
+    }
+  ],
+  "WaterTints": null,
+  "ColorFilters": null,
+  "SunlightColors": [
+    {
+      "Hour": 0,
+      "Color": "#166e6e"
+    }
+  ],
+  "Moons": [
+    {
+      "Texture": "Sky/Sun.png",
+      "Day": 0
+    },
+    {
+      "Texture": "Sky/Sun.png",
+      "Day": 1
+    },
+    {
+      "Texture": "Sky/Sun.png",
+      "Day": 2
+    },
+    {
+      "Texture": "Sky/Sun.png",
+      "Day": 3
+    },
+    {
+      "Texture": "Sky/Sun.png",
+      "Day": 4
+    },
+    {
+      "Texture": "Sky/Sun.png",
+      "Day": 5
+    },
+    {
+      "Texture": "Sky/Sun.png",
+      "Day": 6
+    }
+  ],
+  "SunScales": [
+    {
+      "Hour": 0,
+      "Color": "#0e152c"
+    }
+  ],
+  "MoonScales": [
+    {
+      "Hour": 0,
+      "Value": 0
+    }
+  ],
+  "MoonGlowColors": [
+    {
+      "Hour": 0,
+      "Color": "#050a1a"
+    }
+  ],
+  "SunGlowColors": [
+    {
+      "Hour": 0,
+      "Color": "#050a1a"
+    }
+  ],
+  "MoonColors": [
+    {
+      "Hour": 0,
+      "Color": "#050a1a"
+    }
+  ],
+  "SunColors": [
+    {
+      "Hour": 0,
+      "Color": "#050a1a"
+    }
+  ],
+  "FogOptions": {
+    "EffectiveViewDistanceMultiplier": 1,
+    "FogHeightCameraFixed": 0,
+    "FogHeightCameraOffset": 0
+  },
+  "Stars": "Sky/Stars.png",
+  "SkyBottomColors": [
+    {
+      "Hour": 0,
+      "Color": "#000000ff"
+    }
+  ],
+  "SkySunsetColors": [
+    {
+      "Hour": 0,
+      "Color": "#000000ff"
+    }
+  ],
+  "FogColors": [
+    {
+      "Hour": 0,
+      "Color": "#000000"
+    }
+  ],
+  "Clouds": [
+    {
+      "Colors": [
+        {
+          "Hour": 0,
+          "Color": "#000000ff"
+        }
+      ],
+      "Texture": "Sky/Clouds/Rain_Heavy_Base.png",
+      "Speeds": [
+        {
+          "Hour": 0,
+          "Value": 0
+        }
+      ]
+    }
+  ]
+}

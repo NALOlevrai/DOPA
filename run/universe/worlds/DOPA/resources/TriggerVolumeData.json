@@ -346,6 +346,108 @@
       "CancelDelayedOnExit": true,
       "Name": "Extraction"
     },
+    "06728678-a238-450f-8873-7e460e0ae39d": {
+      "Position": {
+        "X": 26.5,
+        "Y": 185.0,
+        "Z": 42.5
+      },
+      "Shape": {
+        "Type": "Sphere",
+        "Center": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Radius": 20.0
+      },
+      "Conditions": [
+        {
+          "Type": "TagCondition",
+          "Event": "SIGNAL_RECEIVED",
+          "Source": "Event",
+          "TagKey": "DeleteVolume",
+          "Comparison": "Exactly",
+          "CompareAgainst": "Value",
+          "TagValue": "",
+          "Inverted": false,
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 50.0,
+          "Center": "Volume"
+        },
+        {
+          "Type": "ItemCondition",
+          "Event": "ENTER",
+          "Item": "EditorTool_PrefabEditing_SelectPrefab",
+          "Location": "InHand",
+          "Quantity": 1,
+          "Consume": false,
+          "Comparison": "NotEquals",
+          "EmptyInventory": false,
+          "MetadataKey": "",
+          "MetadataValue": ""
+        },
+        {
+          "Type": "ItemCondition",
+          "Event": "ENTER",
+          "Item": "EditorTool_TriggerVolume",
+          "Location": "InHand",
+          "Quantity": 1,
+          "Consume": false,
+          "Comparison": "NotEquals",
+          "EmptyInventory": false,
+          "MetadataKey": "",
+          "MetadataValue": ""
+        }
+      ],
+      "Effects": [
+        {
+          "Type": "SendSignal",
+          "Event": "ENTER",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "MatchKey": "BreachFx",
+          "MatchValue": "",
+          "Radius": 21.0,
+          "Center": "Volume",
+          "SignalKeys": [
+            "Activate"
+          ]
+        },
+        {
+          "Type": "DeleteVolume",
+          "Event": "SIGNAL_RECEIVED",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "MatchKey": "Deletable",
+          "MatchValue": "",
+          "Radius": 21.0,
+          "Center": "Volume"
+        },
+        {
+          "Type": "DisableVolume",
+          "Event": "SIGNAL_RECEIVED",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "MatchKey": "BreachWrapper",
+          "MatchValue": "",
+          "Radius": 2.0,
+          "Center": "Volume"
+        }
+      ],
+      "TargetTypes": [
+        "Player"
+      ],
+      "Enabled": true,
+      "GroupId": "6c06678b-e7e7-4823-acbd-960969226184",
+      "KeepLoaded": false,
+      "Tags": {
+        "BreachWrapper": "Empty",
+        "Deletable": "Empty"
+      },
+      "Name": "Goblin_Breach_Wrapper"
+    },
     "4473d628-fbd6-4656-92d1-93c109680d43": {
       "Position": {
         "X": 0.0,
@@ -3104,352 +3206,6 @@
       "CancelDelayedOnExit": true,
       "Name": "Extraction (9)"
     },
-    "5e8bd84a-2922-49cc-9d4b-3f0119613af9": {
-      "Position": {
-        "X": 345.5,
-        "Y": 76.0,
-        "Z": 65.5
-      },
-      "Shape": {
-        "Type": "Box",
-        "Min": {
-          "X": -4.0,
-          "Y": -4.0,
-          "Z": -4.0
-        },
-        "Max": {
-          "X": 4.0,
-          "Y": 4.0,
-          "Z": 4.0
-        }
-      },
-      "Conditions": [
-        {
-          "Type": "BlockTypeCondition",
-          "Event": "EXIT",
-          "BlockType": [
-            "Block_White"
-          ],
-          "PositionSource": "VolumeOrigin",
-          "PositionOffset": {
-            "X": 0.0,
-            "Y": -5.0,
-            "Z": 0.0
-          }
-        }
-      ],
-      "Effects": [
-        {
-          "Type": "PlaceBlock",
-          "Event": "ENTER",
-          "Interval": 0.0,
-          "Delay": 0.0,
-          "BlockType": "Extraction_Active",
-          "Position": {
-            "X": 0.0,
-            "Y": -5.0,
-            "Z": 0.0
-          },
-          "Origin": "VolumeOrigin",
-          "ReplaceMode": "Always",
-          "Rotation": "None",
-          "Pitch": "None",
-          "Roll": "None"
-        },
-        {
-          "Type": "PlaceBlock",
-          "Event": "ENTER",
-          "Interval": 0.0,
-          "Delay": 2.950000047683716,
-          "BlockType": "Block_White",
-          "Position": {
-            "X": 0.0,
-            "Y": -5.0,
-            "Z": 0.0
-          },
-          "Origin": "VolumeOrigin",
-          "ReplaceMode": "Always",
-          "Rotation": "None",
-          "Pitch": "None",
-          "Roll": "None"
-        },
-        {
-          "Type": "ShowEventTitle",
-          "Event": "ENTER",
-          "Interval": 0.0,
-          "Delay": 0.0,
-          "PrimaryTitle": "3",
-          "SecondaryTitle": "Extraction",
-          "Style": "Default",
-          "Icon": "",
-          "Duration": 0.800000011920929,
-          "FadeInDuration": 0.10000000149011612,
-          "FadeOutDuration": 0.10000000149011612,
-          "Recipient": "TriggeringPlayer"
-        },
-        {
-          "Type": "ShowEventTitle",
-          "Event": "ENTER",
-          "Interval": 0.0,
-          "Delay": 1.0,
-          "PrimaryTitle": "2",
-          "SecondaryTitle": "Extraction",
-          "Style": "Default",
-          "Icon": "",
-          "Duration": 0.800000011920929,
-          "FadeInDuration": 0.10000000149011612,
-          "FadeOutDuration": 0.10000000149011612,
-          "Recipient": "TriggeringPlayer"
-        },
-        {
-          "Type": "ShowEventTitle",
-          "Event": "ENTER",
-          "Interval": 0.0,
-          "Delay": 2.0,
-          "PrimaryTitle": "1",
-          "SecondaryTitle": "Extraction",
-          "Style": "Default",
-          "Icon": "",
-          "Duration": 0.800000011920929,
-          "FadeInDuration": 0.10000000149011612,
-          "FadeOutDuration": 0.10000000149011612,
-          "Recipient": "TriggeringPlayer"
-        },
-        {
-          "Type": "PlayVfx",
-          "Event": "ENTER",
-          "Interval": 0.0,
-          "Delay": 0.0,
-          "ParticleSystem": "Extraction_Enter_Particles",
-          "Offset": {
-            "X": 0.0,
-            "Y": -4.0,
-            "Z": 0.0
-          },
-          "Anchor": "Volume",
-          "Scale": 5.5,
-          "Rotation": {
-            "X": 0.0,
-            "Y": 0.0,
-            "Z": 0.0
-          },
-          "Duration": 0.0
-        },
-        {
-          "Type": "PlaySound",
-          "Event": "ENTER",
-          "Interval": 0.0,
-          "Delay": 0.0,
-          "SoundEvent": "SFX_Wood_Build",
-          "PitchSemitones": 12.0,
-          "Location": "VolumeCenter",
-          "Offset": {
-            "X": 0.0,
-            "Y": 0.0,
-            "Z": 0.0
-          }
-        },
-        {
-          "Type": "PlaySound",
-          "Event": "ENTER",
-          "Interval": 0.0,
-          "Delay": 1.0,
-          "SoundEvent": "SFX_Wood_Build",
-          "PitchSemitones": 12.0,
-          "Location": "VolumeCenter",
-          "Offset": {
-            "X": 0.0,
-            "Y": 0.0,
-            "Z": 0.0
-          }
-        },
-        {
-          "Type": "PlaySound",
-          "Event": "ENTER",
-          "Interval": 0.0,
-          "Delay": 2.0,
-          "SoundEvent": "SFX_Wood_Build",
-          "PitchSemitones": 12.0,
-          "Location": "VolumeCenter",
-          "Offset": {
-            "X": 0.0,
-            "Y": 0.0,
-            "Z": 0.0
-          }
-        },
-        {
-          "Type": "PlaySound",
-          "Event": "ENTER",
-          "Interval": 0.0,
-          "Delay": 0.0,
-          "SoundEvent": "SFX_Arrow_Whistle",
-          "Location": "VolumeCenter",
-          "Offset": {
-            "X": 0.0,
-            "Y": 0.0,
-            "Z": 0.0
-          }
-        },
-        {
-          "Type": "PlaySound",
-          "Event": "EXIT",
-          "Interval": 0.0,
-          "Delay": 0.0,
-          "SoundEvent": "SFX_Ability_Ground_Slam_Impact",
-          "Location": "VolumeCenter",
-          "Offset": {
-            "X": 0.0,
-            "Y": 0.0,
-            "Z": 0.0
-          }
-        },
-        {
-          "Type": "PlaySound",
-          "Event": "ENTER",
-          "Interval": 0.0,
-          "Delay": 0.25,
-          "SoundEvent": "SFX_Arrow_Whistle",
-          "PitchSemitones": -2.8135826587677,
-          "Location": "VolumeCenter",
-          "Offset": {
-            "X": 0.0,
-            "Y": 0.0,
-            "Z": 0.0
-          }
-        },
-        {
-          "Type": "PlaySound",
-          "Event": "ENTER",
-          "Interval": 0.0,
-          "Delay": 2.8499999046325684,
-          "SoundEvent": "SFX_Extraction_Teleport",
-          "Location": "VolumeCenter",
-          "Offset": {
-            "X": 0.0,
-            "Y": 0.0,
-            "Z": 0.0
-          }
-        },
-        {
-          "Type": "PlayVfx",
-          "Event": "ENTER",
-          "Interval": 0.0,
-          "Delay": 2.8499999046325684,
-          "ParticleSystem": "Sword_Signature_Dash_Trail",
-          "Offset": {
-            "X": 0.0,
-            "Y": 0.0,
-            "Z": -2.5
-          },
-          "Anchor": "Volume",
-          "Scale": 5.5,
-          "Rotation": {
-            "X": 90.0,
-            "Y": 180.0,
-            "Z": 90.0
-          },
-          "Duration": 0.0
-        },
-        {
-          "Type": "PlaceBlock",
-          "Event": "EXIT",
-          "Interval": 0.0,
-          "Delay": 22.5,
-          "BlockType": "Extraction_Active",
-          "Position": {
-            "X": 0.0,
-            "Y": -5.0,
-            "Z": 0.0
-          },
-          "Origin": "VolumeOrigin",
-          "ReplaceMode": "Always",
-          "Rotation": "None",
-          "Pitch": "None",
-          "Roll": "None"
-        },
-        {
-          "Type": "EntityEffect",
-          "Event": "ENTER",
-          "Interval": 0.0,
-          "Delay": 3.0,
-          "Effect": "Life_Effect",
-          "Mode": "Apply",
-          "Duration": -1.0
-        },
-        {
-          "Type": "EnableVolume",
-          "Event": "EXIT",
-          "Interval": 0.0,
-          "Delay": 25.0,
-          "MatchKey": "",
-          "MatchValue": "",
-          "Radius": 10.0,
-          "Center": "Volume"
-        },
-        {
-          "Type": "DisableVolume",
-          "Event": "ENTER",
-          "Interval": 0.0,
-          "Delay": 3.0,
-          "MatchKey": "",
-          "MatchValue": "",
-          "Radius": 15.0,
-          "Center": "Volume"
-        },
-        {
-          "Type": "Teleport",
-          "Event": "ENTER",
-          "Interval": 0.0,
-          "Delay": 3.0,
-          "Position": {
-            "X": 0.5,
-            "Y": 205.0,
-            "Z": 0.5
-          },
-          "World": "",
-          "ResetVelocity": true,
-          "RelativeToEntity": false,
-          "RelativeToVolume": false,
-          "UseRotation": false,
-          "Rotation": {
-            "X": 0.0,
-            "Y": 0.0,
-            "Z": 0.0
-          }
-        }
-      ],
-      "Rules": [
-        {
-          "Type": "NoBuild",
-          "Enabled": false,
-          "Target": "Self",
-          "MatchKey": "",
-          "MatchValue": "",
-          "Radius": 50.0
-        },
-        {
-          "Type": "NoHarvest",
-          "Enabled": false,
-          "Target": "Self",
-          "MatchKey": "",
-          "MatchValue": "",
-          "Radius": 50.0
-        }
-      ],
-      "TargetTypes": [
-        "Player"
-      ],
-      "Enabled": true,
-      "Color": {
-        "X": 0.0,
-        "Y": 0.5058823823928833,
-        "Z": 1.0
-      },
-      "KeepLoaded": true,
-      "RotateEffectsOnPaste": false,
-      "CancelDelayedOnExit": true,
-      "Name": "Extraction (3)"
-    },
     "e038e93f-3114-4252-9367-ab19dc2738ba": {
       "Position": {
         "X": -65.5,
@@ -3795,6 +3551,118 @@
       "RotateEffectsOnPaste": false,
       "CancelDelayedOnExit": true,
       "Name": "Extraction (7)"
+    },
+    "a707ac9a-238a-41ad-89f5-39bc71056f18": {
+      "Position": {
+        "X": 26.5,
+        "Y": 185.0,
+        "Z": 42.5
+      },
+      "Shape": {
+        "Type": "Cylinder",
+        "Center": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Radius": 6.5,
+        "Height": 3.0
+      },
+      "Conditions": [
+        {
+          "Type": "TagCondition",
+          "Event": "SIGNAL_RECEIVED",
+          "Source": "Event",
+          "TagKey": "Activate",
+          "Comparison": "Exactly",
+          "CompareAgainst": "Value",
+          "TagValue": "",
+          "Inverted": false,
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 50.0,
+          "Center": "Volume"
+        },
+        {
+          "Type": "TagCondition",
+          "Event": "TICK",
+          "Entry": 1,
+          "Source": "Self",
+          "TagKey": "BoomOn",
+          "Comparison": "Exactly",
+          "CompareAgainst": "Value",
+          "TagValue": "",
+          "Inverted": false,
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 50.0,
+          "Center": "Volume"
+        }
+      ],
+      "Effects": [
+        {
+          "Type": "ModifyTags",
+          "Event": "SIGNAL_RECEIVED",
+          "Interval": 0.0,
+          "Delay": 5.349999904632568,
+          "Operation": "Set",
+          "TagKey": "BoomOn",
+          "TagValue": "",
+          "MatchKey": "BreachBoom",
+          "MatchValue": "",
+          "Radius": 1.0,
+          "Center": "Volume"
+        },
+        {
+          "Type": "DisableVolume",
+          "Event": "SIGNAL_RECEIVED",
+          "Interval": 0.0,
+          "Delay": 5.550000190734863,
+          "MatchKey": "BreachBoom",
+          "MatchValue": "",
+          "Radius": 1.0,
+          "Center": "Volume"
+        },
+        {
+          "Type": "SendSignal",
+          "Event": "SIGNAL_RECEIVED",
+          "Interval": 0.0,
+          "Delay": 5.550000190734863,
+          "MatchKey": "BreachWrapper",
+          "MatchValue": "",
+          "Radius": 2.0,
+          "Center": "Volume",
+          "SignalKeys": [
+            "DeleteVolume"
+          ]
+        },
+        {
+          "Type": "SetVelocity",
+          "Event": "TICK",
+          "Interval": 1.0,
+          "Delay": 0.0,
+          "Entry": 1,
+          "Velocity": {
+            "X": 0.0,
+            "Y": 10.0,
+            "Z": -20.0
+          },
+          "Additive": false,
+          "RelativeMode": "VolumeOrigin"
+        }
+      ],
+      "TargetTypes": [
+        "Player"
+      ],
+      "Enabled": true,
+      "GroupId": "6c06678b-e7e7-4823-acbd-960969226184",
+      "KeepLoaded": false,
+      "Tags": {
+        "BreachFx": "Empty",
+        "BreachBoom": "Empty",
+        "Deletable": "Empty"
+      },
+      "Name": "Goblin_Breach_Explosion"
     },
     "ab7752ef-97cd-4c0d-a9b2-e6ba8e7b89ac": {
       "Position": {
@@ -4187,6 +4055,21 @@
       "RotateEffectsOnPaste": false,
       "CancelDelayedOnExit": true,
       "Name": "Extraction (2)"
+    }
+  },
+  "Groups": {
+    "6c06678b-e7e7-4823-acbd-960969226184": {
+      "Origin": {
+        "X": 26.5,
+        "Y": 187.875,
+        "Z": 42.5
+      },
+      "TargetTypes": [
+        "Player"
+      ],
+      "Enabled": false,
+      "Color": 12599424,
+      "Name": "tvg_kmom80"
     }
   }
 }
