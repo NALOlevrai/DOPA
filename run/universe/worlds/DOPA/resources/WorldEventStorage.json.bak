@@ -10,7 +10,7 @@
             "Conditions": [
               {
                 "Type": "IntervalCondition",
-                "RemainingSeconds": 348.58563232421875
+                "RemainingSeconds": 277.7994384765625
               }
             ]
           }
@@ -19,6 +19,28 @@
       "RepeatCount": -1,
       "Transient": true,
       "Context": [
+        {
+          "Key": "EndInterval",
+          "Context": {
+            "Type": "IntervalContext"
+          }
+        },
+        {
+          "Key": "BreachPortal",
+          "Context": {
+            "Type": "LocationContext",
+            "Location": {
+              "X": -166,
+              "Y": 52,
+              "Z": -94
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 3.1415927410125732,
+              "Roll": 0.0
+            }
+          }
+        },
         {
           "Key": "BreachLocation",
           "Context": {
@@ -44,28 +66,6 @@
               "Yaw": 4.71238899230957,
               "Roll": 0.0
             }
-          }
-        },
-        {
-          "Key": "BreachPortal",
-          "Context": {
-            "Type": "LocationContext",
-            "Location": {
-              "X": -166,
-              "Y": 52,
-              "Z": -94
-            },
-            "Rotation": {
-              "Pitch": 0.0,
-              "Yaw": 3.1415927410125732,
-              "Roll": 0.0
-            }
-          }
-        },
-        {
-          "Key": "EndInterval",
-          "Context": {
-            "Type": "IntervalContext"
           }
         }
       ]
