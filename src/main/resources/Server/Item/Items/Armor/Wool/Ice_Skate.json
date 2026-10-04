@@ -1,0 +1,35 @@
+{
+  "TranslationProperties": {
+    "Name": "Ice Skate"
+  },
+  "Parent": "Armor_Iron_Legs",
+  "Quality": "Common",
+  "ItemLevel": 30,
+  "Icon": "Icons/ItemsGenerated/Armor_Wool_Legs.png",
+  "IconProperties": {
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Scale": 0.59,
+    "Translation": [
+      -2.7,
+      -8.1
+    ]
+  },
+  "Model": "Items/Armors/Ice_Skate_Model.blockymodel",
+  "Texture": "Items/Armors/Ice_Skate_Texture.png",
+  "Armor": {
+    "ArmorSlot": "Legs",
+    "CosmeticsToHide": [
+      "Shoes"
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Armor_Cloth"
+}

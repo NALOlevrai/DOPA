@@ -1,5 +1,117 @@
 {
   "Volumes": {
+    "308ea88f-ea9d-41cb-bc47-d6a70dc8a8e8": {
+      "Position": {
+        "X": 53.5,
+        "Y": 50.0,
+        "Z": 351.5
+      },
+      "Shape": {
+        "Type": "Cylinder",
+        "Center": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Radius": 6.5,
+        "Height": 3.0
+      },
+      "Conditions": [
+        {
+          "Type": "TagCondition",
+          "Event": "SIGNAL_RECEIVED",
+          "Source": "Event",
+          "TagKey": "Activate",
+          "Comparison": "Exactly",
+          "CompareAgainst": "Value",
+          "TagValue": "",
+          "Inverted": false,
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 50.0,
+          "Center": "Volume"
+        },
+        {
+          "Type": "TagCondition",
+          "Event": "TICK",
+          "Entry": 1,
+          "Source": "Self",
+          "TagKey": "BoomOn",
+          "Comparison": "Exactly",
+          "CompareAgainst": "Value",
+          "TagValue": "",
+          "Inverted": false,
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 50.0,
+          "Center": "Volume"
+        }
+      ],
+      "Effects": [
+        {
+          "Type": "ModifyTags",
+          "Event": "SIGNAL_RECEIVED",
+          "Interval": 0.0,
+          "Delay": 5.349999904632568,
+          "Operation": "Set",
+          "TagKey": "BoomOn",
+          "TagValue": "",
+          "MatchKey": "BreachBoom",
+          "MatchValue": "",
+          "Radius": 1.0,
+          "Center": "Volume"
+        },
+        {
+          "Type": "DisableVolume",
+          "Event": "SIGNAL_RECEIVED",
+          "Interval": 0.0,
+          "Delay": 5.550000190734863,
+          "MatchKey": "BreachBoom",
+          "MatchValue": "",
+          "Radius": 1.0,
+          "Center": "Volume"
+        },
+        {
+          "Type": "SendSignal",
+          "Event": "SIGNAL_RECEIVED",
+          "Interval": 0.0,
+          "Delay": 5.550000190734863,
+          "MatchKey": "BreachWrapper",
+          "MatchValue": "",
+          "Radius": 2.0,
+          "Center": "Volume",
+          "SignalKeys": [
+            "DeleteVolume"
+          ]
+        },
+        {
+          "Type": "SetVelocity",
+          "Event": "TICK",
+          "Interval": 1.0,
+          "Delay": 0.0,
+          "Entry": 1,
+          "Velocity": {
+            "X": 0.0,
+            "Y": 10.0,
+            "Z": -20.0
+          },
+          "Additive": false,
+          "RelativeMode": "VolumeOrigin"
+        }
+      ],
+      "TargetTypes": [
+        "Player"
+      ],
+      "Enabled": true,
+      "GroupId": "c25e5c26-6be5-4ae4-9df1-585856536ed2",
+      "KeepLoaded": false,
+      "Tags": {
+        "BreachFx": "Empty",
+        "BreachBoom": "Empty",
+        "Deletable": "Empty"
+      },
+      "Name": "Goblin_Breach_Explosion (2)"
+    },
     "243412fa-6bcf-4603-8c32-2c7dc0e07e28": {
       "Position": {
         "X": -1.5,
@@ -346,108 +458,6 @@
       "CancelDelayedOnExit": true,
       "Name": "Extraction"
     },
-    "06728678-a238-450f-8873-7e460e0ae39d": {
-      "Position": {
-        "X": 26.5,
-        "Y": 185.0,
-        "Z": 42.5
-      },
-      "Shape": {
-        "Type": "Sphere",
-        "Center": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "Radius": 20.0
-      },
-      "Conditions": [
-        {
-          "Type": "TagCondition",
-          "Event": "SIGNAL_RECEIVED",
-          "Source": "Event",
-          "TagKey": "DeleteVolume",
-          "Comparison": "Exactly",
-          "CompareAgainst": "Value",
-          "TagValue": "",
-          "Inverted": false,
-          "MatchKey": "",
-          "MatchValue": "",
-          "Radius": 50.0,
-          "Center": "Volume"
-        },
-        {
-          "Type": "ItemCondition",
-          "Event": "ENTER",
-          "Item": "EditorTool_PrefabEditing_SelectPrefab",
-          "Location": "InHand",
-          "Quantity": 1,
-          "Consume": false,
-          "Comparison": "NotEquals",
-          "EmptyInventory": false,
-          "MetadataKey": "",
-          "MetadataValue": ""
-        },
-        {
-          "Type": "ItemCondition",
-          "Event": "ENTER",
-          "Item": "EditorTool_TriggerVolume",
-          "Location": "InHand",
-          "Quantity": 1,
-          "Consume": false,
-          "Comparison": "NotEquals",
-          "EmptyInventory": false,
-          "MetadataKey": "",
-          "MetadataValue": ""
-        }
-      ],
-      "Effects": [
-        {
-          "Type": "SendSignal",
-          "Event": "ENTER",
-          "Interval": 0.0,
-          "Delay": 0.0,
-          "MatchKey": "BreachFx",
-          "MatchValue": "",
-          "Radius": 21.0,
-          "Center": "Volume",
-          "SignalKeys": [
-            "Activate"
-          ]
-        },
-        {
-          "Type": "DeleteVolume",
-          "Event": "SIGNAL_RECEIVED",
-          "Interval": 0.0,
-          "Delay": 0.0,
-          "MatchKey": "Deletable",
-          "MatchValue": "",
-          "Radius": 21.0,
-          "Center": "Volume"
-        },
-        {
-          "Type": "DisableVolume",
-          "Event": "SIGNAL_RECEIVED",
-          "Interval": 0.0,
-          "Delay": 0.0,
-          "MatchKey": "BreachWrapper",
-          "MatchValue": "",
-          "Radius": 2.0,
-          "Center": "Volume"
-        }
-      ],
-      "TargetTypes": [
-        "Player"
-      ],
-      "Enabled": true,
-      "GroupId": "6c06678b-e7e7-4823-acbd-960969226184",
-      "KeepLoaded": false,
-      "Tags": {
-        "BreachWrapper": "Empty",
-        "Deletable": "Empty"
-      },
-      "Name": "Goblin_Breach_Wrapper"
-    },
     "4473d628-fbd6-4656-92d1-93c109680d43": {
       "Position": {
         "X": 0.0,
@@ -490,6 +500,118 @@
       "KeepLoaded": true,
       "RotateEffectsOnPaste": false,
       "Name": "KillDown"
+    },
+    "20a406ea-a342-4b3b-9091-a81e7f96d775": {
+      "Position": {
+        "X": 278.5,
+        "Y": 55.0,
+        "Z": 139.5
+      },
+      "Shape": {
+        "Type": "Cylinder",
+        "Center": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Radius": 6.5,
+        "Height": 3.0
+      },
+      "Conditions": [
+        {
+          "Type": "TagCondition",
+          "Event": "SIGNAL_RECEIVED",
+          "Source": "Event",
+          "TagKey": "Activate",
+          "Comparison": "Exactly",
+          "CompareAgainst": "Value",
+          "TagValue": "",
+          "Inverted": false,
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 50.0,
+          "Center": "Volume"
+        },
+        {
+          "Type": "TagCondition",
+          "Event": "TICK",
+          "Entry": 1,
+          "Source": "Self",
+          "TagKey": "BoomOn",
+          "Comparison": "Exactly",
+          "CompareAgainst": "Value",
+          "TagValue": "",
+          "Inverted": false,
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 50.0,
+          "Center": "Volume"
+        }
+      ],
+      "Effects": [
+        {
+          "Type": "ModifyTags",
+          "Event": "SIGNAL_RECEIVED",
+          "Interval": 0.0,
+          "Delay": 5.349999904632568,
+          "Operation": "Set",
+          "TagKey": "BoomOn",
+          "TagValue": "",
+          "MatchKey": "BreachBoom",
+          "MatchValue": "",
+          "Radius": 1.0,
+          "Center": "Volume"
+        },
+        {
+          "Type": "DisableVolume",
+          "Event": "SIGNAL_RECEIVED",
+          "Interval": 0.0,
+          "Delay": 5.550000190734863,
+          "MatchKey": "BreachBoom",
+          "MatchValue": "",
+          "Radius": 1.0,
+          "Center": "Volume"
+        },
+        {
+          "Type": "SendSignal",
+          "Event": "SIGNAL_RECEIVED",
+          "Interval": 0.0,
+          "Delay": 5.550000190734863,
+          "MatchKey": "BreachWrapper",
+          "MatchValue": "",
+          "Radius": 2.0,
+          "Center": "Volume",
+          "SignalKeys": [
+            "DeleteVolume"
+          ]
+        },
+        {
+          "Type": "SetVelocity",
+          "Event": "TICK",
+          "Interval": 1.0,
+          "Delay": 0.0,
+          "Entry": 1,
+          "Velocity": {
+            "X": 0.0,
+            "Y": 10.0,
+            "Z": -20.0
+          },
+          "Additive": false,
+          "RelativeMode": "VolumeOrigin"
+        }
+      ],
+      "TargetTypes": [
+        "Player"
+      ],
+      "Enabled": true,
+      "GroupId": "e311b024-288b-4b77-a47a-e23d45c034ba",
+      "KeepLoaded": false,
+      "Tags": {
+        "BreachFx": "Empty",
+        "BreachBoom": "Empty",
+        "Deletable": "Empty"
+      },
+      "Name": "Goblin_Breach_Explosion"
     },
     "243a9491-8936-44f0-a79e-6169a2e875f4": {
       "Position": {
@@ -884,6 +1006,108 @@
       },
       "KeepLoaded": false,
       "Name": "Disco"
+    },
+    "1c69c2cf-26a5-481f-9e0c-b05d8d6125b2": {
+      "Position": {
+        "X": 53.5,
+        "Y": 50.0,
+        "Z": 351.5
+      },
+      "Shape": {
+        "Type": "Sphere",
+        "Center": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Radius": 20.0
+      },
+      "Conditions": [
+        {
+          "Type": "TagCondition",
+          "Event": "SIGNAL_RECEIVED",
+          "Source": "Event",
+          "TagKey": "DeleteVolume",
+          "Comparison": "Exactly",
+          "CompareAgainst": "Value",
+          "TagValue": "",
+          "Inverted": false,
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 50.0,
+          "Center": "Volume"
+        },
+        {
+          "Type": "ItemCondition",
+          "Event": "ENTER",
+          "Item": "EditorTool_PrefabEditing_SelectPrefab",
+          "Location": "InHand",
+          "Quantity": 1,
+          "Consume": false,
+          "Comparison": "NotEquals",
+          "EmptyInventory": false,
+          "MetadataKey": "",
+          "MetadataValue": ""
+        },
+        {
+          "Type": "ItemCondition",
+          "Event": "ENTER",
+          "Item": "EditorTool_TriggerVolume",
+          "Location": "InHand",
+          "Quantity": 1,
+          "Consume": false,
+          "Comparison": "NotEquals",
+          "EmptyInventory": false,
+          "MetadataKey": "",
+          "MetadataValue": ""
+        }
+      ],
+      "Effects": [
+        {
+          "Type": "SendSignal",
+          "Event": "ENTER",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "MatchKey": "BreachFx",
+          "MatchValue": "",
+          "Radius": 21.0,
+          "Center": "Volume",
+          "SignalKeys": [
+            "Activate"
+          ]
+        },
+        {
+          "Type": "DeleteVolume",
+          "Event": "SIGNAL_RECEIVED",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "MatchKey": "Deletable",
+          "MatchValue": "",
+          "Radius": 21.0,
+          "Center": "Volume"
+        },
+        {
+          "Type": "DisableVolume",
+          "Event": "SIGNAL_RECEIVED",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "MatchKey": "BreachWrapper",
+          "MatchValue": "",
+          "Radius": 2.0,
+          "Center": "Volume"
+        }
+      ],
+      "TargetTypes": [
+        "Player"
+      ],
+      "Enabled": true,
+      "GroupId": "c25e5c26-6be5-4ae4-9df1-585856536ed2",
+      "KeepLoaded": false,
+      "Tags": {
+        "BreachWrapper": "Empty",
+        "Deletable": "Empty"
+      },
+      "Name": "Goblin_Breach_Wrapper (2)"
     },
     "d69f0b21-4d9b-4f87-9dfe-a78b01ef0d46": {
       "Position": {
@@ -1778,6 +2002,108 @@
       "Enabled": true,
       "KeepLoaded": true,
       "Name": "Lobby"
+    },
+    "049494a7-609b-4614-9ffc-2f5a3bf68e2b": {
+      "Position": {
+        "X": 278.5,
+        "Y": 55.0,
+        "Z": 139.5
+      },
+      "Shape": {
+        "Type": "Sphere",
+        "Center": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Radius": 20.0
+      },
+      "Conditions": [
+        {
+          "Type": "TagCondition",
+          "Event": "SIGNAL_RECEIVED",
+          "Source": "Event",
+          "TagKey": "DeleteVolume",
+          "Comparison": "Exactly",
+          "CompareAgainst": "Value",
+          "TagValue": "",
+          "Inverted": false,
+          "MatchKey": "",
+          "MatchValue": "",
+          "Radius": 50.0,
+          "Center": "Volume"
+        },
+        {
+          "Type": "ItemCondition",
+          "Event": "ENTER",
+          "Item": "EditorTool_PrefabEditing_SelectPrefab",
+          "Location": "InHand",
+          "Quantity": 1,
+          "Consume": false,
+          "Comparison": "NotEquals",
+          "EmptyInventory": false,
+          "MetadataKey": "",
+          "MetadataValue": ""
+        },
+        {
+          "Type": "ItemCondition",
+          "Event": "ENTER",
+          "Item": "EditorTool_TriggerVolume",
+          "Location": "InHand",
+          "Quantity": 1,
+          "Consume": false,
+          "Comparison": "NotEquals",
+          "EmptyInventory": false,
+          "MetadataKey": "",
+          "MetadataValue": ""
+        }
+      ],
+      "Effects": [
+        {
+          "Type": "SendSignal",
+          "Event": "ENTER",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "MatchKey": "BreachFx",
+          "MatchValue": "",
+          "Radius": 21.0,
+          "Center": "Volume",
+          "SignalKeys": [
+            "Activate"
+          ]
+        },
+        {
+          "Type": "DeleteVolume",
+          "Event": "SIGNAL_RECEIVED",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "MatchKey": "Deletable",
+          "MatchValue": "",
+          "Radius": 21.0,
+          "Center": "Volume"
+        },
+        {
+          "Type": "DisableVolume",
+          "Event": "SIGNAL_RECEIVED",
+          "Interval": 0.0,
+          "Delay": 0.0,
+          "MatchKey": "BreachWrapper",
+          "MatchValue": "",
+          "Radius": 2.0,
+          "Center": "Volume"
+        }
+      ],
+      "TargetTypes": [
+        "Player"
+      ],
+      "Enabled": true,
+      "GroupId": "e311b024-288b-4b77-a47a-e23d45c034ba",
+      "KeepLoaded": false,
+      "Tags": {
+        "BreachWrapper": "Empty",
+        "Deletable": "Empty"
+      },
+      "Name": "Goblin_Breach_Wrapper"
     },
     "78868b0e-9411-4f47-90b0-6f1844b24335": {
       "Position": {
@@ -3552,118 +3878,6 @@
       "CancelDelayedOnExit": true,
       "Name": "Extraction (7)"
     },
-    "a707ac9a-238a-41ad-89f5-39bc71056f18": {
-      "Position": {
-        "X": 26.5,
-        "Y": 185.0,
-        "Z": 42.5
-      },
-      "Shape": {
-        "Type": "Cylinder",
-        "Center": {
-          "X": 0.0,
-          "Y": 0.0,
-          "Z": 0.0
-        },
-        "Radius": 6.5,
-        "Height": 3.0
-      },
-      "Conditions": [
-        {
-          "Type": "TagCondition",
-          "Event": "SIGNAL_RECEIVED",
-          "Source": "Event",
-          "TagKey": "Activate",
-          "Comparison": "Exactly",
-          "CompareAgainst": "Value",
-          "TagValue": "",
-          "Inverted": false,
-          "MatchKey": "",
-          "MatchValue": "",
-          "Radius": 50.0,
-          "Center": "Volume"
-        },
-        {
-          "Type": "TagCondition",
-          "Event": "TICK",
-          "Entry": 1,
-          "Source": "Self",
-          "TagKey": "BoomOn",
-          "Comparison": "Exactly",
-          "CompareAgainst": "Value",
-          "TagValue": "",
-          "Inverted": false,
-          "MatchKey": "",
-          "MatchValue": "",
-          "Radius": 50.0,
-          "Center": "Volume"
-        }
-      ],
-      "Effects": [
-        {
-          "Type": "ModifyTags",
-          "Event": "SIGNAL_RECEIVED",
-          "Interval": 0.0,
-          "Delay": 5.349999904632568,
-          "Operation": "Set",
-          "TagKey": "BoomOn",
-          "TagValue": "",
-          "MatchKey": "BreachBoom",
-          "MatchValue": "",
-          "Radius": 1.0,
-          "Center": "Volume"
-        },
-        {
-          "Type": "DisableVolume",
-          "Event": "SIGNAL_RECEIVED",
-          "Interval": 0.0,
-          "Delay": 5.550000190734863,
-          "MatchKey": "BreachBoom",
-          "MatchValue": "",
-          "Radius": 1.0,
-          "Center": "Volume"
-        },
-        {
-          "Type": "SendSignal",
-          "Event": "SIGNAL_RECEIVED",
-          "Interval": 0.0,
-          "Delay": 5.550000190734863,
-          "MatchKey": "BreachWrapper",
-          "MatchValue": "",
-          "Radius": 2.0,
-          "Center": "Volume",
-          "SignalKeys": [
-            "DeleteVolume"
-          ]
-        },
-        {
-          "Type": "SetVelocity",
-          "Event": "TICK",
-          "Interval": 1.0,
-          "Delay": 0.0,
-          "Entry": 1,
-          "Velocity": {
-            "X": 0.0,
-            "Y": 10.0,
-            "Z": -20.0
-          },
-          "Additive": false,
-          "RelativeMode": "VolumeOrigin"
-        }
-      ],
-      "TargetTypes": [
-        "Player"
-      ],
-      "Enabled": true,
-      "GroupId": "6c06678b-e7e7-4823-acbd-960969226184",
-      "KeepLoaded": false,
-      "Tags": {
-        "BreachFx": "Empty",
-        "BreachBoom": "Empty",
-        "Deletable": "Empty"
-      },
-      "Name": "Goblin_Breach_Explosion"
-    },
     "ab7752ef-97cd-4c0d-a9b2-e6ba8e7b89ac": {
       "Position": {
         "X": 0.5,
@@ -4058,11 +4272,11 @@
     }
   },
   "Groups": {
-    "6c06678b-e7e7-4823-acbd-960969226184": {
+    "e311b024-288b-4b77-a47a-e23d45c034ba": {
       "Origin": {
-        "X": 26.5,
-        "Y": 187.875,
-        "Z": 42.5
+        "X": 278.5,
+        "Y": 57.875,
+        "Z": 139.5
       },
       "TargetTypes": [
         "Player"
@@ -4070,6 +4284,19 @@
       "Enabled": false,
       "Color": 12599424,
       "Name": "tvg_kmom80"
+    },
+    "c25e5c26-6be5-4ae4-9df1-585856536ed2": {
+      "Origin": {
+        "X": 53.5,
+        "Y": 52.875,
+        "Z": 351.5
+      },
+      "TargetTypes": [
+        "Player"
+      ],
+      "Enabled": false,
+      "Color": 12599424,
+      "Name": "tvg_kmom80 (2)"
     }
   }
 }

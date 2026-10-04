@@ -4,13 +4,13 @@
       "UUID": "e3f1c5d2-4b6a-4f8e-9c3b-1a2b3c4d5e6f",
       "Asset": "Goblin_Breach_Event",
       "Stage": {
-        "Id": 4,
+        "Id": 5,
         "Forks": [
           {
             "Conditions": [
               {
                 "Type": "IntervalCondition",
-                "RemainingSeconds": 277.7994384765625
+                "RemainingSeconds": 1070.4620361328125
               }
             ]
           }
@@ -19,6 +19,19 @@
       "RepeatCount": -1,
       "Transient": true,
       "Context": [
+        {
+          "Key": "BreachPortal",
+          "Context": {
+            "Type": "PrefabPasteContext",
+            "Path": "Server/Prefabs/Orbis/WorldEvent/Goblins/Goblin_World_Event_Portal",
+            "Origin": {
+              "X": 15,
+              "Y": 57,
+              "Z": -105
+            },
+            "Rotation": "Rotation90"
+          }
+        },
         {
           "Key": "EndInterval",
           "Context": {
@@ -30,13 +43,13 @@
           "Context": {
             "Type": "LocationContext",
             "Location": {
-              "X": -166,
-              "Y": 52,
-              "Z": -94
+              "X": 15,
+              "Y": 57,
+              "Z": -105
             },
             "Rotation": {
               "Pitch": 0.0,
-              "Yaw": 3.1415927410125732,
+              "Yaw": 1.5707963705062866,
               "Roll": 0.0
             }
           }
@@ -46,9 +59,9 @@
           "Context": {
             "Type": "LocationContext",
             "Location": {
-              "X": -166,
-              "Y": 52,
-              "Z": -94
+              "X": 15,
+              "Y": 57,
+              "Z": -105
             }
           }
         },
@@ -57,13 +70,13 @@
           "Context": {
             "Type": "LocationContext",
             "Location": {
-              "X": -166,
-              "Y": 52,
-              "Z": -94
+              "X": 15,
+              "Y": 57,
+              "Z": -105
             },
             "Rotation": {
               "Pitch": 0.0,
-              "Yaw": 4.71238899230957,
+              "Yaw": 1.5707963705062866,
               "Roll": 0.0
             }
           }
